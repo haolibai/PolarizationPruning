@@ -26,7 +26,7 @@ See `./imagenet` or `./cifar` for detail guides running on ImageNet ([ILSVRC-12]
 
 ~~We release our checkpoints, training logs and TensorBoard events on [Google Drive](#). Hope them help you better understand our work.~~
 
-We have uploaded our training logs and Tensorboard events on CMT. Limited by the upload file size, we can't upload checkpoints. We will release checkpoints as soon as possible after review.
+We have uploaded our training logs on CMT (see `code.zip/log/`). Limited by the upload file size, we can't upload checkpoints and TensorBoard events. We will release checkpoints as soon as possible after review.
 
 ## Note
 
