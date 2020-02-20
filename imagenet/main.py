@@ -85,7 +85,7 @@ parser.add_argument('--dist-url', default='tcp://224.66.41.62:23456', type=str,
 parser.add_argument('--dist-backend', default='gloo', type=str,
                     help='distributed backend')
 parser.add_argument('--lbd', type=float, default=0.0001,
-                    help='scale sparse rate (default: 0.0001)')
+                    help='scale sparse rate (i.e. lambda in eq.2) (default: 0.0001)')
 parser.add_argument('--alpha', type=float, default=1.,
                     help='coefficient of mean term in polarization regularizer. deprecated. (default: 1)')
 parser.add_argument('--t', type=float, default=1.,
