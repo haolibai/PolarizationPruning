@@ -1,0 +1,62 @@
+Configuration: 
+[14, 14, 14, 15, 2, 13, 11, 14, 14, 16, 0, 0, 13, 16, 14, 16, 13, 16, 32, 30, 28, 31, 27, 32, 26, 32, 28, 32, 21, 32, 26, 32, 12, 32, 11, 32, 64, 64, 55, 64, 56, 64, 56, 64, 52, 64, 48, 64, 64, 64, 64, 64, 64, 64]
+Number of parameters: 
+737478
+FLOPs before pruning: 756143936.0 
+FLOPs after pruning: 572135360.0 
+
+
+
+************MODEL SUMMARY************bn1: original shape: 16, pruned shape: 16
+layer1.0.bn1: original shape: 16, pruned shape: 14
+layer1.0.bn2: original shape: 16, pruned shape: 14
+layer1.1.bn1: original shape: 16, pruned shape: 14
+layer1.1.bn2: original shape: 16, pruned shape: 15
+layer1.2.bn1: original shape: 16, pruned shape: 2
+layer1.2.bn2: original shape: 16, pruned shape: 13
+layer1.3.bn1: original shape: 16, pruned shape: 11
+layer1.3.bn2: original shape: 16, pruned shape: 14
+layer1.4.bn1: original shape: 16, pruned shape: 14
+layer1.4.bn2: original shape: 16, pruned shape: 16
+layer1.6.bn1: original shape: 16, pruned shape: 13
+layer1.6.bn2: original shape: 16, pruned shape: 16
+layer1.7.bn1: original shape: 16, pruned shape: 14
+layer1.7.bn2: original shape: 16, pruned shape: 16
+layer1.8.bn1: original shape: 16, pruned shape: 13
+layer1.8.bn2: original shape: 16, pruned shape: 16
+layer2.0.bn1: original shape: 32, pruned shape: 32
+layer2.0.bn2: original shape: 32, pruned shape: 30
+layer2.1.bn1: original shape: 32, pruned shape: 28
+layer2.1.bn2: original shape: 32, pruned shape: 31
+layer2.2.bn1: original shape: 32, pruned shape: 27
+layer2.2.bn2: original shape: 32, pruned shape: 32
+layer2.3.bn1: original shape: 32, pruned shape: 26
+layer2.3.bn2: original shape: 32, pruned shape: 32
+layer2.4.bn1: original shape: 32, pruned shape: 28
+layer2.4.bn2: original shape: 32, pruned shape: 32
+layer2.5.bn1: original shape: 32, pruned shape: 21
+layer2.5.bn2: original shape: 32, pruned shape: 32
+layer2.6.bn1: original shape: 32, pruned shape: 26
+layer2.6.bn2: original shape: 32, pruned shape: 32
+layer2.7.bn1: original shape: 32, pruned shape: 12
+layer2.7.bn2: original shape: 32, pruned shape: 32
+layer2.8.bn1: original shape: 32, pruned shape: 11
+layer2.8.bn2: original shape: 32, pruned shape: 32
+layer3.0.bn1: original shape: 64, pruned shape: 64
+layer3.0.bn2: original shape: 64, pruned shape: 64
+layer3.1.bn1: original shape: 64, pruned shape: 55
+layer3.1.bn2: original shape: 64, pruned shape: 64
+layer3.2.bn1: original shape: 64, pruned shape: 56
+layer3.2.bn2: original shape: 64, pruned shape: 64
+layer3.3.bn1: original shape: 64, pruned shape: 56
+layer3.3.bn2: original shape: 64, pruned shape: 64
+layer3.4.bn1: original shape: 64, pruned shape: 52
+layer3.4.bn2: original shape: 64, pruned shape: 64
+layer3.5.bn1: original shape: 64, pruned shape: 48
+layer3.5.bn2: original shape: 64, pruned shape: 64
+layer3.6.bn1: original shape: 64, pruned shape: 64
+layer3.6.bn2: original shape: 64, pruned shape: 64
+layer3.7.bn1: original shape: 64, pruned shape: 64
+layer3.7.bn2: original shape: 64, pruned shape: 64
+layer3.8.bn1: original shape: 64, pruned shape: 64
+layer3.8.bn2: original shape: 64, pruned shape: 64*************************************

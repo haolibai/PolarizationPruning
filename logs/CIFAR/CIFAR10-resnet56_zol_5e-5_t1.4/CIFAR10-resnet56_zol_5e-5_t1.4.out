@@ -1,0 +1,2462 @@
+Namespace(alpha=1.4, arch='resnet56', batch_size=64, bn_init_value=0.5, cuda=True, dataset='cifar10', decay_epoch=[1, 60, 120, 160], depth=19, epochs=200, gammas=[10.0, 0.2, 0.2, 0.2], log='./log/CIFAR10-resnet56_zol_5e-5_alpha1.4_wd5e-4_0.2decay_warmup_3', log_interval=100, loss=<LossType.POLARIZATION: 5>, lr=0.01, momentum=0.9, no_cuda=False, resume='', s=5e-05, save='./logs/CIFAR10-resnet56_zol_5e-5_alpha1.4_wd5e-4_0.2decay_warmup_3/', seed=888, start_epoch=0, t=1.0, test_batch_size=128, weight_decay=0.0005)
+Files already downloaded and verified
+Start epoch 0/200 with learning rate 0.01...
+Step: 1 Train Epoch: 0 [0/50000 (0.0%)]	Loss: 3.460190
+Step: 101 Train Epoch: 0 [6400/50000 (12.8%)]	Loss: 1.748349
+Step: 201 Train Epoch: 0 [12800/50000 (25.6%)]	Loss: 1.714556
+Step: 301 Train Epoch: 0 [19200/50000 (38.4%)]	Loss: 1.527813
+Step: 401 Train Epoch: 0 [25600/50000 (51.2%)]	Loss: 1.591950
+Step: 501 Train Epoch: 0 [32000/50000 (63.9%)]	Loss: 1.679819
+Step: 601 Train Epoch: 0 [38400/50000 (76.7%)]	Loss: 1.560005
+Step: 701 Train Epoch: 0 [44800/50000 (89.5%)]	Loss: 1.269084
+/home/pruning/lib/python3.6/site-packages/torch/nn/_reduction.py:43: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+
+Test set: Average loss: 1.3136, Accuracy: 5263/10000 (52.6300%)
+
+Start epoch 1/200 with learning rate 0.1...
+Step: 783 Train Epoch: 1 [0/50000 (0.0%)]	Loss: 1.254308
+Step: 883 Train Epoch: 1 [6400/50000 (12.8%)]	Loss: 1.761070
+Step: 983 Train Epoch: 1 [12800/50000 (25.6%)]	Loss: 1.684129
+Step: 1083 Train Epoch: 1 [19200/50000 (38.4%)]	Loss: 1.626795
+Step: 1183 Train Epoch: 1 [25600/50000 (51.2%)]	Loss: 1.384080
+Step: 1283 Train Epoch: 1 [32000/50000 (63.9%)]	Loss: 1.201056
+Step: 1383 Train Epoch: 1 [38400/50000 (76.7%)]	Loss: 1.590589
+Step: 1483 Train Epoch: 1 [44800/50000 (89.5%)]	Loss: 1.245396
+
+Test set: Average loss: 1.2486, Accuracy: 5608/10000 (56.0800%)
+
+Start epoch 2/200 with learning rate 0.1...
+Step: 1565 Train Epoch: 2 [0/50000 (0.0%)]	Loss: 0.871191
+Step: 1665 Train Epoch: 2 [6400/50000 (12.8%)]	Loss: 1.358893
+Step: 1765 Train Epoch: 2 [12800/50000 (25.6%)]	Loss: 0.858840
+Step: 1865 Train Epoch: 2 [19200/50000 (38.4%)]	Loss: 0.953146
+Step: 1965 Train Epoch: 2 [25600/50000 (51.2%)]	Loss: 1.009757
+Step: 2065 Train Epoch: 2 [32000/50000 (63.9%)]	Loss: 1.128828
+Step: 2165 Train Epoch: 2 [38400/50000 (76.7%)]	Loss: 0.943731
+Step: 2265 Train Epoch: 2 [44800/50000 (89.5%)]	Loss: 0.780809
+
+Test set: Average loss: 0.9199, Accuracy: 6847/10000 (68.4700%)
+
+Start epoch 3/200 with learning rate 0.1...
+Step: 2347 Train Epoch: 3 [0/50000 (0.0%)]	Loss: 1.017520
+Step: 2447 Train Epoch: 3 [6400/50000 (12.8%)]	Loss: 0.969562
+Step: 2547 Train Epoch: 3 [12800/50000 (25.6%)]	Loss: 0.647765
+Step: 2647 Train Epoch: 3 [19200/50000 (38.4%)]	Loss: 1.057832
+Step: 2747 Train Epoch: 3 [25600/50000 (51.2%)]	Loss: 0.973346
+Step: 2847 Train Epoch: 3 [32000/50000 (63.9%)]	Loss: 0.668752
+Step: 2947 Train Epoch: 3 [38400/50000 (76.7%)]	Loss: 0.900168
+Step: 3047 Train Epoch: 3 [44800/50000 (89.5%)]	Loss: 0.831263
+
+Test set: Average loss: 1.2290, Accuracy: 5936/10000 (59.3600%)
+
+Start epoch 4/200 with learning rate 0.1...
+Step: 3129 Train Epoch: 4 [0/50000 (0.0%)]	Loss: 0.732192
+Step: 3229 Train Epoch: 4 [6400/50000 (12.8%)]	Loss: 0.602795
+Step: 3329 Train Epoch: 4 [12800/50000 (25.6%)]	Loss: 1.050635
+Step: 3429 Train Epoch: 4 [19200/50000 (38.4%)]	Loss: 0.717251
+Step: 3529 Train Epoch: 4 [25600/50000 (51.2%)]	Loss: 0.692344
+Step: 3629 Train Epoch: 4 [32000/50000 (63.9%)]	Loss: 0.849469
+Step: 3729 Train Epoch: 4 [38400/50000 (76.7%)]	Loss: 0.734947
+Step: 3829 Train Epoch: 4 [44800/50000 (89.5%)]	Loss: 0.688197
+
+Test set: Average loss: 0.7531, Accuracy: 7456/10000 (74.5600%)
+
+Start epoch 5/200 with learning rate 0.1...
+Step: 3911 Train Epoch: 5 [0/50000 (0.0%)]	Loss: 0.771527
+Step: 4011 Train Epoch: 5 [6400/50000 (12.8%)]	Loss: 0.931949
+Step: 4111 Train Epoch: 5 [12800/50000 (25.6%)]	Loss: 0.905963
+Step: 4211 Train Epoch: 5 [19200/50000 (38.4%)]	Loss: 0.744821
+Step: 4311 Train Epoch: 5 [25600/50000 (51.2%)]	Loss: 0.539079
+Step: 4411 Train Epoch: 5 [32000/50000 (63.9%)]	Loss: 0.637974
+Step: 4511 Train Epoch: 5 [38400/50000 (76.7%)]	Loss: 0.680706
+Step: 4611 Train Epoch: 5 [44800/50000 (89.5%)]	Loss: 0.815672
+
+Test set: Average loss: 0.9479, Accuracy: 6989/10000 (69.8900%)
+
+Start epoch 6/200 with learning rate 0.1...
+Step: 4693 Train Epoch: 6 [0/50000 (0.0%)]	Loss: 0.445695
+Step: 4793 Train Epoch: 6 [6400/50000 (12.8%)]	Loss: 0.712450
+Step: 4893 Train Epoch: 6 [12800/50000 (25.6%)]	Loss: 0.702824
+Step: 4993 Train Epoch: 6 [19200/50000 (38.4%)]	Loss: 0.902736
+Step: 5093 Train Epoch: 6 [25600/50000 (51.2%)]	Loss: 0.717699
+Step: 5193 Train Epoch: 6 [32000/50000 (63.9%)]	Loss: 0.685708
+Step: 5293 Train Epoch: 6 [38400/50000 (76.7%)]	Loss: 0.970185
+Step: 5393 Train Epoch: 6 [44800/50000 (89.5%)]	Loss: 0.689074
+
+Test set: Average loss: 1.0403, Accuracy: 6785/10000 (67.8500%)
+
+Start epoch 7/200 with learning rate 0.1...
+Step: 5475 Train Epoch: 7 [0/50000 (0.0%)]	Loss: 0.899632
+Step: 5575 Train Epoch: 7 [6400/50000 (12.8%)]	Loss: 0.843545
+Step: 5675 Train Epoch: 7 [12800/50000 (25.6%)]	Loss: 0.479932
+Step: 5775 Train Epoch: 7 [19200/50000 (38.4%)]	Loss: 0.920918
+Step: 5875 Train Epoch: 7 [25600/50000 (51.2%)]	Loss: 0.746690
+Step: 5975 Train Epoch: 7 [32000/50000 (63.9%)]	Loss: 0.849021
+Step: 6075 Train Epoch: 7 [38400/50000 (76.7%)]	Loss: 0.705884
+Step: 6175 Train Epoch: 7 [44800/50000 (89.5%)]	Loss: 0.876149
+
+Test set: Average loss: 0.9961, Accuracy: 6516/10000 (65.1600%)
+
+Start epoch 8/200 with learning rate 0.1...
+Step: 6257 Train Epoch: 8 [0/50000 (0.0%)]	Loss: 0.747463
+Step: 6357 Train Epoch: 8 [6400/50000 (12.8%)]	Loss: 0.604187
+Step: 6457 Train Epoch: 8 [12800/50000 (25.6%)]	Loss: 0.517321
+Step: 6557 Train Epoch: 8 [19200/50000 (38.4%)]	Loss: 0.700411
+Step: 6657 Train Epoch: 8 [25600/50000 (51.2%)]	Loss: 0.509637
+Step: 6757 Train Epoch: 8 [32000/50000 (63.9%)]	Loss: 0.452197
+Step: 6857 Train Epoch: 8 [38400/50000 (76.7%)]	Loss: 0.846437
+Step: 6957 Train Epoch: 8 [44800/50000 (89.5%)]	Loss: 0.769061
+
+Test set: Average loss: 0.7695, Accuracy: 7381/10000 (73.8100%)
+
+Start epoch 9/200 with learning rate 0.1...
+Step: 7039 Train Epoch: 9 [0/50000 (0.0%)]	Loss: 0.731382
+Step: 7139 Train Epoch: 9 [6400/50000 (12.8%)]	Loss: 0.510839
+Step: 7239 Train Epoch: 9 [12800/50000 (25.6%)]	Loss: 0.642754
+Step: 7339 Train Epoch: 9 [19200/50000 (38.4%)]	Loss: 0.982493
+Step: 7439 Train Epoch: 9 [25600/50000 (51.2%)]	Loss: 0.630718
+Step: 7539 Train Epoch: 9 [32000/50000 (63.9%)]	Loss: 0.665733
+Step: 7639 Train Epoch: 9 [38400/50000 (76.7%)]	Loss: 0.758149
+Step: 7739 Train Epoch: 9 [44800/50000 (89.5%)]	Loss: 0.662665
+
+Test set: Average loss: 1.1237, Accuracy: 6623/10000 (66.2300%)
+
+Start epoch 10/200 with learning rate 0.1...
+Step: 7821 Train Epoch: 10 [0/50000 (0.0%)]	Loss: 0.890112
+Step: 7921 Train Epoch: 10 [6400/50000 (12.8%)]	Loss: 0.724239
+Step: 8021 Train Epoch: 10 [12800/50000 (25.6%)]	Loss: 0.741692
+Step: 8121 Train Epoch: 10 [19200/50000 (38.4%)]	Loss: 0.692410
+Step: 8221 Train Epoch: 10 [25600/50000 (51.2%)]	Loss: 0.624962
+Step: 8321 Train Epoch: 10 [32000/50000 (63.9%)]	Loss: 0.598489
+Step: 8421 Train Epoch: 10 [38400/50000 (76.7%)]	Loss: 0.378620
+Step: 8521 Train Epoch: 10 [44800/50000 (89.5%)]	Loss: 0.587339
+
+Test set: Average loss: 0.8782, Accuracy: 7183/10000 (71.8300%)
+
+Start epoch 11/200 with learning rate 0.1...
+Step: 8603 Train Epoch: 11 [0/50000 (0.0%)]	Loss: 0.762722
+Step: 8703 Train Epoch: 11 [6400/50000 (12.8%)]	Loss: 0.777434
+Step: 8803 Train Epoch: 11 [12800/50000 (25.6%)]	Loss: 0.479679
+Step: 8903 Train Epoch: 11 [19200/50000 (38.4%)]	Loss: 0.684808
+Step: 9003 Train Epoch: 11 [25600/50000 (51.2%)]	Loss: 0.789688
+Step: 9103 Train Epoch: 11 [32000/50000 (63.9%)]	Loss: 0.624738
+Step: 9203 Train Epoch: 11 [38400/50000 (76.7%)]	Loss: 0.578422
+Step: 9303 Train Epoch: 11 [44800/50000 (89.5%)]	Loss: 0.823177
+
+Test set: Average loss: 0.8986, Accuracy: 7211/10000 (72.1100%)
+
+Start epoch 12/200 with learning rate 0.1...
+Step: 9385 Train Epoch: 12 [0/50000 (0.0%)]	Loss: 0.784024
+Step: 9485 Train Epoch: 12 [6400/50000 (12.8%)]	Loss: 0.722878
+Step: 9585 Train Epoch: 12 [12800/50000 (25.6%)]	Loss: 0.655275
+Step: 9685 Train Epoch: 12 [19200/50000 (38.4%)]	Loss: 1.011661
+Step: 9785 Train Epoch: 12 [25600/50000 (51.2%)]	Loss: 0.555835
+Step: 9885 Train Epoch: 12 [32000/50000 (63.9%)]	Loss: 0.639490
+Step: 9985 Train Epoch: 12 [38400/50000 (76.7%)]	Loss: 0.660187
+Step: 10085 Train Epoch: 12 [44800/50000 (89.5%)]	Loss: 0.656189
+
+Test set: Average loss: 2.1396, Accuracy: 5224/10000 (52.2400%)
+
+Start epoch 13/200 with learning rate 0.1...
+Step: 10167 Train Epoch: 13 [0/50000 (0.0%)]	Loss: 0.576412
+Step: 10267 Train Epoch: 13 [6400/50000 (12.8%)]	Loss: 0.529345
+Step: 10367 Train Epoch: 13 [12800/50000 (25.6%)]	Loss: 0.691762
+Step: 10467 Train Epoch: 13 [19200/50000 (38.4%)]	Loss: 0.521057
+Step: 10567 Train Epoch: 13 [25600/50000 (51.2%)]	Loss: 0.561953
+Step: 10667 Train Epoch: 13 [32000/50000 (63.9%)]	Loss: 0.679438
+Step: 10767 Train Epoch: 13 [38400/50000 (76.7%)]	Loss: 0.796734
+Step: 10867 Train Epoch: 13 [44800/50000 (89.5%)]	Loss: 0.398125
+
+Test set: Average loss: 0.8973, Accuracy: 7011/10000 (70.1100%)
+
+Start epoch 14/200 with learning rate 0.1...
+Step: 10949 Train Epoch: 14 [0/50000 (0.0%)]	Loss: 0.742741
+Step: 11049 Train Epoch: 14 [6400/50000 (12.8%)]	Loss: 0.567537
+Step: 11149 Train Epoch: 14 [12800/50000 (25.6%)]	Loss: 0.472478
+Step: 11249 Train Epoch: 14 [19200/50000 (38.4%)]	Loss: 0.458052
+Step: 11349 Train Epoch: 14 [25600/50000 (51.2%)]	Loss: 0.606739
+Step: 11449 Train Epoch: 14 [32000/50000 (63.9%)]	Loss: 0.684767
+Step: 11549 Train Epoch: 14 [38400/50000 (76.7%)]	Loss: 0.644390
+Step: 11649 Train Epoch: 14 [44800/50000 (89.5%)]	Loss: 0.707303
+
+Test set: Average loss: 1.1806, Accuracy: 6761/10000 (67.6100%)
+
+Start epoch 15/200 with learning rate 0.1...
+Step: 11731 Train Epoch: 15 [0/50000 (0.0%)]	Loss: 0.664295
+Step: 11831 Train Epoch: 15 [6400/50000 (12.8%)]	Loss: 0.630773
+Step: 11931 Train Epoch: 15 [12800/50000 (25.6%)]	Loss: 0.594363
+Step: 12031 Train Epoch: 15 [19200/50000 (38.4%)]	Loss: 0.488045
+Step: 12131 Train Epoch: 15 [25600/50000 (51.2%)]	Loss: 0.671555
+Step: 12231 Train Epoch: 15 [32000/50000 (63.9%)]	Loss: 0.553844
+Step: 12331 Train Epoch: 15 [38400/50000 (76.7%)]	Loss: 0.510903
+Step: 12431 Train Epoch: 15 [44800/50000 (89.5%)]	Loss: 0.465348
+
+Test set: Average loss: 0.7141, Accuracy: 7685/10000 (76.8500%)
+
+Start epoch 16/200 with learning rate 0.1...
+Step: 12513 Train Epoch: 16 [0/50000 (0.0%)]	Loss: 0.581048
+Step: 12613 Train Epoch: 16 [6400/50000 (12.8%)]	Loss: 0.775775
+Step: 12713 Train Epoch: 16 [12800/50000 (25.6%)]	Loss: 0.678632
+Step: 12813 Train Epoch: 16 [19200/50000 (38.4%)]	Loss: 0.552847
+Step: 12913 Train Epoch: 16 [25600/50000 (51.2%)]	Loss: 0.733647
+Step: 13013 Train Epoch: 16 [32000/50000 (63.9%)]	Loss: 0.493633
+Step: 13113 Train Epoch: 16 [38400/50000 (76.7%)]	Loss: 0.679182
+Step: 13213 Train Epoch: 16 [44800/50000 (89.5%)]	Loss: 0.763086
+
+Test set: Average loss: 0.8429, Accuracy: 7207/10000 (72.0700%)
+
+Start epoch 17/200 with learning rate 0.1...
+Step: 13295 Train Epoch: 17 [0/50000 (0.0%)]	Loss: 0.685935
+Step: 13395 Train Epoch: 17 [6400/50000 (12.8%)]	Loss: 0.662375
+Step: 13495 Train Epoch: 17 [12800/50000 (25.6%)]	Loss: 0.417119
+Step: 13595 Train Epoch: 17 [19200/50000 (38.4%)]	Loss: 0.532556
+Step: 13695 Train Epoch: 17 [25600/50000 (51.2%)]	Loss: 0.558674
+Step: 13795 Train Epoch: 17 [32000/50000 (63.9%)]	Loss: 0.670870
+Step: 13895 Train Epoch: 17 [38400/50000 (76.7%)]	Loss: 0.617703
+Step: 13995 Train Epoch: 17 [44800/50000 (89.5%)]	Loss: 0.646239
+
+Test set: Average loss: 0.7400, Accuracy: 7516/10000 (75.1600%)
+
+Start epoch 18/200 with learning rate 0.1...
+Step: 14077 Train Epoch: 18 [0/50000 (0.0%)]	Loss: 0.678494
+Step: 14177 Train Epoch: 18 [6400/50000 (12.8%)]	Loss: 0.529015
+Step: 14277 Train Epoch: 18 [12800/50000 (25.6%)]	Loss: 0.557500
+Step: 14377 Train Epoch: 18 [19200/50000 (38.4%)]	Loss: 0.759884
+Step: 14477 Train Epoch: 18 [25600/50000 (51.2%)]	Loss: 0.947408
+Step: 14577 Train Epoch: 18 [32000/50000 (63.9%)]	Loss: 0.665693
+Step: 14677 Train Epoch: 18 [38400/50000 (76.7%)]	Loss: 0.523608
+Step: 14777 Train Epoch: 18 [44800/50000 (89.5%)]	Loss: 0.629253
+
+Test set: Average loss: 0.7990, Accuracy: 7363/10000 (73.6300%)
+
+Start epoch 19/200 with learning rate 0.1...
+Step: 14859 Train Epoch: 19 [0/50000 (0.0%)]	Loss: 0.594960
+Step: 14959 Train Epoch: 19 [6400/50000 (12.8%)]	Loss: 0.511062
+Step: 15059 Train Epoch: 19 [12800/50000 (25.6%)]	Loss: 0.669384
+Step: 15159 Train Epoch: 19 [19200/50000 (38.4%)]	Loss: 0.846433
+Step: 15259 Train Epoch: 19 [25600/50000 (51.2%)]	Loss: 0.472491
+Step: 15359 Train Epoch: 19 [32000/50000 (63.9%)]	Loss: 0.729330
+Step: 15459 Train Epoch: 19 [38400/50000 (76.7%)]	Loss: 0.694399
+Step: 15559 Train Epoch: 19 [44800/50000 (89.5%)]	Loss: 0.670012
+
+Test set: Average loss: 0.6422, Accuracy: 7823/10000 (78.2300%)
+
+Start epoch 20/200 with learning rate 0.1...
+Step: 15641 Train Epoch: 20 [0/50000 (0.0%)]	Loss: 0.556439
+Step: 15741 Train Epoch: 20 [6400/50000 (12.8%)]	Loss: 0.730265
+Step: 15841 Train Epoch: 20 [12800/50000 (25.6%)]	Loss: 0.809533
+Step: 15941 Train Epoch: 20 [19200/50000 (38.4%)]	Loss: 0.590515
+Step: 16041 Train Epoch: 20 [25600/50000 (51.2%)]	Loss: 0.544073
+Step: 16141 Train Epoch: 20 [32000/50000 (63.9%)]	Loss: 0.718733
+Step: 16241 Train Epoch: 20 [38400/50000 (76.7%)]	Loss: 0.765954
+Step: 16341 Train Epoch: 20 [44800/50000 (89.5%)]	Loss: 0.722913
+
+Test set: Average loss: 1.0164, Accuracy: 6827/10000 (68.2700%)
+
+Start epoch 21/200 with learning rate 0.1...
+Step: 16423 Train Epoch: 21 [0/50000 (0.0%)]	Loss: 0.598232
+Step: 16523 Train Epoch: 21 [6400/50000 (12.8%)]	Loss: 0.444825
+Step: 16623 Train Epoch: 21 [12800/50000 (25.6%)]	Loss: 0.640705
+Step: 16723 Train Epoch: 21 [19200/50000 (38.4%)]	Loss: 0.490458
+Step: 16823 Train Epoch: 21 [25600/50000 (51.2%)]	Loss: 0.639948
+Step: 16923 Train Epoch: 21 [32000/50000 (63.9%)]	Loss: 0.667001
+Step: 17023 Train Epoch: 21 [38400/50000 (76.7%)]	Loss: 0.428506
+Step: 17123 Train Epoch: 21 [44800/50000 (89.5%)]	Loss: 0.616845
+
+Test set: Average loss: 0.8518, Accuracy: 7284/10000 (72.8400%)
+
+Start epoch 22/200 with learning rate 0.1...
+Step: 17205 Train Epoch: 22 [0/50000 (0.0%)]	Loss: 0.517353
+Step: 17305 Train Epoch: 22 [6400/50000 (12.8%)]	Loss: 0.639045
+Step: 17405 Train Epoch: 22 [12800/50000 (25.6%)]	Loss: 0.413235
+Step: 17505 Train Epoch: 22 [19200/50000 (38.4%)]	Loss: 0.806524
+Step: 17605 Train Epoch: 22 [25600/50000 (51.2%)]	Loss: 0.647592
+Step: 17705 Train Epoch: 22 [32000/50000 (63.9%)]	Loss: 0.616223
+Step: 17805 Train Epoch: 22 [38400/50000 (76.7%)]	Loss: 0.508492
+Step: 17905 Train Epoch: 22 [44800/50000 (89.5%)]	Loss: 0.726490
+
+Test set: Average loss: 1.3207, Accuracy: 6250/10000 (62.5000%)
+
+Start epoch 23/200 with learning rate 0.1...
+Step: 17987 Train Epoch: 23 [0/50000 (0.0%)]	Loss: 0.661828
+Step: 18087 Train Epoch: 23 [6400/50000 (12.8%)]	Loss: 0.635110
+Step: 18187 Train Epoch: 23 [12800/50000 (25.6%)]	Loss: 0.487792
+Step: 18287 Train Epoch: 23 [19200/50000 (38.4%)]	Loss: 0.576630
+Step: 18387 Train Epoch: 23 [25600/50000 (51.2%)]	Loss: 0.719126
+Step: 18487 Train Epoch: 23 [32000/50000 (63.9%)]	Loss: 0.677214
+Step: 18587 Train Epoch: 23 [38400/50000 (76.7%)]	Loss: 0.617640
+Step: 18687 Train Epoch: 23 [44800/50000 (89.5%)]	Loss: 0.537773
+
+Test set: Average loss: 1.1173, Accuracy: 6617/10000 (66.1700%)
+
+Start epoch 24/200 with learning rate 0.1...
+Step: 18769 Train Epoch: 24 [0/50000 (0.0%)]	Loss: 0.657314
+Step: 18869 Train Epoch: 24 [6400/50000 (12.8%)]	Loss: 0.925960
+Step: 18969 Train Epoch: 24 [12800/50000 (25.6%)]	Loss: 0.510017
+Step: 19069 Train Epoch: 24 [19200/50000 (38.4%)]	Loss: 0.817548
+Step: 19169 Train Epoch: 24 [25600/50000 (51.2%)]	Loss: 0.608714
+Step: 19269 Train Epoch: 24 [32000/50000 (63.9%)]	Loss: 0.492043
+Step: 19369 Train Epoch: 24 [38400/50000 (76.7%)]	Loss: 0.823183
+Step: 19469 Train Epoch: 24 [44800/50000 (89.5%)]	Loss: 0.613115
+
+Test set: Average loss: 0.9631, Accuracy: 6842/10000 (68.4200%)
+
+Start epoch 25/200 with learning rate 0.1...
+Step: 19551 Train Epoch: 25 [0/50000 (0.0%)]	Loss: 0.742483
+Step: 19651 Train Epoch: 25 [6400/50000 (12.8%)]	Loss: 0.578516
+Step: 19751 Train Epoch: 25 [12800/50000 (25.6%)]	Loss: 0.661248
+Step: 19851 Train Epoch: 25 [19200/50000 (38.4%)]	Loss: 0.617987
+Step: 19951 Train Epoch: 25 [25600/50000 (51.2%)]	Loss: 0.470170
+Step: 20051 Train Epoch: 25 [32000/50000 (63.9%)]	Loss: 0.520291
+Step: 20151 Train Epoch: 25 [38400/50000 (76.7%)]	Loss: 0.384711
+Step: 20251 Train Epoch: 25 [44800/50000 (89.5%)]	Loss: 0.472647
+
+Test set: Average loss: 0.9291, Accuracy: 7045/10000 (70.4500%)
+
+Start epoch 26/200 with learning rate 0.1...
+Step: 20333 Train Epoch: 26 [0/50000 (0.0%)]	Loss: 0.518594
+Step: 20433 Train Epoch: 26 [6400/50000 (12.8%)]	Loss: 0.531209
+Step: 20533 Train Epoch: 26 [12800/50000 (25.6%)]	Loss: 0.730664
+Step: 20633 Train Epoch: 26 [19200/50000 (38.4%)]	Loss: 0.601326
+Step: 20733 Train Epoch: 26 [25600/50000 (51.2%)]	Loss: 0.802939
+Step: 20833 Train Epoch: 26 [32000/50000 (63.9%)]	Loss: 0.457985
+Step: 20933 Train Epoch: 26 [38400/50000 (76.7%)]	Loss: 0.638155
+Step: 21033 Train Epoch: 26 [44800/50000 (89.5%)]	Loss: 0.537937
+
+Test set: Average loss: 1.3575, Accuracy: 6380/10000 (63.8000%)
+
+Start epoch 27/200 with learning rate 0.1...
+Step: 21115 Train Epoch: 27 [0/50000 (0.0%)]	Loss: 0.496803
+Step: 21215 Train Epoch: 27 [6400/50000 (12.8%)]	Loss: 0.604805
+Step: 21315 Train Epoch: 27 [12800/50000 (25.6%)]	Loss: 0.813275
+Step: 21415 Train Epoch: 27 [19200/50000 (38.4%)]	Loss: 0.415532
+Step: 21515 Train Epoch: 27 [25600/50000 (51.2%)]	Loss: 0.405329
+Step: 21615 Train Epoch: 27 [32000/50000 (63.9%)]	Loss: 0.575511
+Step: 21715 Train Epoch: 27 [38400/50000 (76.7%)]	Loss: 0.543683
+Step: 21815 Train Epoch: 27 [44800/50000 (89.5%)]	Loss: 0.861666
+
+Test set: Average loss: 1.0300, Accuracy: 6907/10000 (69.0700%)
+
+Start epoch 28/200 with learning rate 0.1...
+Step: 21897 Train Epoch: 28 [0/50000 (0.0%)]	Loss: 0.567573
+Step: 21997 Train Epoch: 28 [6400/50000 (12.8%)]	Loss: 0.629119
+Step: 22097 Train Epoch: 28 [12800/50000 (25.6%)]	Loss: 0.470707
+Step: 22197 Train Epoch: 28 [19200/50000 (38.4%)]	Loss: 0.447006
+Step: 22297 Train Epoch: 28 [25600/50000 (51.2%)]	Loss: 0.675315
+Step: 22397 Train Epoch: 28 [32000/50000 (63.9%)]	Loss: 0.580477
+Step: 22497 Train Epoch: 28 [38400/50000 (76.7%)]	Loss: 0.550771
+Step: 22597 Train Epoch: 28 [44800/50000 (89.5%)]	Loss: 0.395229
+
+Test set: Average loss: 0.7081, Accuracy: 7729/10000 (77.2900%)
+
+Start epoch 29/200 with learning rate 0.1...
+Step: 22679 Train Epoch: 29 [0/50000 (0.0%)]	Loss: 0.365051
+Step: 22779 Train Epoch: 29 [6400/50000 (12.8%)]	Loss: 0.419603
+Step: 22879 Train Epoch: 29 [12800/50000 (25.6%)]	Loss: 0.608149
+Step: 22979 Train Epoch: 29 [19200/50000 (38.4%)]	Loss: 0.484089
+Step: 23079 Train Epoch: 29 [25600/50000 (51.2%)]	Loss: 0.673249
+Step: 23179 Train Epoch: 29 [32000/50000 (63.9%)]	Loss: 0.539267
+Step: 23279 Train Epoch: 29 [38400/50000 (76.7%)]	Loss: 0.444200
+Step: 23379 Train Epoch: 29 [44800/50000 (89.5%)]	Loss: 0.466746
+
+Test set: Average loss: 0.7667, Accuracy: 7493/10000 (74.9300%)
+
+Start epoch 30/200 with learning rate 0.1...
+Step: 23461 Train Epoch: 30 [0/50000 (0.0%)]	Loss: 0.643256
+Step: 23561 Train Epoch: 30 [6400/50000 (12.8%)]	Loss: 0.555101
+Step: 23661 Train Epoch: 30 [12800/50000 (25.6%)]	Loss: 0.789953
+Step: 23761 Train Epoch: 30 [19200/50000 (38.4%)]	Loss: 0.505716
+Step: 23861 Train Epoch: 30 [25600/50000 (51.2%)]	Loss: 0.471650
+Step: 23961 Train Epoch: 30 [32000/50000 (63.9%)]	Loss: 0.556056
+Step: 24061 Train Epoch: 30 [38400/50000 (76.7%)]	Loss: 0.704360
+Step: 24161 Train Epoch: 30 [44800/50000 (89.5%)]	Loss: 0.499505
+
+Test set: Average loss: 0.6344, Accuracy: 7877/10000 (78.7700%)
+
+Start epoch 31/200 with learning rate 0.1...
+Step: 24243 Train Epoch: 31 [0/50000 (0.0%)]	Loss: 0.595666
+Step: 24343 Train Epoch: 31 [6400/50000 (12.8%)]	Loss: 0.509454
+Step: 24443 Train Epoch: 31 [12800/50000 (25.6%)]	Loss: 0.487118
+Step: 24543 Train Epoch: 31 [19200/50000 (38.4%)]	Loss: 0.690337
+Step: 24643 Train Epoch: 31 [25600/50000 (51.2%)]	Loss: 0.651126
+Step: 24743 Train Epoch: 31 [32000/50000 (63.9%)]	Loss: 0.363254
+Step: 24843 Train Epoch: 31 [38400/50000 (76.7%)]	Loss: 0.345872
+Step: 24943 Train Epoch: 31 [44800/50000 (89.5%)]	Loss: 0.748607
+
+Test set: Average loss: 0.9032, Accuracy: 7191/10000 (71.9100%)
+
+Start epoch 32/200 with learning rate 0.1...
+Step: 25025 Train Epoch: 32 [0/50000 (0.0%)]	Loss: 0.678105
+Step: 25125 Train Epoch: 32 [6400/50000 (12.8%)]	Loss: 0.363001
+Step: 25225 Train Epoch: 32 [12800/50000 (25.6%)]	Loss: 0.530435
+Step: 25325 Train Epoch: 32 [19200/50000 (38.4%)]	Loss: 0.525586
+Step: 25425 Train Epoch: 32 [25600/50000 (51.2%)]	Loss: 0.544738
+Step: 25525 Train Epoch: 32 [32000/50000 (63.9%)]	Loss: 0.466326
+Step: 25625 Train Epoch: 32 [38400/50000 (76.7%)]	Loss: 0.559875
+Step: 25725 Train Epoch: 32 [44800/50000 (89.5%)]	Loss: 0.628574
+
+Test set: Average loss: 0.6993, Accuracy: 7692/10000 (76.9200%)
+
+Start epoch 33/200 with learning rate 0.1...
+Step: 25807 Train Epoch: 33 [0/50000 (0.0%)]	Loss: 0.417268
+Step: 25907 Train Epoch: 33 [6400/50000 (12.8%)]	Loss: 0.550498
+Step: 26007 Train Epoch: 33 [12800/50000 (25.6%)]	Loss: 0.477085
+Step: 26107 Train Epoch: 33 [19200/50000 (38.4%)]	Loss: 0.418765
+Step: 26207 Train Epoch: 33 [25600/50000 (51.2%)]	Loss: 0.599129
+Step: 26307 Train Epoch: 33 [32000/50000 (63.9%)]	Loss: 0.748532
+Step: 26407 Train Epoch: 33 [38400/50000 (76.7%)]	Loss: 0.538785
+Step: 26507 Train Epoch: 33 [44800/50000 (89.5%)]	Loss: 0.674049
+
+Test set: Average loss: 0.8556, Accuracy: 7268/10000 (72.6800%)
+
+Start epoch 34/200 with learning rate 0.1...
+Step: 26589 Train Epoch: 34 [0/50000 (0.0%)]	Loss: 0.419270
+Step: 26689 Train Epoch: 34 [6400/50000 (12.8%)]	Loss: 0.607144
+Step: 26789 Train Epoch: 34 [12800/50000 (25.6%)]	Loss: 0.655282
+Step: 26889 Train Epoch: 34 [19200/50000 (38.4%)]	Loss: 0.663159
+Step: 26989 Train Epoch: 34 [25600/50000 (51.2%)]	Loss: 0.696184
+Step: 27089 Train Epoch: 34 [32000/50000 (63.9%)]	Loss: 0.646883
+Step: 27189 Train Epoch: 34 [38400/50000 (76.7%)]	Loss: 0.782068
+Step: 27289 Train Epoch: 34 [44800/50000 (89.5%)]	Loss: 0.755599
+
+Test set: Average loss: 1.0372, Accuracy: 6902/10000 (69.0200%)
+
+Start epoch 35/200 with learning rate 0.1...
+Step: 27371 Train Epoch: 35 [0/50000 (0.0%)]	Loss: 0.719829
+Step: 27471 Train Epoch: 35 [6400/50000 (12.8%)]	Loss: 0.569586
+Step: 27571 Train Epoch: 35 [12800/50000 (25.6%)]	Loss: 0.374139
+Step: 27671 Train Epoch: 35 [19200/50000 (38.4%)]	Loss: 0.594265
+Step: 27771 Train Epoch: 35 [25600/50000 (51.2%)]	Loss: 0.472742
+Step: 27871 Train Epoch: 35 [32000/50000 (63.9%)]	Loss: 0.628898
+Step: 27971 Train Epoch: 35 [38400/50000 (76.7%)]	Loss: 0.633003
+Step: 28071 Train Epoch: 35 [44800/50000 (89.5%)]	Loss: 0.517829
+
+Test set: Average loss: 0.8170, Accuracy: 7330/10000 (73.3000%)
+
+Start epoch 36/200 with learning rate 0.1...
+Step: 28153 Train Epoch: 36 [0/50000 (0.0%)]	Loss: 0.677373
+Step: 28253 Train Epoch: 36 [6400/50000 (12.8%)]	Loss: 0.456458
+Step: 28353 Train Epoch: 36 [12800/50000 (25.6%)]	Loss: 0.657420
+Step: 28453 Train Epoch: 36 [19200/50000 (38.4%)]	Loss: 0.594141
+Step: 28553 Train Epoch: 36 [25600/50000 (51.2%)]	Loss: 0.548849
+Step: 28653 Train Epoch: 36 [32000/50000 (63.9%)]	Loss: 0.435079
+Step: 28753 Train Epoch: 36 [38400/50000 (76.7%)]	Loss: 0.346049
+Step: 28853 Train Epoch: 36 [44800/50000 (89.5%)]	Loss: 0.552553
+
+Test set: Average loss: 1.3666, Accuracy: 6363/10000 (63.6300%)
+
+Start epoch 37/200 with learning rate 0.1...
+Step: 28935 Train Epoch: 37 [0/50000 (0.0%)]	Loss: 0.748028
+Step: 29035 Train Epoch: 37 [6400/50000 (12.8%)]	Loss: 0.546331
+Step: 29135 Train Epoch: 37 [12800/50000 (25.6%)]	Loss: 0.574890
+Step: 29235 Train Epoch: 37 [19200/50000 (38.4%)]	Loss: 0.550325
+Step: 29335 Train Epoch: 37 [25600/50000 (51.2%)]	Loss: 0.696523
+Step: 29435 Train Epoch: 37 [32000/50000 (63.9%)]	Loss: 0.549784
+Step: 29535 Train Epoch: 37 [38400/50000 (76.7%)]	Loss: 0.536160
+Step: 29635 Train Epoch: 37 [44800/50000 (89.5%)]	Loss: 0.561526
+
+Test set: Average loss: 1.0689, Accuracy: 7041/10000 (70.4100%)
+
+Start epoch 38/200 with learning rate 0.1...
+Step: 29717 Train Epoch: 38 [0/50000 (0.0%)]	Loss: 0.438148
+Step: 29817 Train Epoch: 38 [6400/50000 (12.8%)]	Loss: 0.685409
+Step: 29917 Train Epoch: 38 [12800/50000 (25.6%)]	Loss: 0.542089
+Step: 30017 Train Epoch: 38 [19200/50000 (38.4%)]	Loss: 0.626582
+Step: 30117 Train Epoch: 38 [25600/50000 (51.2%)]	Loss: 0.476180
+Step: 30217 Train Epoch: 38 [32000/50000 (63.9%)]	Loss: 0.625693
+Step: 30317 Train Epoch: 38 [38400/50000 (76.7%)]	Loss: 0.550690
+Step: 30417 Train Epoch: 38 [44800/50000 (89.5%)]	Loss: 0.550851
+
+Test set: Average loss: 1.2671, Accuracy: 6259/10000 (62.5900%)
+
+Start epoch 39/200 with learning rate 0.1...
+Step: 30499 Train Epoch: 39 [0/50000 (0.0%)]	Loss: 0.488130
+Step: 30599 Train Epoch: 39 [6400/50000 (12.8%)]	Loss: 0.424777
+Step: 30699 Train Epoch: 39 [12800/50000 (25.6%)]	Loss: 0.489234
+Step: 30799 Train Epoch: 39 [19200/50000 (38.4%)]	Loss: 0.600990
+Step: 30899 Train Epoch: 39 [25600/50000 (51.2%)]	Loss: 0.538632
+Step: 30999 Train Epoch: 39 [32000/50000 (63.9%)]	Loss: 0.691307
+Step: 31099 Train Epoch: 39 [38400/50000 (76.7%)]	Loss: 0.467897
+Step: 31199 Train Epoch: 39 [44800/50000 (89.5%)]	Loss: 0.521003
+
+Test set: Average loss: 0.8644, Accuracy: 7281/10000 (72.8100%)
+
+Start epoch 40/200 with learning rate 0.1...
+Step: 31281 Train Epoch: 40 [0/50000 (0.0%)]	Loss: 0.684300
+Step: 31381 Train Epoch: 40 [6400/50000 (12.8%)]	Loss: 0.435902
+Step: 31481 Train Epoch: 40 [12800/50000 (25.6%)]	Loss: 0.590168
+Step: 31581 Train Epoch: 40 [19200/50000 (38.4%)]	Loss: 0.527439
+Step: 31681 Train Epoch: 40 [25600/50000 (51.2%)]	Loss: 0.604064
+Step: 31781 Train Epoch: 40 [32000/50000 (63.9%)]	Loss: 0.535627
+Step: 31881 Train Epoch: 40 [38400/50000 (76.7%)]	Loss: 0.690004
+Step: 31981 Train Epoch: 40 [44800/50000 (89.5%)]	Loss: 0.494249
+
+Test set: Average loss: 1.0690, Accuracy: 6651/10000 (66.5100%)
+
+Start epoch 41/200 with learning rate 0.1...
+Step: 32063 Train Epoch: 41 [0/50000 (0.0%)]	Loss: 0.508854
+Step: 32163 Train Epoch: 41 [6400/50000 (12.8%)]	Loss: 0.389466
+Step: 32263 Train Epoch: 41 [12800/50000 (25.6%)]	Loss: 0.523392
+Step: 32363 Train Epoch: 41 [19200/50000 (38.4%)]	Loss: 0.764450
+Step: 32463 Train Epoch: 41 [25600/50000 (51.2%)]	Loss: 0.759658
+Step: 32563 Train Epoch: 41 [32000/50000 (63.9%)]	Loss: 0.507686
+Step: 32663 Train Epoch: 41 [38400/50000 (76.7%)]	Loss: 0.479679
+Step: 32763 Train Epoch: 41 [44800/50000 (89.5%)]	Loss: 0.389452
+
+Test set: Average loss: 1.2544, Accuracy: 6536/10000 (65.3600%)
+
+Start epoch 42/200 with learning rate 0.1...
+Step: 32845 Train Epoch: 42 [0/50000 (0.0%)]	Loss: 0.523328
+Step: 32945 Train Epoch: 42 [6400/50000 (12.8%)]	Loss: 0.535046
+Step: 33045 Train Epoch: 42 [12800/50000 (25.6%)]	Loss: 0.550251
+Step: 33145 Train Epoch: 42 [19200/50000 (38.4%)]	Loss: 0.506909
+Step: 33245 Train Epoch: 42 [25600/50000 (51.2%)]	Loss: 0.628773
+Step: 33345 Train Epoch: 42 [32000/50000 (63.9%)]	Loss: 0.440184
+Step: 33445 Train Epoch: 42 [38400/50000 (76.7%)]	Loss: 0.838051
+Step: 33545 Train Epoch: 42 [44800/50000 (89.5%)]	Loss: 0.586317
+
+Test set: Average loss: 0.7567, Accuracy: 7501/10000 (75.0100%)
+
+Start epoch 43/200 with learning rate 0.1...
+Step: 33627 Train Epoch: 43 [0/50000 (0.0%)]	Loss: 0.324243
+Step: 33727 Train Epoch: 43 [6400/50000 (12.8%)]	Loss: 0.760709
+Step: 33827 Train Epoch: 43 [12800/50000 (25.6%)]	Loss: 0.649775
+Step: 33927 Train Epoch: 43 [19200/50000 (38.4%)]	Loss: 0.648612
+Step: 34027 Train Epoch: 43 [25600/50000 (51.2%)]	Loss: 0.500084
+Step: 34127 Train Epoch: 43 [32000/50000 (63.9%)]	Loss: 0.505564
+Step: 34227 Train Epoch: 43 [38400/50000 (76.7%)]	Loss: 0.656429
+Step: 34327 Train Epoch: 43 [44800/50000 (89.5%)]	Loss: 0.577948
+
+Test set: Average loss: 0.8762, Accuracy: 7088/10000 (70.8800%)
+
+Start epoch 44/200 with learning rate 0.1...
+Step: 34409 Train Epoch: 44 [0/50000 (0.0%)]	Loss: 0.475821
+Step: 34509 Train Epoch: 44 [6400/50000 (12.8%)]	Loss: 0.705881
+Step: 34609 Train Epoch: 44 [12800/50000 (25.6%)]	Loss: 0.668760
+Step: 34709 Train Epoch: 44 [19200/50000 (38.4%)]	Loss: 0.668441
+Step: 34809 Train Epoch: 44 [25600/50000 (51.2%)]	Loss: 0.498263
+Step: 34909 Train Epoch: 44 [32000/50000 (63.9%)]	Loss: 0.722961
+Step: 35009 Train Epoch: 44 [38400/50000 (76.7%)]	Loss: 0.820739
+Step: 35109 Train Epoch: 44 [44800/50000 (89.5%)]	Loss: 0.598400
+
+Test set: Average loss: 0.7632, Accuracy: 7442/10000 (74.4200%)
+
+Start epoch 45/200 with learning rate 0.1...
+Step: 35191 Train Epoch: 45 [0/50000 (0.0%)]	Loss: 0.635883
+Step: 35291 Train Epoch: 45 [6400/50000 (12.8%)]	Loss: 0.584011
+Step: 35391 Train Epoch: 45 [12800/50000 (25.6%)]	Loss: 0.764419
+Step: 35491 Train Epoch: 45 [19200/50000 (38.4%)]	Loss: 0.556480
+Step: 35591 Train Epoch: 45 [25600/50000 (51.2%)]	Loss: 0.358081
+Step: 35691 Train Epoch: 45 [32000/50000 (63.9%)]	Loss: 0.824982
+Step: 35791 Train Epoch: 45 [38400/50000 (76.7%)]	Loss: 0.656928
+Step: 35891 Train Epoch: 45 [44800/50000 (89.5%)]	Loss: 0.719552
+
+Test set: Average loss: 0.7112, Accuracy: 7703/10000 (77.0300%)
+
+Start epoch 46/200 with learning rate 0.1...
+Step: 35973 Train Epoch: 46 [0/50000 (0.0%)]	Loss: 0.508951
+Step: 36073 Train Epoch: 46 [6400/50000 (12.8%)]	Loss: 0.621034
+Step: 36173 Train Epoch: 46 [12800/50000 (25.6%)]	Loss: 0.599930
+Step: 36273 Train Epoch: 46 [19200/50000 (38.4%)]	Loss: 0.655322
+Step: 36373 Train Epoch: 46 [25600/50000 (51.2%)]	Loss: 0.396141
+Step: 36473 Train Epoch: 46 [32000/50000 (63.9%)]	Loss: 0.666320
+Step: 36573 Train Epoch: 46 [38400/50000 (76.7%)]	Loss: 0.471076
+Step: 36673 Train Epoch: 46 [44800/50000 (89.5%)]	Loss: 0.418201
+
+Test set: Average loss: 0.8890, Accuracy: 7032/10000 (70.3200%)
+
+Start epoch 47/200 with learning rate 0.1...
+Step: 36755 Train Epoch: 47 [0/50000 (0.0%)]	Loss: 0.708212
+Step: 36855 Train Epoch: 47 [6400/50000 (12.8%)]	Loss: 0.496110
+Step: 36955 Train Epoch: 47 [12800/50000 (25.6%)]	Loss: 0.373302
+Step: 37055 Train Epoch: 47 [19200/50000 (38.4%)]	Loss: 0.686674
+Step: 37155 Train Epoch: 47 [25600/50000 (51.2%)]	Loss: 0.503153
+Step: 37255 Train Epoch: 47 [32000/50000 (63.9%)]	Loss: 0.509776
+Step: 37355 Train Epoch: 47 [38400/50000 (76.7%)]	Loss: 0.606492
+Step: 37455 Train Epoch: 47 [44800/50000 (89.5%)]	Loss: 0.683843
+
+Test set: Average loss: 0.8083, Accuracy: 7451/10000 (74.5100%)
+
+Start epoch 48/200 with learning rate 0.1...
+Step: 37537 Train Epoch: 48 [0/50000 (0.0%)]	Loss: 0.778851
+Step: 37637 Train Epoch: 48 [6400/50000 (12.8%)]	Loss: 0.474640
+Step: 37737 Train Epoch: 48 [12800/50000 (25.6%)]	Loss: 0.643065
+Step: 37837 Train Epoch: 48 [19200/50000 (38.4%)]	Loss: 0.462728
+Step: 37937 Train Epoch: 48 [25600/50000 (51.2%)]	Loss: 0.575055
+Step: 38037 Train Epoch: 48 [32000/50000 (63.9%)]	Loss: 0.446723
+Step: 38137 Train Epoch: 48 [38400/50000 (76.7%)]	Loss: 0.623687
+Step: 38237 Train Epoch: 48 [44800/50000 (89.5%)]	Loss: 0.498111
+
+Test set: Average loss: 0.7446, Accuracy: 7469/10000 (74.6900%)
+
+Start epoch 49/200 with learning rate 0.1...
+Step: 38319 Train Epoch: 49 [0/50000 (0.0%)]	Loss: 0.416611
+Step: 38419 Train Epoch: 49 [6400/50000 (12.8%)]	Loss: 0.666943
+Step: 38519 Train Epoch: 49 [12800/50000 (25.6%)]	Loss: 0.461554
+Step: 38619 Train Epoch: 49 [19200/50000 (38.4%)]	Loss: 0.620857
+Step: 38719 Train Epoch: 49 [25600/50000 (51.2%)]	Loss: 0.536209
+Step: 38819 Train Epoch: 49 [32000/50000 (63.9%)]	Loss: 0.623376
+Step: 38919 Train Epoch: 49 [38400/50000 (76.7%)]	Loss: 0.468959
+Step: 39019 Train Epoch: 49 [44800/50000 (89.5%)]	Loss: 0.673148
+
+Test set: Average loss: 0.6436, Accuracy: 7788/10000 (77.8800%)
+
+Start epoch 50/200 with learning rate 0.1...
+Step: 39101 Train Epoch: 50 [0/50000 (0.0%)]	Loss: 0.679448
+Step: 39201 Train Epoch: 50 [6400/50000 (12.8%)]	Loss: 0.697840
+Step: 39301 Train Epoch: 50 [12800/50000 (25.6%)]	Loss: 0.606107
+Step: 39401 Train Epoch: 50 [19200/50000 (38.4%)]	Loss: 0.730342
+Step: 39501 Train Epoch: 50 [25600/50000 (51.2%)]	Loss: 0.361026
+Step: 39601 Train Epoch: 50 [32000/50000 (63.9%)]	Loss: 0.416909
+Step: 39701 Train Epoch: 50 [38400/50000 (76.7%)]	Loss: 0.540580
+Step: 39801 Train Epoch: 50 [44800/50000 (89.5%)]	Loss: 0.643656
+
+Test set: Average loss: 0.8357, Accuracy: 7362/10000 (73.6200%)
+
+Start epoch 51/200 with learning rate 0.1...
+Step: 39883 Train Epoch: 51 [0/50000 (0.0%)]	Loss: 0.467721
+Step: 39983 Train Epoch: 51 [6400/50000 (12.8%)]	Loss: 0.528510
+Step: 40083 Train Epoch: 51 [12800/50000 (25.6%)]	Loss: 0.422918
+Step: 40183 Train Epoch: 51 [19200/50000 (38.4%)]	Loss: 0.452477
+Step: 40283 Train Epoch: 51 [25600/50000 (51.2%)]	Loss: 0.581066
+Step: 40383 Train Epoch: 51 [32000/50000 (63.9%)]	Loss: 0.420105
+Step: 40483 Train Epoch: 51 [38400/50000 (76.7%)]	Loss: 0.263568
+Step: 40583 Train Epoch: 51 [44800/50000 (89.5%)]	Loss: 0.849382
+
+Test set: Average loss: 0.7366, Accuracy: 7506/10000 (75.0600%)
+
+Start epoch 52/200 with learning rate 0.1...
+Step: 40665 Train Epoch: 52 [0/50000 (0.0%)]	Loss: 0.285047
+Step: 40765 Train Epoch: 52 [6400/50000 (12.8%)]	Loss: 0.501745
+Step: 40865 Train Epoch: 52 [12800/50000 (25.6%)]	Loss: 0.587362
+Step: 40965 Train Epoch: 52 [19200/50000 (38.4%)]	Loss: 0.539850
+Step: 41065 Train Epoch: 52 [25600/50000 (51.2%)]	Loss: 0.488391
+Step: 41165 Train Epoch: 52 [32000/50000 (63.9%)]	Loss: 0.476066
+Step: 41265 Train Epoch: 52 [38400/50000 (76.7%)]	Loss: 0.427702
+Step: 41365 Train Epoch: 52 [44800/50000 (89.5%)]	Loss: 0.691371
+
+Test set: Average loss: 0.8271, Accuracy: 7270/10000 (72.7000%)
+
+Start epoch 53/200 with learning rate 0.1...
+Step: 41447 Train Epoch: 53 [0/50000 (0.0%)]	Loss: 0.503873
+Step: 41547 Train Epoch: 53 [6400/50000 (12.8%)]	Loss: 0.696708
+Step: 41647 Train Epoch: 53 [12800/50000 (25.6%)]	Loss: 0.436204
+Step: 41747 Train Epoch: 53 [19200/50000 (38.4%)]	Loss: 0.535236
+Step: 41847 Train Epoch: 53 [25600/50000 (51.2%)]	Loss: 0.492868
+Step: 41947 Train Epoch: 53 [32000/50000 (63.9%)]	Loss: 0.534162
+Step: 42047 Train Epoch: 53 [38400/50000 (76.7%)]	Loss: 0.579881
+Step: 42147 Train Epoch: 53 [44800/50000 (89.5%)]	Loss: 0.532298
+
+Test set: Average loss: 0.6301, Accuracy: 7921/10000 (79.2100%)
+
+Start epoch 54/200 with learning rate 0.1...
+Step: 42229 Train Epoch: 54 [0/50000 (0.0%)]	Loss: 0.545474
+Step: 42329 Train Epoch: 54 [6400/50000 (12.8%)]	Loss: 0.452584
+Step: 42429 Train Epoch: 54 [12800/50000 (25.6%)]	Loss: 0.557487
+Step: 42529 Train Epoch: 54 [19200/50000 (38.4%)]	Loss: 0.525910
+Step: 42629 Train Epoch: 54 [25600/50000 (51.2%)]	Loss: 0.678601
+Step: 42729 Train Epoch: 54 [32000/50000 (63.9%)]	Loss: 0.909585
+Step: 42829 Train Epoch: 54 [38400/50000 (76.7%)]	Loss: 0.736890
+Step: 42929 Train Epoch: 54 [44800/50000 (89.5%)]	Loss: 0.588397
+
+Test set: Average loss: 0.8717, Accuracy: 7285/10000 (72.8500%)
+
+Start epoch 55/200 with learning rate 0.1...
+Step: 43011 Train Epoch: 55 [0/50000 (0.0%)]	Loss: 0.459556
+Step: 43111 Train Epoch: 55 [6400/50000 (12.8%)]	Loss: 0.718877
+Step: 43211 Train Epoch: 55 [12800/50000 (25.6%)]	Loss: 0.869249
+Step: 43311 Train Epoch: 55 [19200/50000 (38.4%)]	Loss: 0.425348
+Step: 43411 Train Epoch: 55 [25600/50000 (51.2%)]	Loss: 0.498207
+Step: 43511 Train Epoch: 55 [32000/50000 (63.9%)]	Loss: 0.466590
+Step: 43611 Train Epoch: 55 [38400/50000 (76.7%)]	Loss: 0.512580
+Step: 43711 Train Epoch: 55 [44800/50000 (89.5%)]	Loss: 0.385906
+
+Test set: Average loss: 0.8415, Accuracy: 7283/10000 (72.8300%)
+
+Start epoch 56/200 with learning rate 0.1...
+Step: 43793 Train Epoch: 56 [0/50000 (0.0%)]	Loss: 0.450136
+Step: 43893 Train Epoch: 56 [6400/50000 (12.8%)]	Loss: 0.452759
+Step: 43993 Train Epoch: 56 [12800/50000 (25.6%)]	Loss: 0.679667
+Step: 44093 Train Epoch: 56 [19200/50000 (38.4%)]	Loss: 0.699930
+Step: 44193 Train Epoch: 56 [25600/50000 (51.2%)]	Loss: 0.538797
+Step: 44293 Train Epoch: 56 [32000/50000 (63.9%)]	Loss: 0.613743
+Step: 44393 Train Epoch: 56 [38400/50000 (76.7%)]	Loss: 0.625294
+Step: 44493 Train Epoch: 56 [44800/50000 (89.5%)]	Loss: 0.694113
+
+Test set: Average loss: 0.6468, Accuracy: 7838/10000 (78.3800%)
+
+Start epoch 57/200 with learning rate 0.1...
+Step: 44575 Train Epoch: 57 [0/50000 (0.0%)]	Loss: 0.598116
+Step: 44675 Train Epoch: 57 [6400/50000 (12.8%)]	Loss: 0.528025
+Step: 44775 Train Epoch: 57 [12800/50000 (25.6%)]	Loss: 0.374085
+Step: 44875 Train Epoch: 57 [19200/50000 (38.4%)]	Loss: 0.473099
+Step: 44975 Train Epoch: 57 [25600/50000 (51.2%)]	Loss: 0.728409
+Step: 45075 Train Epoch: 57 [32000/50000 (63.9%)]	Loss: 0.593193
+Step: 45175 Train Epoch: 57 [38400/50000 (76.7%)]	Loss: 0.606321
+Step: 45275 Train Epoch: 57 [44800/50000 (89.5%)]	Loss: 0.477318
+
+Test set: Average loss: 0.7257, Accuracy: 7615/10000 (76.1500%)
+
+Start epoch 58/200 with learning rate 0.1...
+Step: 45357 Train Epoch: 58 [0/50000 (0.0%)]	Loss: 0.848300
+Step: 45457 Train Epoch: 58 [6400/50000 (12.8%)]	Loss: 0.636969
+Step: 45557 Train Epoch: 58 [12800/50000 (25.6%)]	Loss: 0.598020
+Step: 45657 Train Epoch: 58 [19200/50000 (38.4%)]	Loss: 0.645397
+Step: 45757 Train Epoch: 58 [25600/50000 (51.2%)]	Loss: 0.556411
+Step: 45857 Train Epoch: 58 [32000/50000 (63.9%)]	Loss: 0.464876
+Step: 45957 Train Epoch: 58 [38400/50000 (76.7%)]	Loss: 0.547926
+Step: 46057 Train Epoch: 58 [44800/50000 (89.5%)]	Loss: 0.718947
+
+Test set: Average loss: 0.9952, Accuracy: 6869/10000 (68.6900%)
+
+Start epoch 59/200 with learning rate 0.1...
+Step: 46139 Train Epoch: 59 [0/50000 (0.0%)]	Loss: 0.605506
+Step: 46239 Train Epoch: 59 [6400/50000 (12.8%)]	Loss: 0.480108
+Step: 46339 Train Epoch: 59 [12800/50000 (25.6%)]	Loss: 0.539602
+Step: 46439 Train Epoch: 59 [19200/50000 (38.4%)]	Loss: 0.604566
+Step: 46539 Train Epoch: 59 [25600/50000 (51.2%)]	Loss: 0.634410
+Step: 46639 Train Epoch: 59 [32000/50000 (63.9%)]	Loss: 0.652973
+Step: 46739 Train Epoch: 59 [38400/50000 (76.7%)]	Loss: 0.559710
+Step: 46839 Train Epoch: 59 [44800/50000 (89.5%)]	Loss: 0.465428
+
+Test set: Average loss: 0.6059, Accuracy: 7995/10000 (79.9500%)
+
+Start epoch 60/200 with learning rate 0.020000000000000004...
+Step: 46921 Train Epoch: 60 [0/50000 (0.0%)]	Loss: 0.680448
+Step: 47021 Train Epoch: 60 [6400/50000 (12.8%)]	Loss: 0.377108
+Step: 47121 Train Epoch: 60 [12800/50000 (25.6%)]	Loss: 0.465237
+Step: 47221 Train Epoch: 60 [19200/50000 (38.4%)]	Loss: 0.356831
+Step: 47321 Train Epoch: 60 [25600/50000 (51.2%)]	Loss: 0.402903
+Step: 47421 Train Epoch: 60 [32000/50000 (63.9%)]	Loss: 0.243691
+Step: 47521 Train Epoch: 60 [38400/50000 (76.7%)]	Loss: 0.340409
+Step: 47621 Train Epoch: 60 [44800/50000 (89.5%)]	Loss: 0.575062
+
+Test set: Average loss: 0.3732, Accuracy: 8708/10000 (87.0800%)
+
+Start epoch 61/200 with learning rate 0.020000000000000004...
+Step: 47703 Train Epoch: 61 [0/50000 (0.0%)]	Loss: 0.412398
+Step: 47803 Train Epoch: 61 [6400/50000 (12.8%)]	Loss: 0.216609
+Step: 47903 Train Epoch: 61 [12800/50000 (25.6%)]	Loss: 0.403177
+Step: 48003 Train Epoch: 61 [19200/50000 (38.4%)]	Loss: 0.388308
+Step: 48103 Train Epoch: 61 [25600/50000 (51.2%)]	Loss: 0.363402
+Step: 48203 Train Epoch: 61 [32000/50000 (63.9%)]	Loss: 0.297225
+Step: 48303 Train Epoch: 61 [38400/50000 (76.7%)]	Loss: 0.219875
+Step: 48403 Train Epoch: 61 [44800/50000 (89.5%)]	Loss: 0.204324
+
+Test set: Average loss: 0.3522, Accuracy: 8781/10000 (87.8100%)
+
+Start epoch 62/200 with learning rate 0.020000000000000004...
+Step: 48485 Train Epoch: 62 [0/50000 (0.0%)]	Loss: 0.266100
+Step: 48585 Train Epoch: 62 [6400/50000 (12.8%)]	Loss: 0.227128
+Step: 48685 Train Epoch: 62 [12800/50000 (25.6%)]	Loss: 0.234211
+Step: 48785 Train Epoch: 62 [19200/50000 (38.4%)]	Loss: 0.331178
+Step: 48885 Train Epoch: 62 [25600/50000 (51.2%)]	Loss: 0.381312
+Step: 48985 Train Epoch: 62 [32000/50000 (63.9%)]	Loss: 0.267818
+Step: 49085 Train Epoch: 62 [38400/50000 (76.7%)]	Loss: 0.331580
+Step: 49185 Train Epoch: 62 [44800/50000 (89.5%)]	Loss: 0.253578
+
+Test set: Average loss: 0.4224, Accuracy: 8589/10000 (85.8900%)
+
+Start epoch 63/200 with learning rate 0.020000000000000004...
+Step: 49267 Train Epoch: 63 [0/50000 (0.0%)]	Loss: 0.370799
+Step: 49367 Train Epoch: 63 [6400/50000 (12.8%)]	Loss: 0.331851
+Step: 49467 Train Epoch: 63 [12800/50000 (25.6%)]	Loss: 0.386067
+Step: 49567 Train Epoch: 63 [19200/50000 (38.4%)]	Loss: 0.254178
+Step: 49667 Train Epoch: 63 [25600/50000 (51.2%)]	Loss: 0.257788
+Step: 49767 Train Epoch: 63 [32000/50000 (63.9%)]	Loss: 0.170985
+Step: 49867 Train Epoch: 63 [38400/50000 (76.7%)]	Loss: 0.240948
+Step: 49967 Train Epoch: 63 [44800/50000 (89.5%)]	Loss: 0.195767
+
+Test set: Average loss: 0.3800, Accuracy: 8729/10000 (87.2900%)
+
+Start epoch 64/200 with learning rate 0.020000000000000004...
+Step: 50049 Train Epoch: 64 [0/50000 (0.0%)]	Loss: 0.297588
+Step: 50149 Train Epoch: 64 [6400/50000 (12.8%)]	Loss: 0.286752
+Step: 50249 Train Epoch: 64 [12800/50000 (25.6%)]	Loss: 0.217518
+Step: 50349 Train Epoch: 64 [19200/50000 (38.4%)]	Loss: 0.443626
+Step: 50449 Train Epoch: 64 [25600/50000 (51.2%)]	Loss: 0.402732
+Step: 50549 Train Epoch: 64 [32000/50000 (63.9%)]	Loss: 0.358416
+Step: 50649 Train Epoch: 64 [38400/50000 (76.7%)]	Loss: 0.460117
+Step: 50749 Train Epoch: 64 [44800/50000 (89.5%)]	Loss: 0.276415
+
+Test set: Average loss: 0.4402, Accuracy: 8507/10000 (85.0700%)
+
+Start epoch 65/200 with learning rate 0.020000000000000004...
+Step: 50831 Train Epoch: 65 [0/50000 (0.0%)]	Loss: 0.366842
+Step: 50931 Train Epoch: 65 [6400/50000 (12.8%)]	Loss: 0.382698
+Step: 51031 Train Epoch: 65 [12800/50000 (25.6%)]	Loss: 0.296623
+Step: 51131 Train Epoch: 65 [19200/50000 (38.4%)]	Loss: 0.290792
+Step: 51231 Train Epoch: 65 [25600/50000 (51.2%)]	Loss: 0.250422
+Step: 51331 Train Epoch: 65 [32000/50000 (63.9%)]	Loss: 0.335571
+Step: 51431 Train Epoch: 65 [38400/50000 (76.7%)]	Loss: 0.212230
+Step: 51531 Train Epoch: 65 [44800/50000 (89.5%)]	Loss: 0.407661
+
+Test set: Average loss: 0.4042, Accuracy: 8652/10000 (86.5200%)
+
+Start epoch 66/200 with learning rate 0.020000000000000004...
+Step: 51613 Train Epoch: 66 [0/50000 (0.0%)]	Loss: 0.290717
+Step: 51713 Train Epoch: 66 [6400/50000 (12.8%)]	Loss: 0.429441
+Step: 51813 Train Epoch: 66 [12800/50000 (25.6%)]	Loss: 0.251973
+Step: 51913 Train Epoch: 66 [19200/50000 (38.4%)]	Loss: 0.452643
+Step: 52013 Train Epoch: 66 [25600/50000 (51.2%)]	Loss: 0.441361
+Step: 52113 Train Epoch: 66 [32000/50000 (63.9%)]	Loss: 0.181504
+Step: 52213 Train Epoch: 66 [38400/50000 (76.7%)]	Loss: 0.172703
+Step: 52313 Train Epoch: 66 [44800/50000 (89.5%)]	Loss: 0.297224
+
+Test set: Average loss: 0.4225, Accuracy: 8599/10000 (85.9900%)
+
+Start epoch 67/200 with learning rate 0.020000000000000004...
+Step: 52395 Train Epoch: 67 [0/50000 (0.0%)]	Loss: 0.226464
+Step: 52495 Train Epoch: 67 [6400/50000 (12.8%)]	Loss: 0.317320
+Step: 52595 Train Epoch: 67 [12800/50000 (25.6%)]	Loss: 0.268292
+Step: 52695 Train Epoch: 67 [19200/50000 (38.4%)]	Loss: 0.275422
+Step: 52795 Train Epoch: 67 [25600/50000 (51.2%)]	Loss: 0.272129
+Step: 52895 Train Epoch: 67 [32000/50000 (63.9%)]	Loss: 0.457617
+Step: 52995 Train Epoch: 67 [38400/50000 (76.7%)]	Loss: 0.341470
+Step: 53095 Train Epoch: 67 [44800/50000 (89.5%)]	Loss: 0.346938
+
+Test set: Average loss: 0.3921, Accuracy: 8668/10000 (86.6800%)
+
+Start epoch 68/200 with learning rate 0.020000000000000004...
+Step: 53177 Train Epoch: 68 [0/50000 (0.0%)]	Loss: 0.294414
+Step: 53277 Train Epoch: 68 [6400/50000 (12.8%)]	Loss: 0.211522
+Step: 53377 Train Epoch: 68 [12800/50000 (25.6%)]	Loss: 0.499987
+Step: 53477 Train Epoch: 68 [19200/50000 (38.4%)]	Loss: 0.237225
+Step: 53577 Train Epoch: 68 [25600/50000 (51.2%)]	Loss: 0.373414
+Step: 53677 Train Epoch: 68 [32000/50000 (63.9%)]	Loss: 0.247608
+Step: 53777 Train Epoch: 68 [38400/50000 (76.7%)]	Loss: 0.453554
+Step: 53877 Train Epoch: 68 [44800/50000 (89.5%)]	Loss: 0.280205
+
+Test set: Average loss: 0.3805, Accuracy: 8685/10000 (86.8500%)
+
+Start epoch 69/200 with learning rate 0.020000000000000004...
+Step: 53959 Train Epoch: 69 [0/50000 (0.0%)]	Loss: 0.350426
+Step: 54059 Train Epoch: 69 [6400/50000 (12.8%)]	Loss: 0.356159
+Step: 54159 Train Epoch: 69 [12800/50000 (25.6%)]	Loss: 0.232664
+Step: 54259 Train Epoch: 69 [19200/50000 (38.4%)]	Loss: 0.393803
+Step: 54359 Train Epoch: 69 [25600/50000 (51.2%)]	Loss: 0.268700
+Step: 54459 Train Epoch: 69 [32000/50000 (63.9%)]	Loss: 0.299978
+Step: 54559 Train Epoch: 69 [38400/50000 (76.7%)]	Loss: 0.400253
+Step: 54659 Train Epoch: 69 [44800/50000 (89.5%)]	Loss: 0.309599
+
+Test set: Average loss: 0.4490, Accuracy: 8531/10000 (85.3100%)
+
+Start epoch 70/200 with learning rate 0.020000000000000004...
+Step: 54741 Train Epoch: 70 [0/50000 (0.0%)]	Loss: 0.385347
+Step: 54841 Train Epoch: 70 [6400/50000 (12.8%)]	Loss: 0.459494
+Step: 54941 Train Epoch: 70 [12800/50000 (25.6%)]	Loss: 0.211549
+Step: 55041 Train Epoch: 70 [19200/50000 (38.4%)]	Loss: 0.342344
+Step: 55141 Train Epoch: 70 [25600/50000 (51.2%)]	Loss: 0.261900
+Step: 55241 Train Epoch: 70 [32000/50000 (63.9%)]	Loss: 0.247728
+Step: 55341 Train Epoch: 70 [38400/50000 (76.7%)]	Loss: 0.281334
+Step: 55441 Train Epoch: 70 [44800/50000 (89.5%)]	Loss: 0.300425
+
+Test set: Average loss: 0.4887, Accuracy: 8379/10000 (83.7900%)
+
+Start epoch 71/200 with learning rate 0.020000000000000004...
+Step: 55523 Train Epoch: 71 [0/50000 (0.0%)]	Loss: 0.269016
+Step: 55623 Train Epoch: 71 [6400/50000 (12.8%)]	Loss: 0.134772
+Step: 55723 Train Epoch: 71 [12800/50000 (25.6%)]	Loss: 0.295185
+Step: 55823 Train Epoch: 71 [19200/50000 (38.4%)]	Loss: 0.317911
+Step: 55923 Train Epoch: 71 [25600/50000 (51.2%)]	Loss: 0.545630
+Step: 56023 Train Epoch: 71 [32000/50000 (63.9%)]	Loss: 0.343123
+Step: 56123 Train Epoch: 71 [38400/50000 (76.7%)]	Loss: 0.302219
+Step: 56223 Train Epoch: 71 [44800/50000 (89.5%)]	Loss: 0.302720
+
+Test set: Average loss: 0.4354, Accuracy: 8534/10000 (85.3400%)
+
+Start epoch 72/200 with learning rate 0.020000000000000004...
+Step: 56305 Train Epoch: 72 [0/50000 (0.0%)]	Loss: 0.240018
+Step: 56405 Train Epoch: 72 [6400/50000 (12.8%)]	Loss: 0.247129
+Step: 56505 Train Epoch: 72 [12800/50000 (25.6%)]	Loss: 0.255744
+Step: 56605 Train Epoch: 72 [19200/50000 (38.4%)]	Loss: 0.158059
+Step: 56705 Train Epoch: 72 [25600/50000 (51.2%)]	Loss: 0.260650
+Step: 56805 Train Epoch: 72 [32000/50000 (63.9%)]	Loss: 0.477117
+Step: 56905 Train Epoch: 72 [38400/50000 (76.7%)]	Loss: 0.238705
+Step: 57005 Train Epoch: 72 [44800/50000 (89.5%)]	Loss: 0.326928
+
+Test set: Average loss: 0.4023, Accuracy: 8641/10000 (86.4100%)
+
+Start epoch 73/200 with learning rate 0.020000000000000004...
+Step: 57087 Train Epoch: 73 [0/50000 (0.0%)]	Loss: 0.192388
+Step: 57187 Train Epoch: 73 [6400/50000 (12.8%)]	Loss: 0.367329
+Step: 57287 Train Epoch: 73 [12800/50000 (25.6%)]	Loss: 0.535483
+Step: 57387 Train Epoch: 73 [19200/50000 (38.4%)]	Loss: 0.404430
+Step: 57487 Train Epoch: 73 [25600/50000 (51.2%)]	Loss: 0.137302
+Step: 57587 Train Epoch: 73 [32000/50000 (63.9%)]	Loss: 0.191122
+Step: 57687 Train Epoch: 73 [38400/50000 (76.7%)]	Loss: 0.354589
+Step: 57787 Train Epoch: 73 [44800/50000 (89.5%)]	Loss: 0.339364
+
+Test set: Average loss: 0.4706, Accuracy: 8490/10000 (84.9000%)
+
+Start epoch 74/200 with learning rate 0.020000000000000004...
+Step: 57869 Train Epoch: 74 [0/50000 (0.0%)]	Loss: 0.266587
+Step: 57969 Train Epoch: 74 [6400/50000 (12.8%)]	Loss: 0.505964
+Step: 58069 Train Epoch: 74 [12800/50000 (25.6%)]	Loss: 0.250975
+Step: 58169 Train Epoch: 74 [19200/50000 (38.4%)]	Loss: 0.349162
+Step: 58269 Train Epoch: 74 [25600/50000 (51.2%)]	Loss: 0.401466
+Step: 58369 Train Epoch: 74 [32000/50000 (63.9%)]	Loss: 0.339646
+Step: 58469 Train Epoch: 74 [38400/50000 (76.7%)]	Loss: 0.356359
+Step: 58569 Train Epoch: 74 [44800/50000 (89.5%)]	Loss: 0.400243
+
+Test set: Average loss: 0.4268, Accuracy: 8577/10000 (85.7700%)
+
+Start epoch 75/200 with learning rate 0.020000000000000004...
+Step: 58651 Train Epoch: 75 [0/50000 (0.0%)]	Loss: 0.361644
+Step: 58751 Train Epoch: 75 [6400/50000 (12.8%)]	Loss: 0.356818
+Step: 58851 Train Epoch: 75 [12800/50000 (25.6%)]	Loss: 0.260041
+Step: 58951 Train Epoch: 75 [19200/50000 (38.4%)]	Loss: 0.128284
+Step: 59051 Train Epoch: 75 [25600/50000 (51.2%)]	Loss: 0.354609
+Step: 59151 Train Epoch: 75 [32000/50000 (63.9%)]	Loss: 0.305606
+Step: 59251 Train Epoch: 75 [38400/50000 (76.7%)]	Loss: 0.271375
+Step: 59351 Train Epoch: 75 [44800/50000 (89.5%)]	Loss: 0.387465
+
+Test set: Average loss: 0.4110, Accuracy: 8639/10000 (86.3900%)
+
+Start epoch 76/200 with learning rate 0.020000000000000004...
+Step: 59433 Train Epoch: 76 [0/50000 (0.0%)]	Loss: 0.208193
+Step: 59533 Train Epoch: 76 [6400/50000 (12.8%)]	Loss: 0.256446
+Step: 59633 Train Epoch: 76 [12800/50000 (25.6%)]	Loss: 0.268970
+Step: 59733 Train Epoch: 76 [19200/50000 (38.4%)]	Loss: 0.511408
+Step: 59833 Train Epoch: 76 [25600/50000 (51.2%)]	Loss: 0.440680
+Step: 59933 Train Epoch: 76 [32000/50000 (63.9%)]	Loss: 0.264202
+Step: 60033 Train Epoch: 76 [38400/50000 (76.7%)]	Loss: 0.545028
+Step: 60133 Train Epoch: 76 [44800/50000 (89.5%)]	Loss: 0.287057
+
+Test set: Average loss: 0.4168, Accuracy: 8584/10000 (85.8400%)
+
+Start epoch 77/200 with learning rate 0.020000000000000004...
+Step: 60215 Train Epoch: 77 [0/50000 (0.0%)]	Loss: 0.193614
+Step: 60315 Train Epoch: 77 [6400/50000 (12.8%)]	Loss: 0.418370
+Step: 60415 Train Epoch: 77 [12800/50000 (25.6%)]	Loss: 0.256216
+Step: 60515 Train Epoch: 77 [19200/50000 (38.4%)]	Loss: 0.350204
+Step: 60615 Train Epoch: 77 [25600/50000 (51.2%)]	Loss: 0.233047
+Step: 60715 Train Epoch: 77 [32000/50000 (63.9%)]	Loss: 0.340476
+Step: 60815 Train Epoch: 77 [38400/50000 (76.7%)]	Loss: 0.244254
+Step: 60915 Train Epoch: 77 [44800/50000 (89.5%)]	Loss: 0.236253
+
+Test set: Average loss: 0.4134, Accuracy: 8619/10000 (86.1900%)
+
+Start epoch 78/200 with learning rate 0.020000000000000004...
+Step: 60997 Train Epoch: 78 [0/50000 (0.0%)]	Loss: 0.431282
+Step: 61097 Train Epoch: 78 [6400/50000 (12.8%)]	Loss: 0.335417
+Step: 61197 Train Epoch: 78 [12800/50000 (25.6%)]	Loss: 0.348523
+Step: 61297 Train Epoch: 78 [19200/50000 (38.4%)]	Loss: 0.208721
+Step: 61397 Train Epoch: 78 [25600/50000 (51.2%)]	Loss: 0.211555
+Step: 61497 Train Epoch: 78 [32000/50000 (63.9%)]	Loss: 0.409715
+Step: 61597 Train Epoch: 78 [38400/50000 (76.7%)]	Loss: 0.201278
+Step: 61697 Train Epoch: 78 [44800/50000 (89.5%)]	Loss: 0.323208
+
+Test set: Average loss: 0.4311, Accuracy: 8559/10000 (85.5900%)
+
+Start epoch 79/200 with learning rate 0.020000000000000004...
+Step: 61779 Train Epoch: 79 [0/50000 (0.0%)]	Loss: 0.157213
+Step: 61879 Train Epoch: 79 [6400/50000 (12.8%)]	Loss: 0.123004
+Step: 61979 Train Epoch: 79 [12800/50000 (25.6%)]	Loss: 0.304986
+Step: 62079 Train Epoch: 79 [19200/50000 (38.4%)]	Loss: 0.310650
+Step: 62179 Train Epoch: 79 [25600/50000 (51.2%)]	Loss: 0.206436
+Step: 62279 Train Epoch: 79 [32000/50000 (63.9%)]	Loss: 0.367957
+Step: 62379 Train Epoch: 79 [38400/50000 (76.7%)]	Loss: 0.212734
+Step: 62479 Train Epoch: 79 [44800/50000 (89.5%)]	Loss: 0.228004
+
+Test set: Average loss: 0.3912, Accuracy: 8717/10000 (87.1700%)
+
+Start epoch 80/200 with learning rate 0.020000000000000004...
+Step: 62561 Train Epoch: 80 [0/50000 (0.0%)]	Loss: 0.151717
+Step: 62661 Train Epoch: 80 [6400/50000 (12.8%)]	Loss: 0.264197
+Step: 62761 Train Epoch: 80 [12800/50000 (25.6%)]	Loss: 0.285717
+Step: 62861 Train Epoch: 80 [19200/50000 (38.4%)]	Loss: 0.323468
+Step: 62961 Train Epoch: 80 [25600/50000 (51.2%)]	Loss: 0.235011
+Step: 63061 Train Epoch: 80 [32000/50000 (63.9%)]	Loss: 0.234461
+Step: 63161 Train Epoch: 80 [38400/50000 (76.7%)]	Loss: 0.333130
+Step: 63261 Train Epoch: 80 [44800/50000 (89.5%)]	Loss: 0.174470
+
+Test set: Average loss: 0.4369, Accuracy: 8574/10000 (85.7400%)
+
+Start epoch 81/200 with learning rate 0.020000000000000004...
+Step: 63343 Train Epoch: 81 [0/50000 (0.0%)]	Loss: 0.361801
+Step: 63443 Train Epoch: 81 [6400/50000 (12.8%)]	Loss: 0.170668
+Step: 63543 Train Epoch: 81 [12800/50000 (25.6%)]	Loss: 0.335960
+Step: 63643 Train Epoch: 81 [19200/50000 (38.4%)]	Loss: 0.215230
+Step: 63743 Train Epoch: 81 [25600/50000 (51.2%)]	Loss: 0.299792
+Step: 63843 Train Epoch: 81 [32000/50000 (63.9%)]	Loss: 0.198231
+Step: 63943 Train Epoch: 81 [38400/50000 (76.7%)]	Loss: 0.169051
+Step: 64043 Train Epoch: 81 [44800/50000 (89.5%)]	Loss: 0.276013
+
+Test set: Average loss: 0.4481, Accuracy: 8584/10000 (85.8400%)
+
+Start epoch 82/200 with learning rate 0.020000000000000004...
+Step: 64125 Train Epoch: 82 [0/50000 (0.0%)]	Loss: 0.339358
+Step: 64225 Train Epoch: 82 [6400/50000 (12.8%)]	Loss: 0.226045
+Step: 64325 Train Epoch: 82 [12800/50000 (25.6%)]	Loss: 0.197351
+Step: 64425 Train Epoch: 82 [19200/50000 (38.4%)]	Loss: 0.180645
+Step: 64525 Train Epoch: 82 [25600/50000 (51.2%)]	Loss: 0.342424
+Step: 64625 Train Epoch: 82 [32000/50000 (63.9%)]	Loss: 0.162739
+Step: 64725 Train Epoch: 82 [38400/50000 (76.7%)]	Loss: 0.223983
+Step: 64825 Train Epoch: 82 [44800/50000 (89.5%)]	Loss: 0.263402
+
+Test set: Average loss: 0.4074, Accuracy: 8628/10000 (86.2800%)
+
+Start epoch 83/200 with learning rate 0.020000000000000004...
+Step: 64907 Train Epoch: 83 [0/50000 (0.0%)]	Loss: 0.371606
+Step: 65007 Train Epoch: 83 [6400/50000 (12.8%)]	Loss: 0.305694
+Step: 65107 Train Epoch: 83 [12800/50000 (25.6%)]	Loss: 0.438889
+Step: 65207 Train Epoch: 83 [19200/50000 (38.4%)]	Loss: 0.384175
+Step: 65307 Train Epoch: 83 [25600/50000 (51.2%)]	Loss: 0.342666
+Step: 65407 Train Epoch: 83 [32000/50000 (63.9%)]	Loss: 0.212857
+Step: 65507 Train Epoch: 83 [38400/50000 (76.7%)]	Loss: 0.379940
+Step: 65607 Train Epoch: 83 [44800/50000 (89.5%)]	Loss: 0.255060
+
+Test set: Average loss: 0.4394, Accuracy: 8571/10000 (85.7100%)
+
+Start epoch 84/200 with learning rate 0.020000000000000004...
+Step: 65689 Train Epoch: 84 [0/50000 (0.0%)]	Loss: 0.150627
+Step: 65789 Train Epoch: 84 [6400/50000 (12.8%)]	Loss: 0.301919
+Step: 65889 Train Epoch: 84 [12800/50000 (25.6%)]	Loss: 0.370210
+Step: 65989 Train Epoch: 84 [19200/50000 (38.4%)]	Loss: 0.259664
+Step: 66089 Train Epoch: 84 [25600/50000 (51.2%)]	Loss: 0.167180
+Step: 66189 Train Epoch: 84 [32000/50000 (63.9%)]	Loss: 0.258072
+Step: 66289 Train Epoch: 84 [38400/50000 (76.7%)]	Loss: 0.248043
+Step: 66389 Train Epoch: 84 [44800/50000 (89.5%)]	Loss: 0.382798
+
+Test set: Average loss: 0.3911, Accuracy: 8705/10000 (87.0500%)
+
+Start epoch 85/200 with learning rate 0.020000000000000004...
+Step: 66471 Train Epoch: 85 [0/50000 (0.0%)]	Loss: 0.403065
+Step: 66571 Train Epoch: 85 [6400/50000 (12.8%)]	Loss: 0.333640
+Step: 66671 Train Epoch: 85 [12800/50000 (25.6%)]	Loss: 0.247833
+Step: 66771 Train Epoch: 85 [19200/50000 (38.4%)]	Loss: 0.285579
+Step: 66871 Train Epoch: 85 [25600/50000 (51.2%)]	Loss: 0.380493
+Step: 66971 Train Epoch: 85 [32000/50000 (63.9%)]	Loss: 0.359633
+Step: 67071 Train Epoch: 85 [38400/50000 (76.7%)]	Loss: 0.337611
+Step: 67171 Train Epoch: 85 [44800/50000 (89.5%)]	Loss: 0.091413
+
+Test set: Average loss: 0.3832, Accuracy: 8710/10000 (87.1000%)
+
+Start epoch 86/200 with learning rate 0.020000000000000004...
+Step: 67253 Train Epoch: 86 [0/50000 (0.0%)]	Loss: 0.168110
+Step: 67353 Train Epoch: 86 [6400/50000 (12.8%)]	Loss: 0.257891
+Step: 67453 Train Epoch: 86 [12800/50000 (25.6%)]	Loss: 0.219472
+Step: 67553 Train Epoch: 86 [19200/50000 (38.4%)]	Loss: 0.292268
+Step: 67653 Train Epoch: 86 [25600/50000 (51.2%)]	Loss: 0.137808
+Step: 67753 Train Epoch: 86 [32000/50000 (63.9%)]	Loss: 0.208914
+Step: 67853 Train Epoch: 86 [38400/50000 (76.7%)]	Loss: 0.380253
+Step: 67953 Train Epoch: 86 [44800/50000 (89.5%)]	Loss: 0.598440
+
+Test set: Average loss: 0.3422, Accuracy: 8865/10000 (88.6500%)
+
+Start epoch 87/200 with learning rate 0.020000000000000004...
+Step: 68035 Train Epoch: 87 [0/50000 (0.0%)]	Loss: 0.184278
+Step: 68135 Train Epoch: 87 [6400/50000 (12.8%)]	Loss: 0.271031
+Step: 68235 Train Epoch: 87 [12800/50000 (25.6%)]	Loss: 0.202298
+Step: 68335 Train Epoch: 87 [19200/50000 (38.4%)]	Loss: 0.286132
+Step: 68435 Train Epoch: 87 [25600/50000 (51.2%)]	Loss: 0.327554
+Step: 68535 Train Epoch: 87 [32000/50000 (63.9%)]	Loss: 0.311985
+Step: 68635 Train Epoch: 87 [38400/50000 (76.7%)]	Loss: 0.286104
+Step: 68735 Train Epoch: 87 [44800/50000 (89.5%)]	Loss: 0.398037
+
+Test set: Average loss: 0.3549, Accuracy: 8780/10000 (87.8000%)
+
+Start epoch 88/200 with learning rate 0.020000000000000004...
+Step: 68817 Train Epoch: 88 [0/50000 (0.0%)]	Loss: 0.234004
+Step: 68917 Train Epoch: 88 [6400/50000 (12.8%)]	Loss: 0.243112
+Step: 69017 Train Epoch: 88 [12800/50000 (25.6%)]	Loss: 0.308258
+Step: 69117 Train Epoch: 88 [19200/50000 (38.4%)]	Loss: 0.517734
+Step: 69217 Train Epoch: 88 [25600/50000 (51.2%)]	Loss: 0.159679
+Step: 69317 Train Epoch: 88 [32000/50000 (63.9%)]	Loss: 0.166442
+Step: 69417 Train Epoch: 88 [38400/50000 (76.7%)]	Loss: 0.240302
+Step: 69517 Train Epoch: 88 [44800/50000 (89.5%)]	Loss: 0.232331
+
+Test set: Average loss: 0.4013, Accuracy: 8671/10000 (86.7100%)
+
+Start epoch 89/200 with learning rate 0.020000000000000004...
+Step: 69599 Train Epoch: 89 [0/50000 (0.0%)]	Loss: 0.140099
+Step: 69699 Train Epoch: 89 [6400/50000 (12.8%)]	Loss: 0.521645
+Step: 69799 Train Epoch: 89 [12800/50000 (25.6%)]	Loss: 0.112235
+Step: 69899 Train Epoch: 89 [19200/50000 (38.4%)]	Loss: 0.369238
+Step: 69999 Train Epoch: 89 [25600/50000 (51.2%)]	Loss: 0.390199
+Step: 70099 Train Epoch: 89 [32000/50000 (63.9%)]	Loss: 0.286367
+Step: 70199 Train Epoch: 89 [38400/50000 (76.7%)]	Loss: 0.218840
+Step: 70299 Train Epoch: 89 [44800/50000 (89.5%)]	Loss: 0.287261
+
+Test set: Average loss: 0.3838, Accuracy: 8763/10000 (87.6300%)
+
+Start epoch 90/200 with learning rate 0.020000000000000004...
+Step: 70381 Train Epoch: 90 [0/50000 (0.0%)]	Loss: 0.129842
+Step: 70481 Train Epoch: 90 [6400/50000 (12.8%)]	Loss: 0.371063
+Step: 70581 Train Epoch: 90 [12800/50000 (25.6%)]	Loss: 0.348943
+Step: 70681 Train Epoch: 90 [19200/50000 (38.4%)]	Loss: 0.417134
+Step: 70781 Train Epoch: 90 [25600/50000 (51.2%)]	Loss: 0.278001
+Step: 70881 Train Epoch: 90 [32000/50000 (63.9%)]	Loss: 0.308651
+Step: 70981 Train Epoch: 90 [38400/50000 (76.7%)]	Loss: 0.156085
+Step: 71081 Train Epoch: 90 [44800/50000 (89.5%)]	Loss: 0.293456
+
+Test set: Average loss: 0.4279, Accuracy: 8571/10000 (85.7100%)
+
+Start epoch 91/200 with learning rate 0.020000000000000004...
+Step: 71163 Train Epoch: 91 [0/50000 (0.0%)]	Loss: 0.284052
+Step: 71263 Train Epoch: 91 [6400/50000 (12.8%)]	Loss: 0.252034
+Step: 71363 Train Epoch: 91 [12800/50000 (25.6%)]	Loss: 0.234619
+Step: 71463 Train Epoch: 91 [19200/50000 (38.4%)]	Loss: 0.271190
+Step: 71563 Train Epoch: 91 [25600/50000 (51.2%)]	Loss: 0.158760
+Step: 71663 Train Epoch: 91 [32000/50000 (63.9%)]	Loss: 0.364441
+Step: 71763 Train Epoch: 91 [38400/50000 (76.7%)]	Loss: 0.329002
+Step: 71863 Train Epoch: 91 [44800/50000 (89.5%)]	Loss: 0.468242
+
+Test set: Average loss: 0.3752, Accuracy: 8759/10000 (87.5900%)
+
+Start epoch 92/200 with learning rate 0.020000000000000004...
+Step: 71945 Train Epoch: 92 [0/50000 (0.0%)]	Loss: 0.239635
+Step: 72045 Train Epoch: 92 [6400/50000 (12.8%)]	Loss: 0.271012
+Step: 72145 Train Epoch: 92 [12800/50000 (25.6%)]	Loss: 0.394285
+Step: 72245 Train Epoch: 92 [19200/50000 (38.4%)]	Loss: 0.354082
+Step: 72345 Train Epoch: 92 [25600/50000 (51.2%)]	Loss: 0.273075
+Step: 72445 Train Epoch: 92 [32000/50000 (63.9%)]	Loss: 0.322443
+Step: 72545 Train Epoch: 92 [38400/50000 (76.7%)]	Loss: 0.268576
+Step: 72645 Train Epoch: 92 [44800/50000 (89.5%)]	Loss: 0.338684
+
+Test set: Average loss: 0.4094, Accuracy: 8662/10000 (86.6200%)
+
+Start epoch 93/200 with learning rate 0.020000000000000004...
+Step: 72727 Train Epoch: 93 [0/50000 (0.0%)]	Loss: 0.175022
+Step: 72827 Train Epoch: 93 [6400/50000 (12.8%)]	Loss: 0.132172
+Step: 72927 Train Epoch: 93 [12800/50000 (25.6%)]	Loss: 0.293631
+Step: 73027 Train Epoch: 93 [19200/50000 (38.4%)]	Loss: 0.142789
+Step: 73127 Train Epoch: 93 [25600/50000 (51.2%)]	Loss: 0.379555
+Step: 73227 Train Epoch: 93 [32000/50000 (63.9%)]	Loss: 0.383799
+Step: 73327 Train Epoch: 93 [38400/50000 (76.7%)]	Loss: 0.532257
+Step: 73427 Train Epoch: 93 [44800/50000 (89.5%)]	Loss: 0.247875
+
+Test set: Average loss: 0.3623, Accuracy: 8793/10000 (87.9300%)
+
+Start epoch 94/200 with learning rate 0.020000000000000004...
+Step: 73509 Train Epoch: 94 [0/50000 (0.0%)]	Loss: 0.216020
+Step: 73609 Train Epoch: 94 [6400/50000 (12.8%)]	Loss: 0.142329
+Step: 73709 Train Epoch: 94 [12800/50000 (25.6%)]	Loss: 0.291850
+Step: 73809 Train Epoch: 94 [19200/50000 (38.4%)]	Loss: 0.253952
+Step: 73909 Train Epoch: 94 [25600/50000 (51.2%)]	Loss: 0.301637
+Step: 74009 Train Epoch: 94 [32000/50000 (63.9%)]	Loss: 0.458201
+Step: 74109 Train Epoch: 94 [38400/50000 (76.7%)]	Loss: 0.428350
+Step: 74209 Train Epoch: 94 [44800/50000 (89.5%)]	Loss: 0.208528
+
+Test set: Average loss: 0.4350, Accuracy: 8649/10000 (86.4900%)
+
+Start epoch 95/200 with learning rate 0.020000000000000004...
+Step: 74291 Train Epoch: 95 [0/50000 (0.0%)]	Loss: 0.262109
+Step: 74391 Train Epoch: 95 [6400/50000 (12.8%)]	Loss: 0.295013
+Step: 74491 Train Epoch: 95 [12800/50000 (25.6%)]	Loss: 0.102999
+Step: 74591 Train Epoch: 95 [19200/50000 (38.4%)]	Loss: 0.245422
+Step: 74691 Train Epoch: 95 [25600/50000 (51.2%)]	Loss: 0.332020
+Step: 74791 Train Epoch: 95 [32000/50000 (63.9%)]	Loss: 0.361478
+Step: 74891 Train Epoch: 95 [38400/50000 (76.7%)]	Loss: 0.250415
+Step: 74991 Train Epoch: 95 [44800/50000 (89.5%)]	Loss: 0.139253
+
+Test set: Average loss: 0.3625, Accuracy: 8787/10000 (87.8700%)
+
+Start epoch 96/200 with learning rate 0.020000000000000004...
+Step: 75073 Train Epoch: 96 [0/50000 (0.0%)]	Loss: 0.347517
+Step: 75173 Train Epoch: 96 [6400/50000 (12.8%)]	Loss: 0.136498
+Step: 75273 Train Epoch: 96 [12800/50000 (25.6%)]	Loss: 0.390121
+Step: 75373 Train Epoch: 96 [19200/50000 (38.4%)]	Loss: 0.219500
+Step: 75473 Train Epoch: 96 [25600/50000 (51.2%)]	Loss: 0.237986
+Step: 75573 Train Epoch: 96 [32000/50000 (63.9%)]	Loss: 0.268538
+Step: 75673 Train Epoch: 96 [38400/50000 (76.7%)]	Loss: 0.245255
+Step: 75773 Train Epoch: 96 [44800/50000 (89.5%)]	Loss: 0.240726
+
+Test set: Average loss: 0.5298, Accuracy: 8295/10000 (82.9500%)
+
+Start epoch 97/200 with learning rate 0.020000000000000004...
+Step: 75855 Train Epoch: 97 [0/50000 (0.0%)]	Loss: 0.239319
+Step: 75955 Train Epoch: 97 [6400/50000 (12.8%)]	Loss: 0.303753
+Step: 76055 Train Epoch: 97 [12800/50000 (25.6%)]	Loss: 0.249323
+Step: 76155 Train Epoch: 97 [19200/50000 (38.4%)]	Loss: 0.233112
+Step: 76255 Train Epoch: 97 [25600/50000 (51.2%)]	Loss: 0.227573
+Step: 76355 Train Epoch: 97 [32000/50000 (63.9%)]	Loss: 0.441140
+Step: 76455 Train Epoch: 97 [38400/50000 (76.7%)]	Loss: 0.438295
+Step: 76555 Train Epoch: 97 [44800/50000 (89.5%)]	Loss: 0.369541
+
+Test set: Average loss: 0.4581, Accuracy: 8511/10000 (85.1100%)
+
+Start epoch 98/200 with learning rate 0.020000000000000004...
+Step: 76637 Train Epoch: 98 [0/50000 (0.0%)]	Loss: 0.358020
+Step: 76737 Train Epoch: 98 [6400/50000 (12.8%)]	Loss: 0.333551
+Step: 76837 Train Epoch: 98 [12800/50000 (25.6%)]	Loss: 0.237495
+Step: 76937 Train Epoch: 98 [19200/50000 (38.4%)]	Loss: 0.240652
+Step: 77037 Train Epoch: 98 [25600/50000 (51.2%)]	Loss: 0.412846
+Step: 77137 Train Epoch: 98 [32000/50000 (63.9%)]	Loss: 0.331877
+Step: 77237 Train Epoch: 98 [38400/50000 (76.7%)]	Loss: 0.260991
+Step: 77337 Train Epoch: 98 [44800/50000 (89.5%)]	Loss: 0.149929
+
+Test set: Average loss: 0.3969, Accuracy: 8634/10000 (86.3400%)
+
+Start epoch 99/200 with learning rate 0.020000000000000004...
+Step: 77419 Train Epoch: 99 [0/50000 (0.0%)]	Loss: 0.159515
+Step: 77519 Train Epoch: 99 [6400/50000 (12.8%)]	Loss: 0.331402
+Step: 77619 Train Epoch: 99 [12800/50000 (25.6%)]	Loss: 0.230726
+Step: 77719 Train Epoch: 99 [19200/50000 (38.4%)]	Loss: 0.394387
+Step: 77819 Train Epoch: 99 [25600/50000 (51.2%)]	Loss: 0.219592
+Step: 77919 Train Epoch: 99 [32000/50000 (63.9%)]	Loss: 0.265911
+Step: 78019 Train Epoch: 99 [38400/50000 (76.7%)]	Loss: 0.164186
+Step: 78119 Train Epoch: 99 [44800/50000 (89.5%)]	Loss: 0.432717
+
+Test set: Average loss: 0.3951, Accuracy: 8743/10000 (87.4300%)
+
+Start epoch 100/200 with learning rate 0.020000000000000004...
+Step: 78201 Train Epoch: 100 [0/50000 (0.0%)]	Loss: 0.296904
+Step: 78301 Train Epoch: 100 [6400/50000 (12.8%)]	Loss: 0.178251
+Step: 78401 Train Epoch: 100 [12800/50000 (25.6%)]	Loss: 0.310589
+Step: 78501 Train Epoch: 100 [19200/50000 (38.4%)]	Loss: 0.382934
+Step: 78601 Train Epoch: 100 [25600/50000 (51.2%)]	Loss: 0.361679
+Step: 78701 Train Epoch: 100 [32000/50000 (63.9%)]	Loss: 0.313937
+Step: 78801 Train Epoch: 100 [38400/50000 (76.7%)]	Loss: 0.354700
+Step: 78901 Train Epoch: 100 [44800/50000 (89.5%)]	Loss: 0.243763
+
+Test set: Average loss: 0.5069, Accuracy: 8365/10000 (83.6500%)
+
+Start epoch 101/200 with learning rate 0.020000000000000004...
+Step: 78983 Train Epoch: 101 [0/50000 (0.0%)]	Loss: 0.332918
+Step: 79083 Train Epoch: 101 [6400/50000 (12.8%)]	Loss: 0.189588
+Step: 79183 Train Epoch: 101 [12800/50000 (25.6%)]	Loss: 0.242171
+Step: 79283 Train Epoch: 101 [19200/50000 (38.4%)]	Loss: 0.228485
+Step: 79383 Train Epoch: 101 [25600/50000 (51.2%)]	Loss: 0.243185
+Step: 79483 Train Epoch: 101 [32000/50000 (63.9%)]	Loss: 0.350395
+Step: 79583 Train Epoch: 101 [38400/50000 (76.7%)]	Loss: 0.341195
+Step: 79683 Train Epoch: 101 [44800/50000 (89.5%)]	Loss: 0.261668
+
+Test set: Average loss: 0.3857, Accuracy: 8714/10000 (87.1400%)
+
+Start epoch 102/200 with learning rate 0.020000000000000004...
+Step: 79765 Train Epoch: 102 [0/50000 (0.0%)]	Loss: 0.166508
+Step: 79865 Train Epoch: 102 [6400/50000 (12.8%)]	Loss: 0.194600
+Step: 79965 Train Epoch: 102 [12800/50000 (25.6%)]	Loss: 0.298928
+Step: 80065 Train Epoch: 102 [19200/50000 (38.4%)]	Loss: 0.274383
+Step: 80165 Train Epoch: 102 [25600/50000 (51.2%)]	Loss: 0.218123
+Step: 80265 Train Epoch: 102 [32000/50000 (63.9%)]	Loss: 0.277937
+Step: 80365 Train Epoch: 102 [38400/50000 (76.7%)]	Loss: 0.304583
+Step: 80465 Train Epoch: 102 [44800/50000 (89.5%)]	Loss: 0.394844
+
+Test set: Average loss: 0.7761, Accuracy: 7744/10000 (77.4400%)
+
+Start epoch 103/200 with learning rate 0.020000000000000004...
+Step: 80547 Train Epoch: 103 [0/50000 (0.0%)]	Loss: 0.371880
+Step: 80647 Train Epoch: 103 [6400/50000 (12.8%)]	Loss: 0.239587
+Step: 80747 Train Epoch: 103 [12800/50000 (25.6%)]	Loss: 0.197166
+Step: 80847 Train Epoch: 103 [19200/50000 (38.4%)]	Loss: 0.349151
+Step: 80947 Train Epoch: 103 [25600/50000 (51.2%)]	Loss: 0.264324
+Step: 81047 Train Epoch: 103 [32000/50000 (63.9%)]	Loss: 0.281303
+Step: 81147 Train Epoch: 103 [38400/50000 (76.7%)]	Loss: 0.362073
+Step: 81247 Train Epoch: 103 [44800/50000 (89.5%)]	Loss: 0.316074
+
+Test set: Average loss: 0.3893, Accuracy: 8747/10000 (87.4700%)
+
+Start epoch 104/200 with learning rate 0.020000000000000004...
+Step: 81329 Train Epoch: 104 [0/50000 (0.0%)]	Loss: 0.206996
+Step: 81429 Train Epoch: 104 [6400/50000 (12.8%)]	Loss: 0.214850
+Step: 81529 Train Epoch: 104 [12800/50000 (25.6%)]	Loss: 0.217037
+Step: 81629 Train Epoch: 104 [19200/50000 (38.4%)]	Loss: 0.235301
+Step: 81729 Train Epoch: 104 [25600/50000 (51.2%)]	Loss: 0.490100
+Step: 81829 Train Epoch: 104 [32000/50000 (63.9%)]	Loss: 0.266913
+Step: 81929 Train Epoch: 104 [38400/50000 (76.7%)]	Loss: 0.285097
+Step: 82029 Train Epoch: 104 [44800/50000 (89.5%)]	Loss: 0.138785
+
+Test set: Average loss: 0.4577, Accuracy: 8548/10000 (85.4800%)
+
+Start epoch 105/200 with learning rate 0.020000000000000004...
+Step: 82111 Train Epoch: 105 [0/50000 (0.0%)]	Loss: 0.316964
+Step: 82211 Train Epoch: 105 [6400/50000 (12.8%)]	Loss: 0.261452
+Step: 82311 Train Epoch: 105 [12800/50000 (25.6%)]	Loss: 0.331218
+Step: 82411 Train Epoch: 105 [19200/50000 (38.4%)]	Loss: 0.272736
+Step: 82511 Train Epoch: 105 [25600/50000 (51.2%)]	Loss: 0.304819
+Step: 82611 Train Epoch: 105 [32000/50000 (63.9%)]	Loss: 0.441821
+Step: 82711 Train Epoch: 105 [38400/50000 (76.7%)]	Loss: 0.212883
+Step: 82811 Train Epoch: 105 [44800/50000 (89.5%)]	Loss: 0.188863
+
+Test set: Average loss: 0.4259, Accuracy: 8616/10000 (86.1600%)
+
+Start epoch 106/200 with learning rate 0.020000000000000004...
+Step: 82893 Train Epoch: 106 [0/50000 (0.0%)]	Loss: 0.181006
+Step: 82993 Train Epoch: 106 [6400/50000 (12.8%)]	Loss: 0.270875
+Step: 83093 Train Epoch: 106 [12800/50000 (25.6%)]	Loss: 0.307198
+Step: 83193 Train Epoch: 106 [19200/50000 (38.4%)]	Loss: 0.255350
+Step: 83293 Train Epoch: 106 [25600/50000 (51.2%)]	Loss: 0.268551
+Step: 83393 Train Epoch: 106 [32000/50000 (63.9%)]	Loss: 0.211098
+Step: 83493 Train Epoch: 106 [38400/50000 (76.7%)]	Loss: 0.338679
+Step: 83593 Train Epoch: 106 [44800/50000 (89.5%)]	Loss: 0.235550
+
+Test set: Average loss: 0.3778, Accuracy: 8743/10000 (87.4300%)
+
+Start epoch 107/200 with learning rate 0.020000000000000004...
+Step: 83675 Train Epoch: 107 [0/50000 (0.0%)]	Loss: 0.274206
+Step: 83775 Train Epoch: 107 [6400/50000 (12.8%)]	Loss: 0.274837
+Step: 83875 Train Epoch: 107 [12800/50000 (25.6%)]	Loss: 0.175210
+Step: 83975 Train Epoch: 107 [19200/50000 (38.4%)]	Loss: 0.167009
+Step: 84075 Train Epoch: 107 [25600/50000 (51.2%)]	Loss: 0.336259
+Step: 84175 Train Epoch: 107 [32000/50000 (63.9%)]	Loss: 0.135717
+Step: 84275 Train Epoch: 107 [38400/50000 (76.7%)]	Loss: 0.175850
+Step: 84375 Train Epoch: 107 [44800/50000 (89.5%)]	Loss: 0.303546
+
+Test set: Average loss: 0.4197, Accuracy: 8633/10000 (86.3300%)
+
+Start epoch 108/200 with learning rate 0.020000000000000004...
+Step: 84457 Train Epoch: 108 [0/50000 (0.0%)]	Loss: 0.247516
+Step: 84557 Train Epoch: 108 [6400/50000 (12.8%)]	Loss: 0.178160
+Step: 84657 Train Epoch: 108 [12800/50000 (25.6%)]	Loss: 0.259285
+Step: 84757 Train Epoch: 108 [19200/50000 (38.4%)]	Loss: 0.472003
+Step: 84857 Train Epoch: 108 [25600/50000 (51.2%)]	Loss: 0.182051
+Step: 84957 Train Epoch: 108 [32000/50000 (63.9%)]	Loss: 0.264124
+Step: 85057 Train Epoch: 108 [38400/50000 (76.7%)]	Loss: 0.253844
+Step: 85157 Train Epoch: 108 [44800/50000 (89.5%)]	Loss: 0.252527
+
+Test set: Average loss: 0.3865, Accuracy: 8740/10000 (87.4000%)
+
+Start epoch 109/200 with learning rate 0.020000000000000004...
+Step: 85239 Train Epoch: 109 [0/50000 (0.0%)]	Loss: 0.153054
+Step: 85339 Train Epoch: 109 [6400/50000 (12.8%)]	Loss: 0.307563
+Step: 85439 Train Epoch: 109 [12800/50000 (25.6%)]	Loss: 0.245342
+Step: 85539 Train Epoch: 109 [19200/50000 (38.4%)]	Loss: 0.281706
+Step: 85639 Train Epoch: 109 [25600/50000 (51.2%)]	Loss: 0.229098
+Step: 85739 Train Epoch: 109 [32000/50000 (63.9%)]	Loss: 0.516567
+Step: 85839 Train Epoch: 109 [38400/50000 (76.7%)]	Loss: 0.327456
+Step: 85939 Train Epoch: 109 [44800/50000 (89.5%)]	Loss: 0.368543
+
+Test set: Average loss: 0.5002, Accuracy: 8464/10000 (84.6400%)
+
+Start epoch 110/200 with learning rate 0.020000000000000004...
+Step: 86021 Train Epoch: 110 [0/50000 (0.0%)]	Loss: 0.192482
+Step: 86121 Train Epoch: 110 [6400/50000 (12.8%)]	Loss: 0.142320
+Step: 86221 Train Epoch: 110 [12800/50000 (25.6%)]	Loss: 0.150105
+Step: 86321 Train Epoch: 110 [19200/50000 (38.4%)]	Loss: 0.225664
+Step: 86421 Train Epoch: 110 [25600/50000 (51.2%)]	Loss: 0.265143
+Step: 86521 Train Epoch: 110 [32000/50000 (63.9%)]	Loss: 0.349414
+Step: 86621 Train Epoch: 110 [38400/50000 (76.7%)]	Loss: 0.157530
+Step: 86721 Train Epoch: 110 [44800/50000 (89.5%)]	Loss: 0.259543
+
+Test set: Average loss: 0.3818, Accuracy: 8772/10000 (87.7200%)
+
+Start epoch 111/200 with learning rate 0.020000000000000004...
+Step: 86803 Train Epoch: 111 [0/50000 (0.0%)]	Loss: 0.300734
+Step: 86903 Train Epoch: 111 [6400/50000 (12.8%)]	Loss: 0.203298
+Step: 87003 Train Epoch: 111 [12800/50000 (25.6%)]	Loss: 0.267350
+Step: 87103 Train Epoch: 111 [19200/50000 (38.4%)]	Loss: 0.520997
+Step: 87203 Train Epoch: 111 [25600/50000 (51.2%)]	Loss: 0.252311
+Step: 87303 Train Epoch: 111 [32000/50000 (63.9%)]	Loss: 0.202769
+Step: 87403 Train Epoch: 111 [38400/50000 (76.7%)]	Loss: 0.181537
+Step: 87503 Train Epoch: 111 [44800/50000 (89.5%)]	Loss: 0.305184
+
+Test set: Average loss: 0.4375, Accuracy: 8606/10000 (86.0600%)
+
+Start epoch 112/200 with learning rate 0.020000000000000004...
+Step: 87585 Train Epoch: 112 [0/50000 (0.0%)]	Loss: 0.516148
+Step: 87685 Train Epoch: 112 [6400/50000 (12.8%)]	Loss: 0.303802
+Step: 87785 Train Epoch: 112 [12800/50000 (25.6%)]	Loss: 0.185163
+Step: 87885 Train Epoch: 112 [19200/50000 (38.4%)]	Loss: 0.353245
+Step: 87985 Train Epoch: 112 [25600/50000 (51.2%)]	Loss: 0.330936
+Step: 88085 Train Epoch: 112 [32000/50000 (63.9%)]	Loss: 0.513703
+Step: 88185 Train Epoch: 112 [38400/50000 (76.7%)]	Loss: 0.216901
+Step: 88285 Train Epoch: 112 [44800/50000 (89.5%)]	Loss: 0.294084
+
+Test set: Average loss: 0.4290, Accuracy: 8626/10000 (86.2600%)
+
+Start epoch 113/200 with learning rate 0.020000000000000004...
+Step: 88367 Train Epoch: 113 [0/50000 (0.0%)]	Loss: 0.202437
+Step: 88467 Train Epoch: 113 [6400/50000 (12.8%)]	Loss: 0.382107
+Step: 88567 Train Epoch: 113 [12800/50000 (25.6%)]	Loss: 0.284396
+Step: 88667 Train Epoch: 113 [19200/50000 (38.4%)]	Loss: 0.250445
+Step: 88767 Train Epoch: 113 [25600/50000 (51.2%)]	Loss: 0.249321
+Step: 88867 Train Epoch: 113 [32000/50000 (63.9%)]	Loss: 0.147730
+Step: 88967 Train Epoch: 113 [38400/50000 (76.7%)]	Loss: 0.438581
+Step: 89067 Train Epoch: 113 [44800/50000 (89.5%)]	Loss: 0.379377
+
+Test set: Average loss: 0.4229, Accuracy: 8663/10000 (86.6300%)
+
+Start epoch 114/200 with learning rate 0.020000000000000004...
+Step: 89149 Train Epoch: 114 [0/50000 (0.0%)]	Loss: 0.143351
+Step: 89249 Train Epoch: 114 [6400/50000 (12.8%)]	Loss: 0.189647
+Step: 89349 Train Epoch: 114 [12800/50000 (25.6%)]	Loss: 0.194208
+Step: 89449 Train Epoch: 114 [19200/50000 (38.4%)]	Loss: 0.220913
+Step: 89549 Train Epoch: 114 [25600/50000 (51.2%)]	Loss: 0.214771
+Step: 89649 Train Epoch: 114 [32000/50000 (63.9%)]	Loss: 0.279851
+Step: 89749 Train Epoch: 114 [38400/50000 (76.7%)]	Loss: 0.117191
+Step: 89849 Train Epoch: 114 [44800/50000 (89.5%)]	Loss: 0.240289
+
+Test set: Average loss: 0.4186, Accuracy: 8645/10000 (86.4500%)
+
+Start epoch 115/200 with learning rate 0.020000000000000004...
+Step: 89931 Train Epoch: 115 [0/50000 (0.0%)]	Loss: 0.337139
+Step: 90031 Train Epoch: 115 [6400/50000 (12.8%)]	Loss: 0.238173
+Step: 90131 Train Epoch: 115 [12800/50000 (25.6%)]	Loss: 0.303781
+Step: 90231 Train Epoch: 115 [19200/50000 (38.4%)]	Loss: 0.251043
+Step: 90331 Train Epoch: 115 [25600/50000 (51.2%)]	Loss: 0.374559
+Step: 90431 Train Epoch: 115 [32000/50000 (63.9%)]	Loss: 0.277076
+Step: 90531 Train Epoch: 115 [38400/50000 (76.7%)]	Loss: 0.349390
+Step: 90631 Train Epoch: 115 [44800/50000 (89.5%)]	Loss: 0.125865
+
+Test set: Average loss: 0.3772, Accuracy: 8708/10000 (87.0800%)
+
+Start epoch 116/200 with learning rate 0.020000000000000004...
+Step: 90713 Train Epoch: 116 [0/50000 (0.0%)]	Loss: 0.289831
+Step: 90813 Train Epoch: 116 [6400/50000 (12.8%)]	Loss: 0.207944
+Step: 90913 Train Epoch: 116 [12800/50000 (25.6%)]	Loss: 0.139490
+Step: 91013 Train Epoch: 116 [19200/50000 (38.4%)]	Loss: 0.309180
+Step: 91113 Train Epoch: 116 [25600/50000 (51.2%)]	Loss: 0.297675
+Step: 91213 Train Epoch: 116 [32000/50000 (63.9%)]	Loss: 0.470433
+Step: 91313 Train Epoch: 116 [38400/50000 (76.7%)]	Loss: 0.191400
+Step: 91413 Train Epoch: 116 [44800/50000 (89.5%)]	Loss: 0.366482
+
+Test set: Average loss: 0.4673, Accuracy: 8455/10000 (84.5500%)
+
+Start epoch 117/200 with learning rate 0.020000000000000004...
+Step: 91495 Train Epoch: 117 [0/50000 (0.0%)]	Loss: 0.286314
+Step: 91595 Train Epoch: 117 [6400/50000 (12.8%)]	Loss: 0.129237
+Step: 91695 Train Epoch: 117 [12800/50000 (25.6%)]	Loss: 0.204894
+Step: 91795 Train Epoch: 117 [19200/50000 (38.4%)]	Loss: 0.404989
+Step: 91895 Train Epoch: 117 [25600/50000 (51.2%)]	Loss: 0.244156
+Step: 91995 Train Epoch: 117 [32000/50000 (63.9%)]	Loss: 0.178377
+Step: 92095 Train Epoch: 117 [38400/50000 (76.7%)]	Loss: 0.234425
+Step: 92195 Train Epoch: 117 [44800/50000 (89.5%)]	Loss: 0.240202
+
+Test set: Average loss: 0.3793, Accuracy: 8747/10000 (87.4700%)
+
+Start epoch 118/200 with learning rate 0.020000000000000004...
+Step: 92277 Train Epoch: 118 [0/50000 (0.0%)]	Loss: 0.398970
+Step: 92377 Train Epoch: 118 [6400/50000 (12.8%)]	Loss: 0.203290
+Step: 92477 Train Epoch: 118 [12800/50000 (25.6%)]	Loss: 0.127859
+Step: 92577 Train Epoch: 118 [19200/50000 (38.4%)]	Loss: 0.331094
+Step: 92677 Train Epoch: 118 [25600/50000 (51.2%)]	Loss: 0.198440
+Step: 92777 Train Epoch: 118 [32000/50000 (63.9%)]	Loss: 0.143138
+Step: 92877 Train Epoch: 118 [38400/50000 (76.7%)]	Loss: 0.174215
+Step: 92977 Train Epoch: 118 [44800/50000 (89.5%)]	Loss: 0.163802
+
+Test set: Average loss: 0.3895, Accuracy: 8756/10000 (87.5600%)
+
+Start epoch 119/200 with learning rate 0.020000000000000004...
+Step: 93059 Train Epoch: 119 [0/50000 (0.0%)]	Loss: 0.333731
+Step: 93159 Train Epoch: 119 [6400/50000 (12.8%)]	Loss: 0.202586
+Step: 93259 Train Epoch: 119 [12800/50000 (25.6%)]	Loss: 0.152790
+Step: 93359 Train Epoch: 119 [19200/50000 (38.4%)]	Loss: 0.249439
+Step: 93459 Train Epoch: 119 [25600/50000 (51.2%)]	Loss: 0.464497
+Step: 93559 Train Epoch: 119 [32000/50000 (63.9%)]	Loss: 0.280465
+Step: 93659 Train Epoch: 119 [38400/50000 (76.7%)]	Loss: 0.290566
+Step: 93759 Train Epoch: 119 [44800/50000 (89.5%)]	Loss: 0.468795
+
+Test set: Average loss: 0.4556, Accuracy: 8496/10000 (84.9600%)
+
+Start epoch 120/200 with learning rate 0.004000000000000001...
+Step: 93841 Train Epoch: 120 [0/50000 (0.0%)]	Loss: 0.157843
+Step: 93941 Train Epoch: 120 [6400/50000 (12.8%)]	Loss: 0.335721
+Step: 94041 Train Epoch: 120 [12800/50000 (25.6%)]	Loss: 0.217562
+Step: 94141 Train Epoch: 120 [19200/50000 (38.4%)]	Loss: 0.099743
+Step: 94241 Train Epoch: 120 [25600/50000 (51.2%)]	Loss: 0.081161
+Step: 94341 Train Epoch: 120 [32000/50000 (63.9%)]	Loss: 0.095051
+Step: 94441 Train Epoch: 120 [38400/50000 (76.7%)]	Loss: 0.194646
+Step: 94541 Train Epoch: 120 [44800/50000 (89.5%)]	Loss: 0.069117
+
+Test set: Average loss: 0.2413, Accuracy: 9200/10000 (92.0000%)
+
+Start epoch 121/200 with learning rate 0.004000000000000001...
+Step: 94623 Train Epoch: 121 [0/50000 (0.0%)]	Loss: 0.171476
+Step: 94723 Train Epoch: 121 [6400/50000 (12.8%)]	Loss: 0.089133
+Step: 94823 Train Epoch: 121 [12800/50000 (25.6%)]	Loss: 0.070055
+Step: 94923 Train Epoch: 121 [19200/50000 (38.4%)]	Loss: 0.148460
+Step: 95023 Train Epoch: 121 [25600/50000 (51.2%)]	Loss: 0.082001
+Step: 95123 Train Epoch: 121 [32000/50000 (63.9%)]	Loss: 0.062226
+Step: 95223 Train Epoch: 121 [38400/50000 (76.7%)]	Loss: 0.054225
+Step: 95323 Train Epoch: 121 [44800/50000 (89.5%)]	Loss: 0.163727
+
+Test set: Average loss: 0.2445, Accuracy: 9196/10000 (91.9600%)
+
+Start epoch 122/200 with learning rate 0.004000000000000001...
+Step: 95405 Train Epoch: 122 [0/50000 (0.0%)]	Loss: 0.113575
+Step: 95505 Train Epoch: 122 [6400/50000 (12.8%)]	Loss: 0.152301
+Step: 95605 Train Epoch: 122 [12800/50000 (25.6%)]	Loss: 0.140203
+Step: 95705 Train Epoch: 122 [19200/50000 (38.4%)]	Loss: 0.091150
+Step: 95805 Train Epoch: 122 [25600/50000 (51.2%)]	Loss: 0.066735
+Step: 95905 Train Epoch: 122 [32000/50000 (63.9%)]	Loss: 0.156905
+Step: 96005 Train Epoch: 122 [38400/50000 (76.7%)]	Loss: 0.088881
+Step: 96105 Train Epoch: 122 [44800/50000 (89.5%)]	Loss: 0.170144
+
+Test set: Average loss: 0.2349, Accuracy: 9257/10000 (92.5700%)
+
+Start epoch 123/200 with learning rate 0.004000000000000001...
+Step: 96187 Train Epoch: 123 [0/50000 (0.0%)]	Loss: 0.147339
+Step: 96287 Train Epoch: 123 [6400/50000 (12.8%)]	Loss: 0.093297
+Step: 96387 Train Epoch: 123 [12800/50000 (25.6%)]	Loss: 0.069174
+Step: 96487 Train Epoch: 123 [19200/50000 (38.4%)]	Loss: 0.121709
+Step: 96587 Train Epoch: 123 [25600/50000 (51.2%)]	Loss: 0.091311
+Step: 96687 Train Epoch: 123 [32000/50000 (63.9%)]	Loss: 0.059510
+Step: 96787 Train Epoch: 123 [38400/50000 (76.7%)]	Loss: 0.077471
+Step: 96887 Train Epoch: 123 [44800/50000 (89.5%)]	Loss: 0.194240
+
+Test set: Average loss: 0.2433, Accuracy: 9251/10000 (92.5100%)
+
+Start epoch 124/200 with learning rate 0.004000000000000001...
+Step: 96969 Train Epoch: 124 [0/50000 (0.0%)]	Loss: 0.090187
+Step: 97069 Train Epoch: 124 [6400/50000 (12.8%)]	Loss: 0.162011
+Step: 97169 Train Epoch: 124 [12800/50000 (25.6%)]	Loss: 0.062885
+Step: 97269 Train Epoch: 124 [19200/50000 (38.4%)]	Loss: 0.215780
+Step: 97369 Train Epoch: 124 [25600/50000 (51.2%)]	Loss: 0.138674
+Step: 97469 Train Epoch: 124 [32000/50000 (63.9%)]	Loss: 0.138006
+Step: 97569 Train Epoch: 124 [38400/50000 (76.7%)]	Loss: 0.056673
+Step: 97669 Train Epoch: 124 [44800/50000 (89.5%)]	Loss: 0.108381
+
+Test set: Average loss: 0.2503, Accuracy: 9213/10000 (92.1300%)
+
+Start epoch 125/200 with learning rate 0.004000000000000001...
+Step: 97751 Train Epoch: 125 [0/50000 (0.0%)]	Loss: 0.148799
+Step: 97851 Train Epoch: 125 [6400/50000 (12.8%)]	Loss: 0.124729
+Step: 97951 Train Epoch: 125 [12800/50000 (25.6%)]	Loss: 0.160121
+Step: 98051 Train Epoch: 125 [19200/50000 (38.4%)]	Loss: 0.188808
+Step: 98151 Train Epoch: 125 [25600/50000 (51.2%)]	Loss: 0.176794
+Step: 98251 Train Epoch: 125 [32000/50000 (63.9%)]	Loss: 0.211226
+Step: 98351 Train Epoch: 125 [38400/50000 (76.7%)]	Loss: 0.082451
+Step: 98451 Train Epoch: 125 [44800/50000 (89.5%)]	Loss: 0.073193
+
+Test set: Average loss: 0.2473, Accuracy: 9247/10000 (92.4700%)
+
+Start epoch 126/200 with learning rate 0.004000000000000001...
+Step: 98533 Train Epoch: 126 [0/50000 (0.0%)]	Loss: 0.092413
+Step: 98633 Train Epoch: 126 [6400/50000 (12.8%)]	Loss: 0.115358
+Step: 98733 Train Epoch: 126 [12800/50000 (25.6%)]	Loss: 0.056037
+Step: 98833 Train Epoch: 126 [19200/50000 (38.4%)]	Loss: 0.066675
+Step: 98933 Train Epoch: 126 [25600/50000 (51.2%)]	Loss: 0.055213
+Step: 99033 Train Epoch: 126 [32000/50000 (63.9%)]	Loss: 0.146827
+Step: 99133 Train Epoch: 126 [38400/50000 (76.7%)]	Loss: 0.082664
+Step: 99233 Train Epoch: 126 [44800/50000 (89.5%)]	Loss: 0.077479
+
+Test set: Average loss: 0.2571, Accuracy: 9224/10000 (92.2400%)
+
+Start epoch 127/200 with learning rate 0.004000000000000001...
+Step: 99315 Train Epoch: 127 [0/50000 (0.0%)]	Loss: 0.096648
+Step: 99415 Train Epoch: 127 [6400/50000 (12.8%)]	Loss: 0.071790
+Step: 99515 Train Epoch: 127 [12800/50000 (25.6%)]	Loss: 0.113507
+Step: 99615 Train Epoch: 127 [19200/50000 (38.4%)]	Loss: 0.128728
+Step: 99715 Train Epoch: 127 [25600/50000 (51.2%)]	Loss: 0.074395
+Step: 99815 Train Epoch: 127 [32000/50000 (63.9%)]	Loss: 0.115668
+Step: 99915 Train Epoch: 127 [38400/50000 (76.7%)]	Loss: 0.101220
+Step: 100015 Train Epoch: 127 [44800/50000 (89.5%)]	Loss: 0.043411
+
+Test set: Average loss: 0.2584, Accuracy: 9201/10000 (92.0100%)
+
+Start epoch 128/200 with learning rate 0.004000000000000001...
+Step: 100097 Train Epoch: 128 [0/50000 (0.0%)]	Loss: 0.099369
+Step: 100197 Train Epoch: 128 [6400/50000 (12.8%)]	Loss: 0.268298
+Step: 100297 Train Epoch: 128 [12800/50000 (25.6%)]	Loss: 0.124343
+Step: 100397 Train Epoch: 128 [19200/50000 (38.4%)]	Loss: 0.070945
+Step: 100497 Train Epoch: 128 [25600/50000 (51.2%)]	Loss: 0.042098
+Step: 100597 Train Epoch: 128 [32000/50000 (63.9%)]	Loss: 0.055521
+Step: 100697 Train Epoch: 128 [38400/50000 (76.7%)]	Loss: 0.037412
+Step: 100797 Train Epoch: 128 [44800/50000 (89.5%)]	Loss: 0.083965
+
+Test set: Average loss: 0.2852, Accuracy: 9144/10000 (91.4400%)
+
+Start epoch 129/200 with learning rate 0.004000000000000001...
+Step: 100879 Train Epoch: 129 [0/50000 (0.0%)]	Loss: 0.066784
+Step: 100979 Train Epoch: 129 [6400/50000 (12.8%)]	Loss: 0.049841
+Step: 101079 Train Epoch: 129 [12800/50000 (25.6%)]	Loss: 0.142111
+Step: 101179 Train Epoch: 129 [19200/50000 (38.4%)]	Loss: 0.103376
+Step: 101279 Train Epoch: 129 [25600/50000 (51.2%)]	Loss: 0.066800
+Step: 101379 Train Epoch: 129 [32000/50000 (63.9%)]	Loss: 0.038977
+Step: 101479 Train Epoch: 129 [38400/50000 (76.7%)]	Loss: 0.060291
+Step: 101579 Train Epoch: 129 [44800/50000 (89.5%)]	Loss: 0.066119
+
+Test set: Average loss: 0.2582, Accuracy: 9220/10000 (92.2000%)
+
+Start epoch 130/200 with learning rate 0.004000000000000001...
+Step: 101661 Train Epoch: 130 [0/50000 (0.0%)]	Loss: 0.057244
+Step: 101761 Train Epoch: 130 [6400/50000 (12.8%)]	Loss: 0.080904
+Step: 101861 Train Epoch: 130 [12800/50000 (25.6%)]	Loss: 0.053975
+Step: 101961 Train Epoch: 130 [19200/50000 (38.4%)]	Loss: 0.092993
+Step: 102061 Train Epoch: 130 [25600/50000 (51.2%)]	Loss: 0.036582
+Step: 102161 Train Epoch: 130 [32000/50000 (63.9%)]	Loss: 0.091168
+Step: 102261 Train Epoch: 130 [38400/50000 (76.7%)]	Loss: 0.073482
+Step: 102361 Train Epoch: 130 [44800/50000 (89.5%)]	Loss: 0.063933
+
+Test set: Average loss: 0.2682, Accuracy: 9192/10000 (91.9200%)
+
+Start epoch 131/200 with learning rate 0.004000000000000001...
+Step: 102443 Train Epoch: 131 [0/50000 (0.0%)]	Loss: 0.169855
+Step: 102543 Train Epoch: 131 [6400/50000 (12.8%)]	Loss: 0.154898
+Step: 102643 Train Epoch: 131 [12800/50000 (25.6%)]	Loss: 0.041306
+Step: 102743 Train Epoch: 131 [19200/50000 (38.4%)]	Loss: 0.127397
+Step: 102843 Train Epoch: 131 [25600/50000 (51.2%)]	Loss: 0.124396
+Step: 102943 Train Epoch: 131 [32000/50000 (63.9%)]	Loss: 0.041850
+Step: 103043 Train Epoch: 131 [38400/50000 (76.7%)]	Loss: 0.026924
+Step: 103143 Train Epoch: 131 [44800/50000 (89.5%)]	Loss: 0.092316
+
+Test set: Average loss: 0.2829, Accuracy: 9182/10000 (91.8200%)
+
+Start epoch 132/200 with learning rate 0.004000000000000001...
+Step: 103225 Train Epoch: 132 [0/50000 (0.0%)]	Loss: 0.057755
+Step: 103325 Train Epoch: 132 [6400/50000 (12.8%)]	Loss: 0.048735
+Step: 103425 Train Epoch: 132 [12800/50000 (25.6%)]	Loss: 0.044465
+Step: 103525 Train Epoch: 132 [19200/50000 (38.4%)]	Loss: 0.092529
+Step: 103625 Train Epoch: 132 [25600/50000 (51.2%)]	Loss: 0.075170
+Step: 103725 Train Epoch: 132 [32000/50000 (63.9%)]	Loss: 0.200676
+Step: 103825 Train Epoch: 132 [38400/50000 (76.7%)]	Loss: 0.067945
+Step: 103925 Train Epoch: 132 [44800/50000 (89.5%)]	Loss: 0.071276
+
+Test set: Average loss: 0.2681, Accuracy: 9194/10000 (91.9400%)
+
+Start epoch 133/200 with learning rate 0.004000000000000001...
+Step: 104007 Train Epoch: 133 [0/50000 (0.0%)]	Loss: 0.052714
+Step: 104107 Train Epoch: 133 [6400/50000 (12.8%)]	Loss: 0.078245
+Step: 104207 Train Epoch: 133 [12800/50000 (25.6%)]	Loss: 0.035247
+Step: 104307 Train Epoch: 133 [19200/50000 (38.4%)]	Loss: 0.107986
+Step: 104407 Train Epoch: 133 [25600/50000 (51.2%)]	Loss: 0.051549
+Step: 104507 Train Epoch: 133 [32000/50000 (63.9%)]	Loss: 0.191923
+Step: 104607 Train Epoch: 133 [38400/50000 (76.7%)]	Loss: 0.148868
+Step: 104707 Train Epoch: 133 [44800/50000 (89.5%)]	Loss: 0.062520
+
+Test set: Average loss: 0.2779, Accuracy: 9178/10000 (91.7800%)
+
+Start epoch 134/200 with learning rate 0.004000000000000001...
+Step: 104789 Train Epoch: 134 [0/50000 (0.0%)]	Loss: 0.042155
+Step: 104889 Train Epoch: 134 [6400/50000 (12.8%)]	Loss: 0.050967
+Step: 104989 Train Epoch: 134 [12800/50000 (25.6%)]	Loss: 0.156976
+Step: 105089 Train Epoch: 134 [19200/50000 (38.4%)]	Loss: 0.070851
+Step: 105189 Train Epoch: 134 [25600/50000 (51.2%)]	Loss: 0.118114
+Step: 105289 Train Epoch: 134 [32000/50000 (63.9%)]	Loss: 0.158007
+Step: 105389 Train Epoch: 134 [38400/50000 (76.7%)]	Loss: 0.129108
+Step: 105489 Train Epoch: 134 [44800/50000 (89.5%)]	Loss: 0.054580
+
+Test set: Average loss: 0.2657, Accuracy: 9195/10000 (91.9500%)
+
+Start epoch 135/200 with learning rate 0.004000000000000001...
+Step: 105571 Train Epoch: 135 [0/50000 (0.0%)]	Loss: 0.117720
+Step: 105671 Train Epoch: 135 [6400/50000 (12.8%)]	Loss: 0.035572
+Step: 105771 Train Epoch: 135 [12800/50000 (25.6%)]	Loss: 0.105104
+Step: 105871 Train Epoch: 135 [19200/50000 (38.4%)]	Loss: 0.114885
+Step: 105971 Train Epoch: 135 [25600/50000 (51.2%)]	Loss: 0.089474
+Step: 106071 Train Epoch: 135 [32000/50000 (63.9%)]	Loss: 0.055018
+Step: 106171 Train Epoch: 135 [38400/50000 (76.7%)]	Loss: 0.070561
+Step: 106271 Train Epoch: 135 [44800/50000 (89.5%)]	Loss: 0.132671
+
+Test set: Average loss: 0.2873, Accuracy: 9167/10000 (91.6700%)
+
+Start epoch 136/200 with learning rate 0.004000000000000001...
+Step: 106353 Train Epoch: 136 [0/50000 (0.0%)]	Loss: 0.068874
+Step: 106453 Train Epoch: 136 [6400/50000 (12.8%)]	Loss: 0.074138
+Step: 106553 Train Epoch: 136 [12800/50000 (25.6%)]	Loss: 0.187851
+Step: 106653 Train Epoch: 136 [19200/50000 (38.4%)]	Loss: 0.157481
+Step: 106753 Train Epoch: 136 [25600/50000 (51.2%)]	Loss: 0.117395
+Step: 106853 Train Epoch: 136 [32000/50000 (63.9%)]	Loss: 0.122450
+Step: 106953 Train Epoch: 136 [38400/50000 (76.7%)]	Loss: 0.056116
+Step: 107053 Train Epoch: 136 [44800/50000 (89.5%)]	Loss: 0.141082
+
+Test set: Average loss: 0.2634, Accuracy: 9229/10000 (92.2900%)
+
+Start epoch 137/200 with learning rate 0.004000000000000001...
+Step: 107135 Train Epoch: 137 [0/50000 (0.0%)]	Loss: 0.019383
+Step: 107235 Train Epoch: 137 [6400/50000 (12.8%)]	Loss: 0.054478
+Step: 107335 Train Epoch: 137 [12800/50000 (25.6%)]	Loss: 0.081416
+Step: 107435 Train Epoch: 137 [19200/50000 (38.4%)]	Loss: 0.038957
+Step: 107535 Train Epoch: 137 [25600/50000 (51.2%)]	Loss: 0.152267
+Step: 107635 Train Epoch: 137 [32000/50000 (63.9%)]	Loss: 0.265197
+Step: 107735 Train Epoch: 137 [38400/50000 (76.7%)]	Loss: 0.076864
+Step: 107835 Train Epoch: 137 [44800/50000 (89.5%)]	Loss: 0.048907
+
+Test set: Average loss: 0.2840, Accuracy: 9168/10000 (91.6800%)
+
+Start epoch 138/200 with learning rate 0.004000000000000001...
+Step: 107917 Train Epoch: 138 [0/50000 (0.0%)]	Loss: 0.046469
+Step: 108017 Train Epoch: 138 [6400/50000 (12.8%)]	Loss: 0.038957
+Step: 108117 Train Epoch: 138 [12800/50000 (25.6%)]	Loss: 0.042794
+Step: 108217 Train Epoch: 138 [19200/50000 (38.4%)]	Loss: 0.135614
+Step: 108317 Train Epoch: 138 [25600/50000 (51.2%)]	Loss: 0.083100
+Step: 108417 Train Epoch: 138 [32000/50000 (63.9%)]	Loss: 0.115793
+Step: 108517 Train Epoch: 138 [38400/50000 (76.7%)]	Loss: 0.194634
+Step: 108617 Train Epoch: 138 [44800/50000 (89.5%)]	Loss: 0.149319
+
+Test set: Average loss: 0.2857, Accuracy: 9149/10000 (91.4900%)
+
+Start epoch 139/200 with learning rate 0.004000000000000001...
+Step: 108699 Train Epoch: 139 [0/50000 (0.0%)]	Loss: 0.141267
+Step: 108799 Train Epoch: 139 [6400/50000 (12.8%)]	Loss: 0.131531
+Step: 108899 Train Epoch: 139 [12800/50000 (25.6%)]	Loss: 0.193212
+Step: 108999 Train Epoch: 139 [19200/50000 (38.4%)]	Loss: 0.097666
+Step: 109099 Train Epoch: 139 [25600/50000 (51.2%)]	Loss: 0.088358
+Step: 109199 Train Epoch: 139 [32000/50000 (63.9%)]	Loss: 0.186590
+Step: 109299 Train Epoch: 139 [38400/50000 (76.7%)]	Loss: 0.087779
+Step: 109399 Train Epoch: 139 [44800/50000 (89.5%)]	Loss: 0.022892
+
+Test set: Average loss: 0.2704, Accuracy: 9191/10000 (91.9100%)
+
+Start epoch 140/200 with learning rate 0.004000000000000001...
+Step: 109481 Train Epoch: 140 [0/50000 (0.0%)]	Loss: 0.170193
+Step: 109581 Train Epoch: 140 [6400/50000 (12.8%)]	Loss: 0.163799
+Step: 109681 Train Epoch: 140 [12800/50000 (25.6%)]	Loss: 0.228386
+Step: 109781 Train Epoch: 140 [19200/50000 (38.4%)]	Loss: 0.106809
+Step: 109881 Train Epoch: 140 [25600/50000 (51.2%)]	Loss: 0.090300
+Step: 109981 Train Epoch: 140 [32000/50000 (63.9%)]	Loss: 0.113436
+Step: 110081 Train Epoch: 140 [38400/50000 (76.7%)]	Loss: 0.097645
+Step: 110181 Train Epoch: 140 [44800/50000 (89.5%)]	Loss: 0.079620
+
+Test set: Average loss: 0.2819, Accuracy: 9166/10000 (91.6600%)
+
+Start epoch 141/200 with learning rate 0.004000000000000001...
+Step: 110263 Train Epoch: 141 [0/50000 (0.0%)]	Loss: 0.080753
+Step: 110363 Train Epoch: 141 [6400/50000 (12.8%)]	Loss: 0.060462
+Step: 110463 Train Epoch: 141 [12800/50000 (25.6%)]	Loss: 0.161014
+Step: 110563 Train Epoch: 141 [19200/50000 (38.4%)]	Loss: 0.070107
+Step: 110663 Train Epoch: 141 [25600/50000 (51.2%)]	Loss: 0.089510
+Step: 110763 Train Epoch: 141 [32000/50000 (63.9%)]	Loss: 0.129503
+Step: 110863 Train Epoch: 141 [38400/50000 (76.7%)]	Loss: 0.092641
+Step: 110963 Train Epoch: 141 [44800/50000 (89.5%)]	Loss: 0.083131
+
+Test set: Average loss: 0.3116, Accuracy: 9122/10000 (91.2200%)
+
+Start epoch 142/200 with learning rate 0.004000000000000001...
+Step: 111045 Train Epoch: 142 [0/50000 (0.0%)]	Loss: 0.137596
+Step: 111145 Train Epoch: 142 [6400/50000 (12.8%)]	Loss: 0.049572
+Step: 111245 Train Epoch: 142 [12800/50000 (25.6%)]	Loss: 0.054799
+Step: 111345 Train Epoch: 142 [19200/50000 (38.4%)]	Loss: 0.057750
+Step: 111445 Train Epoch: 142 [25600/50000 (51.2%)]	Loss: 0.227595
+Step: 111545 Train Epoch: 142 [32000/50000 (63.9%)]	Loss: 0.148758
+Step: 111645 Train Epoch: 142 [38400/50000 (76.7%)]	Loss: 0.150568
+Step: 111745 Train Epoch: 142 [44800/50000 (89.5%)]	Loss: 0.056046
+
+Test set: Average loss: 0.2938, Accuracy: 9158/10000 (91.5800%)
+
+Start epoch 143/200 with learning rate 0.004000000000000001...
+Step: 111827 Train Epoch: 143 [0/50000 (0.0%)]	Loss: 0.138277
+Step: 111927 Train Epoch: 143 [6400/50000 (12.8%)]	Loss: 0.079873
+Step: 112027 Train Epoch: 143 [12800/50000 (25.6%)]	Loss: 0.125593
+Step: 112127 Train Epoch: 143 [19200/50000 (38.4%)]	Loss: 0.211098
+Step: 112227 Train Epoch: 143 [25600/50000 (51.2%)]	Loss: 0.185304
+Step: 112327 Train Epoch: 143 [32000/50000 (63.9%)]	Loss: 0.051533
+Step: 112427 Train Epoch: 143 [38400/50000 (76.7%)]	Loss: 0.128253
+Step: 112527 Train Epoch: 143 [44800/50000 (89.5%)]	Loss: 0.060758
+
+Test set: Average loss: 0.2929, Accuracy: 9156/10000 (91.5600%)
+
+Start epoch 144/200 with learning rate 0.004000000000000001...
+Step: 112609 Train Epoch: 144 [0/50000 (0.0%)]	Loss: 0.051639
+Step: 112709 Train Epoch: 144 [6400/50000 (12.8%)]	Loss: 0.074869
+Step: 112809 Train Epoch: 144 [12800/50000 (25.6%)]	Loss: 0.058656
+Step: 112909 Train Epoch: 144 [19200/50000 (38.4%)]	Loss: 0.174795
+Step: 113009 Train Epoch: 144 [25600/50000 (51.2%)]	Loss: 0.092267
+Step: 113109 Train Epoch: 144 [32000/50000 (63.9%)]	Loss: 0.065897
+Step: 113209 Train Epoch: 144 [38400/50000 (76.7%)]	Loss: 0.056628
+Step: 113309 Train Epoch: 144 [44800/50000 (89.5%)]	Loss: 0.077817
+
+Test set: Average loss: 0.3006, Accuracy: 9123/10000 (91.2300%)
+
+Start epoch 145/200 with learning rate 0.004000000000000001...
+Step: 113391 Train Epoch: 145 [0/50000 (0.0%)]	Loss: 0.045001
+Step: 113491 Train Epoch: 145 [6400/50000 (12.8%)]	Loss: 0.119191
+Step: 113591 Train Epoch: 145 [12800/50000 (25.6%)]	Loss: 0.065791
+Step: 113691 Train Epoch: 145 [19200/50000 (38.4%)]	Loss: 0.128648
+Step: 113791 Train Epoch: 145 [25600/50000 (51.2%)]	Loss: 0.114296
+Step: 113891 Train Epoch: 145 [32000/50000 (63.9%)]	Loss: 0.074501
+Step: 113991 Train Epoch: 145 [38400/50000 (76.7%)]	Loss: 0.104077
+Step: 114091 Train Epoch: 145 [44800/50000 (89.5%)]	Loss: 0.118381
+
+Test set: Average loss: 0.2837, Accuracy: 9157/10000 (91.5700%)
+
+Start epoch 146/200 with learning rate 0.004000000000000001...
+Step: 114173 Train Epoch: 146 [0/50000 (0.0%)]	Loss: 0.163188
+Step: 114273 Train Epoch: 146 [6400/50000 (12.8%)]	Loss: 0.092483
+Step: 114373 Train Epoch: 146 [12800/50000 (25.6%)]	Loss: 0.086577
+Step: 114473 Train Epoch: 146 [19200/50000 (38.4%)]	Loss: 0.138961
+Step: 114573 Train Epoch: 146 [25600/50000 (51.2%)]	Loss: 0.202288
+Step: 114673 Train Epoch: 146 [32000/50000 (63.9%)]	Loss: 0.022123
+Step: 114773 Train Epoch: 146 [38400/50000 (76.7%)]	Loss: 0.099985
+Step: 114873 Train Epoch: 146 [44800/50000 (89.5%)]	Loss: 0.052052
+
+Test set: Average loss: 0.2728, Accuracy: 9173/10000 (91.7300%)
+
+Start epoch 147/200 with learning rate 0.004000000000000001...
+Step: 114955 Train Epoch: 147 [0/50000 (0.0%)]	Loss: 0.118624
+Step: 115055 Train Epoch: 147 [6400/50000 (12.8%)]	Loss: 0.163656
+Step: 115155 Train Epoch: 147 [12800/50000 (25.6%)]	Loss: 0.046699
+Step: 115255 Train Epoch: 147 [19200/50000 (38.4%)]	Loss: 0.065632
+Step: 115355 Train Epoch: 147 [25600/50000 (51.2%)]	Loss: 0.190646
+Step: 115455 Train Epoch: 147 [32000/50000 (63.9%)]	Loss: 0.197542
+Step: 115555 Train Epoch: 147 [38400/50000 (76.7%)]	Loss: 0.159166
+Step: 115655 Train Epoch: 147 [44800/50000 (89.5%)]	Loss: 0.083590
+
+Test set: Average loss: 0.2950, Accuracy: 9143/10000 (91.4300%)
+
+Start epoch 148/200 with learning rate 0.004000000000000001...
+Step: 115737 Train Epoch: 148 [0/50000 (0.0%)]	Loss: 0.181291
+Step: 115837 Train Epoch: 148 [6400/50000 (12.8%)]	Loss: 0.049686
+Step: 115937 Train Epoch: 148 [12800/50000 (25.6%)]	Loss: 0.122997
+Step: 116037 Train Epoch: 148 [19200/50000 (38.4%)]	Loss: 0.155047
+Step: 116137 Train Epoch: 148 [25600/50000 (51.2%)]	Loss: 0.031239
+Step: 116237 Train Epoch: 148 [32000/50000 (63.9%)]	Loss: 0.109869
+Step: 116337 Train Epoch: 148 [38400/50000 (76.7%)]	Loss: 0.048805
+Step: 116437 Train Epoch: 148 [44800/50000 (89.5%)]	Loss: 0.085436
+
+Test set: Average loss: 0.2943, Accuracy: 9167/10000 (91.6700%)
+
+Start epoch 149/200 with learning rate 0.004000000000000001...
+Step: 116519 Train Epoch: 149 [0/50000 (0.0%)]	Loss: 0.110652
+Step: 116619 Train Epoch: 149 [6400/50000 (12.8%)]	Loss: 0.092416
+Step: 116719 Train Epoch: 149 [12800/50000 (25.6%)]	Loss: 0.142196
+Step: 116819 Train Epoch: 149 [19200/50000 (38.4%)]	Loss: 0.087801
+Step: 116919 Train Epoch: 149 [25600/50000 (51.2%)]	Loss: 0.100884
+Step: 117019 Train Epoch: 149 [32000/50000 (63.9%)]	Loss: 0.099767
+Step: 117119 Train Epoch: 149 [38400/50000 (76.7%)]	Loss: 0.105924
+Step: 117219 Train Epoch: 149 [44800/50000 (89.5%)]	Loss: 0.042529
+
+Test set: Average loss: 0.3096, Accuracy: 9109/10000 (91.0900%)
+
+Start epoch 150/200 with learning rate 0.004000000000000001...
+Step: 117301 Train Epoch: 150 [0/50000 (0.0%)]	Loss: 0.030033
+Step: 117401 Train Epoch: 150 [6400/50000 (12.8%)]	Loss: 0.124072
+Step: 117501 Train Epoch: 150 [12800/50000 (25.6%)]	Loss: 0.168145
+Step: 117601 Train Epoch: 150 [19200/50000 (38.4%)]	Loss: 0.114813
+Step: 117701 Train Epoch: 150 [25600/50000 (51.2%)]	Loss: 0.121673
+Step: 117801 Train Epoch: 150 [32000/50000 (63.9%)]	Loss: 0.077530
+Step: 117901 Train Epoch: 150 [38400/50000 (76.7%)]	Loss: 0.091367
+Step: 118001 Train Epoch: 150 [44800/50000 (89.5%)]	Loss: 0.158084
+
+Test set: Average loss: 0.3112, Accuracy: 9095/10000 (90.9500%)
+
+Start epoch 151/200 with learning rate 0.004000000000000001...
+Step: 118083 Train Epoch: 151 [0/50000 (0.0%)]	Loss: 0.083297
+Step: 118183 Train Epoch: 151 [6400/50000 (12.8%)]	Loss: 0.086164
+Step: 118283 Train Epoch: 151 [12800/50000 (25.6%)]	Loss: 0.033882
+Step: 118383 Train Epoch: 151 [19200/50000 (38.4%)]	Loss: 0.064670
+Step: 118483 Train Epoch: 151 [25600/50000 (51.2%)]	Loss: 0.042613
+Step: 118583 Train Epoch: 151 [32000/50000 (63.9%)]	Loss: 0.136564
+Step: 118683 Train Epoch: 151 [38400/50000 (76.7%)]	Loss: 0.110076
+Step: 118783 Train Epoch: 151 [44800/50000 (89.5%)]	Loss: 0.138710
+
+Test set: Average loss: 0.3211, Accuracy: 9054/10000 (90.5400%)
+
+Start epoch 152/200 with learning rate 0.004000000000000001...
+Step: 118865 Train Epoch: 152 [0/50000 (0.0%)]	Loss: 0.131743
+Step: 118965 Train Epoch: 152 [6400/50000 (12.8%)]	Loss: 0.137103
+Step: 119065 Train Epoch: 152 [12800/50000 (25.6%)]	Loss: 0.096303
+Step: 119165 Train Epoch: 152 [19200/50000 (38.4%)]	Loss: 0.064844
+Step: 119265 Train Epoch: 152 [25600/50000 (51.2%)]	Loss: 0.076168
+Step: 119365 Train Epoch: 152 [32000/50000 (63.9%)]	Loss: 0.139591
+Step: 119465 Train Epoch: 152 [38400/50000 (76.7%)]	Loss: 0.033449
+Step: 119565 Train Epoch: 152 [44800/50000 (89.5%)]	Loss: 0.081266
+
+Test set: Average loss: 0.3003, Accuracy: 9126/10000 (91.2600%)
+
+Start epoch 153/200 with learning rate 0.004000000000000001...
+Step: 119647 Train Epoch: 153 [0/50000 (0.0%)]	Loss: 0.094242
+Step: 119747 Train Epoch: 153 [6400/50000 (12.8%)]	Loss: 0.083943
+Step: 119847 Train Epoch: 153 [12800/50000 (25.6%)]	Loss: 0.139389
+Step: 119947 Train Epoch: 153 [19200/50000 (38.4%)]	Loss: 0.106239
+Step: 120047 Train Epoch: 153 [25600/50000 (51.2%)]	Loss: 0.063108
+Step: 120147 Train Epoch: 153 [32000/50000 (63.9%)]	Loss: 0.139363
+Step: 120247 Train Epoch: 153 [38400/50000 (76.7%)]	Loss: 0.137589
+Step: 120347 Train Epoch: 153 [44800/50000 (89.5%)]	Loss: 0.110865
+
+Test set: Average loss: 0.3061, Accuracy: 9129/10000 (91.2900%)
+
+Start epoch 154/200 with learning rate 0.004000000000000001...
+Step: 120429 Train Epoch: 154 [0/50000 (0.0%)]	Loss: 0.097034
+Step: 120529 Train Epoch: 154 [6400/50000 (12.8%)]	Loss: 0.018283
+Step: 120629 Train Epoch: 154 [12800/50000 (25.6%)]	Loss: 0.150496
+Step: 120729 Train Epoch: 154 [19200/50000 (38.4%)]	Loss: 0.023368
+Step: 120829 Train Epoch: 154 [25600/50000 (51.2%)]	Loss: 0.060066
+Step: 120929 Train Epoch: 154 [32000/50000 (63.9%)]	Loss: 0.066687
+Step: 121029 Train Epoch: 154 [38400/50000 (76.7%)]	Loss: 0.206365
+Step: 121129 Train Epoch: 154 [44800/50000 (89.5%)]	Loss: 0.035500
+
+Test set: Average loss: 0.2815, Accuracy: 9180/10000 (91.8000%)
+
+Start epoch 155/200 with learning rate 0.004000000000000001...
+Step: 121211 Train Epoch: 155 [0/50000 (0.0%)]	Loss: 0.062431
+Step: 121311 Train Epoch: 155 [6400/50000 (12.8%)]	Loss: 0.079867
+Step: 121411 Train Epoch: 155 [12800/50000 (25.6%)]	Loss: 0.061970
+Step: 121511 Train Epoch: 155 [19200/50000 (38.4%)]	Loss: 0.110335
+Step: 121611 Train Epoch: 155 [25600/50000 (51.2%)]	Loss: 0.063665
+Step: 121711 Train Epoch: 155 [32000/50000 (63.9%)]	Loss: 0.035731
+Step: 121811 Train Epoch: 155 [38400/50000 (76.7%)]	Loss: 0.035741
+Step: 121911 Train Epoch: 155 [44800/50000 (89.5%)]	Loss: 0.136061
+
+Test set: Average loss: 0.3166, Accuracy: 9104/10000 (91.0400%)
+
+Start epoch 156/200 with learning rate 0.004000000000000001...
+Step: 121993 Train Epoch: 156 [0/50000 (0.0%)]	Loss: 0.091316
+Step: 122093 Train Epoch: 156 [6400/50000 (12.8%)]	Loss: 0.040531
+Step: 122193 Train Epoch: 156 [12800/50000 (25.6%)]	Loss: 0.024296
+Step: 122293 Train Epoch: 156 [19200/50000 (38.4%)]	Loss: 0.060970
+Step: 122393 Train Epoch: 156 [25600/50000 (51.2%)]	Loss: 0.094790
+Step: 122493 Train Epoch: 156 [32000/50000 (63.9%)]	Loss: 0.065761
+Step: 122593 Train Epoch: 156 [38400/50000 (76.7%)]	Loss: 0.143212
+Step: 122693 Train Epoch: 156 [44800/50000 (89.5%)]	Loss: 0.150018
+
+Test set: Average loss: 0.3152, Accuracy: 9094/10000 (90.9400%)
+
+Start epoch 157/200 with learning rate 0.004000000000000001...
+Step: 122775 Train Epoch: 157 [0/50000 (0.0%)]	Loss: 0.164684
+Step: 122875 Train Epoch: 157 [6400/50000 (12.8%)]	Loss: 0.053872
+Step: 122975 Train Epoch: 157 [12800/50000 (25.6%)]	Loss: 0.027332
+Step: 123075 Train Epoch: 157 [19200/50000 (38.4%)]	Loss: 0.172301
+Step: 123175 Train Epoch: 157 [25600/50000 (51.2%)]	Loss: 0.073025
+Step: 123275 Train Epoch: 157 [32000/50000 (63.9%)]	Loss: 0.049257
+Step: 123375 Train Epoch: 157 [38400/50000 (76.7%)]	Loss: 0.025796
+Step: 123475 Train Epoch: 157 [44800/50000 (89.5%)]	Loss: 0.151590
+
+Test set: Average loss: 0.3050, Accuracy: 9158/10000 (91.5800%)
+
+Start epoch 158/200 with learning rate 0.004000000000000001...
+Step: 123557 Train Epoch: 158 [0/50000 (0.0%)]	Loss: 0.099977
+Step: 123657 Train Epoch: 158 [6400/50000 (12.8%)]	Loss: 0.083279
+Step: 123757 Train Epoch: 158 [12800/50000 (25.6%)]	Loss: 0.039437
+Step: 123857 Train Epoch: 158 [19200/50000 (38.4%)]	Loss: 0.071209
+Step: 123957 Train Epoch: 158 [25600/50000 (51.2%)]	Loss: 0.030356
+Step: 124057 Train Epoch: 158 [32000/50000 (63.9%)]	Loss: 0.211919
+Step: 124157 Train Epoch: 158 [38400/50000 (76.7%)]	Loss: 0.147110
+Step: 124257 Train Epoch: 158 [44800/50000 (89.5%)]	Loss: 0.073369
+
+Test set: Average loss: 0.3017, Accuracy: 9078/10000 (90.7800%)
+
+Start epoch 159/200 with learning rate 0.004000000000000001...
+Step: 124339 Train Epoch: 159 [0/50000 (0.0%)]	Loss: 0.145328
+Step: 124439 Train Epoch: 159 [6400/50000 (12.8%)]	Loss: 0.028268
+Step: 124539 Train Epoch: 159 [12800/50000 (25.6%)]	Loss: 0.108796
+Step: 124639 Train Epoch: 159 [19200/50000 (38.4%)]	Loss: 0.082076
+Step: 124739 Train Epoch: 159 [25600/50000 (51.2%)]	Loss: 0.098906
+Step: 124839 Train Epoch: 159 [32000/50000 (63.9%)]	Loss: 0.092138
+Step: 124939 Train Epoch: 159 [38400/50000 (76.7%)]	Loss: 0.090668
+Step: 125039 Train Epoch: 159 [44800/50000 (89.5%)]	Loss: 0.085637
+
+Test set: Average loss: 0.3166, Accuracy: 9078/10000 (90.7800%)
+
+Start epoch 160/200 with learning rate 0.0008000000000000003...
+Step: 125121 Train Epoch: 160 [0/50000 (0.0%)]	Loss: 0.171741
+Step: 125221 Train Epoch: 160 [6400/50000 (12.8%)]	Loss: 0.107134
+Step: 125321 Train Epoch: 160 [12800/50000 (25.6%)]	Loss: 0.128477
+Step: 125421 Train Epoch: 160 [19200/50000 (38.4%)]	Loss: 0.088469
+Step: 125521 Train Epoch: 160 [25600/50000 (51.2%)]	Loss: 0.065593
+Step: 125621 Train Epoch: 160 [32000/50000 (63.9%)]	Loss: 0.077340
+Step: 125721 Train Epoch: 160 [38400/50000 (76.7%)]	Loss: 0.094585
+Step: 125821 Train Epoch: 160 [44800/50000 (89.5%)]	Loss: 0.040204
+
+Test set: Average loss: 0.2388, Accuracy: 9301/10000 (93.0100%)
+
+Start epoch 161/200 with learning rate 0.0008000000000000003...
+Step: 125903 Train Epoch: 161 [0/50000 (0.0%)]	Loss: 0.023396
+Step: 126003 Train Epoch: 161 [6400/50000 (12.8%)]	Loss: 0.083422
+Step: 126103 Train Epoch: 161 [12800/50000 (25.6%)]	Loss: 0.135839
+Step: 126203 Train Epoch: 161 [19200/50000 (38.4%)]	Loss: 0.035530
+Step: 126303 Train Epoch: 161 [25600/50000 (51.2%)]	Loss: 0.020697
+Step: 126403 Train Epoch: 161 [32000/50000 (63.9%)]	Loss: 0.078948
+Step: 126503 Train Epoch: 161 [38400/50000 (76.7%)]	Loss: 0.039281
+Step: 126603 Train Epoch: 161 [44800/50000 (89.5%)]	Loss: 0.062374
+
+Test set: Average loss: 0.2386, Accuracy: 9311/10000 (93.1100%)
+
+Start epoch 162/200 with learning rate 0.0008000000000000003...
+Step: 126685 Train Epoch: 162 [0/50000 (0.0%)]	Loss: 0.080717
+Step: 126785 Train Epoch: 162 [6400/50000 (12.8%)]	Loss: 0.028857
+Step: 126885 Train Epoch: 162 [12800/50000 (25.6%)]	Loss: 0.024962
+Step: 126985 Train Epoch: 162 [19200/50000 (38.4%)]	Loss: 0.015112
+Step: 127085 Train Epoch: 162 [25600/50000 (51.2%)]	Loss: 0.023817
+Step: 127185 Train Epoch: 162 [32000/50000 (63.9%)]	Loss: 0.026223
+Step: 127285 Train Epoch: 162 [38400/50000 (76.7%)]	Loss: 0.012140
+Step: 127385 Train Epoch: 162 [44800/50000 (89.5%)]	Loss: 0.013212
+
+Test set: Average loss: 0.2475, Accuracy: 9297/10000 (92.9700%)
+
+Start epoch 163/200 with learning rate 0.0008000000000000003...
+Step: 127467 Train Epoch: 163 [0/50000 (0.0%)]	Loss: 0.053545
+Step: 127567 Train Epoch: 163 [6400/50000 (12.8%)]	Loss: 0.044892
+Step: 127667 Train Epoch: 163 [12800/50000 (25.6%)]	Loss: 0.076161
+Step: 127767 Train Epoch: 163 [19200/50000 (38.4%)]	Loss: 0.043457
+Step: 127867 Train Epoch: 163 [25600/50000 (51.2%)]	Loss: 0.091675
+Step: 127967 Train Epoch: 163 [32000/50000 (63.9%)]	Loss: 0.042499
+Step: 128067 Train Epoch: 163 [38400/50000 (76.7%)]	Loss: 0.026854
+Step: 128167 Train Epoch: 163 [44800/50000 (89.5%)]	Loss: 0.035408
+
+Test set: Average loss: 0.2458, Accuracy: 9302/10000 (93.0200%)
+
+Start epoch 164/200 with learning rate 0.0008000000000000003...
+Step: 128249 Train Epoch: 164 [0/50000 (0.0%)]	Loss: 0.077967
+Step: 128349 Train Epoch: 164 [6400/50000 (12.8%)]	Loss: 0.020924
+Step: 128449 Train Epoch: 164 [12800/50000 (25.6%)]	Loss: 0.029614
+Step: 128549 Train Epoch: 164 [19200/50000 (38.4%)]	Loss: 0.012670
+Step: 128649 Train Epoch: 164 [25600/50000 (51.2%)]	Loss: 0.017712
+Step: 128749 Train Epoch: 164 [32000/50000 (63.9%)]	Loss: 0.029326
+Step: 128849 Train Epoch: 164 [38400/50000 (76.7%)]	Loss: 0.026995
+Step: 128949 Train Epoch: 164 [44800/50000 (89.5%)]	Loss: 0.017916
+
+Test set: Average loss: 0.2455, Accuracy: 9326/10000 (93.2600%)
+
+Start epoch 165/200 with learning rate 0.0008000000000000003...
+Step: 129031 Train Epoch: 165 [0/50000 (0.0%)]	Loss: 0.017210
+Step: 129131 Train Epoch: 165 [6400/50000 (12.8%)]	Loss: 0.042758
+Step: 129231 Train Epoch: 165 [12800/50000 (25.6%)]	Loss: 0.022921
+Step: 129331 Train Epoch: 165 [19200/50000 (38.4%)]	Loss: 0.117251
+Step: 129431 Train Epoch: 165 [25600/50000 (51.2%)]	Loss: 0.046192
+Step: 129531 Train Epoch: 165 [32000/50000 (63.9%)]	Loss: 0.015908
+Step: 129631 Train Epoch: 165 [38400/50000 (76.7%)]	Loss: 0.055073
+Step: 129731 Train Epoch: 165 [44800/50000 (89.5%)]	Loss: 0.033333
+
+Test set: Average loss: 0.2449, Accuracy: 9330/10000 (93.3000%)
+
+Start epoch 166/200 with learning rate 0.0008000000000000003...
+Step: 129813 Train Epoch: 166 [0/50000 (0.0%)]	Loss: 0.024932
+Step: 129913 Train Epoch: 166 [6400/50000 (12.8%)]	Loss: 0.021914
+Step: 130013 Train Epoch: 166 [12800/50000 (25.6%)]	Loss: 0.062069
+Step: 130113 Train Epoch: 166 [19200/50000 (38.4%)]	Loss: 0.031020
+Step: 130213 Train Epoch: 166 [25600/50000 (51.2%)]	Loss: 0.011069
+Step: 130313 Train Epoch: 166 [32000/50000 (63.9%)]	Loss: 0.018180
+Step: 130413 Train Epoch: 166 [38400/50000 (76.7%)]	Loss: 0.018539
+Step: 130513 Train Epoch: 166 [44800/50000 (89.5%)]	Loss: 0.015862
+
+Test set: Average loss: 0.2555, Accuracy: 9327/10000 (93.2700%)
+
+Start epoch 167/200 with learning rate 0.0008000000000000003...
+Step: 130595 Train Epoch: 167 [0/50000 (0.0%)]	Loss: 0.015613
+Step: 130695 Train Epoch: 167 [6400/50000 (12.8%)]	Loss: 0.009709
+Step: 130795 Train Epoch: 167 [12800/50000 (25.6%)]	Loss: 0.019647
+Step: 130895 Train Epoch: 167 [19200/50000 (38.4%)]	Loss: 0.049557
+Step: 130995 Train Epoch: 167 [25600/50000 (51.2%)]	Loss: 0.065443
+Step: 131095 Train Epoch: 167 [32000/50000 (63.9%)]	Loss: 0.039253
+Step: 131195 Train Epoch: 167 [38400/50000 (76.7%)]	Loss: 0.030655
+Step: 131295 Train Epoch: 167 [44800/50000 (89.5%)]	Loss: 0.021631
+
+Test set: Average loss: 0.2604, Accuracy: 9327/10000 (93.2700%)
+
+Start epoch 168/200 with learning rate 0.0008000000000000003...
+Step: 131377 Train Epoch: 168 [0/50000 (0.0%)]	Loss: 0.036993
+Step: 131477 Train Epoch: 168 [6400/50000 (12.8%)]	Loss: 0.020125
+Step: 131577 Train Epoch: 168 [12800/50000 (25.6%)]	Loss: 0.012711
+Step: 131677 Train Epoch: 168 [19200/50000 (38.4%)]	Loss: 0.016911
+Step: 131777 Train Epoch: 168 [25600/50000 (51.2%)]	Loss: 0.016743
+Step: 131877 Train Epoch: 168 [32000/50000 (63.9%)]	Loss: 0.026354
+Step: 131977 Train Epoch: 168 [38400/50000 (76.7%)]	Loss: 0.011793
+Step: 132077 Train Epoch: 168 [44800/50000 (89.5%)]	Loss: 0.029800
+
+Test set: Average loss: 0.2559, Accuracy: 9334/10000 (93.3400%)
+
+Start epoch 169/200 with learning rate 0.0008000000000000003...
+Step: 132159 Train Epoch: 169 [0/50000 (0.0%)]	Loss: 0.030332
+Step: 132259 Train Epoch: 169 [6400/50000 (12.8%)]	Loss: 0.035950
+Step: 132359 Train Epoch: 169 [12800/50000 (25.6%)]	Loss: 0.039238
+Step: 132459 Train Epoch: 169 [19200/50000 (38.4%)]	Loss: 0.028982
+Step: 132559 Train Epoch: 169 [25600/50000 (51.2%)]	Loss: 0.023581
+Step: 132659 Train Epoch: 169 [32000/50000 (63.9%)]	Loss: 0.019899
+Step: 132759 Train Epoch: 169 [38400/50000 (76.7%)]	Loss: 0.010399
+Step: 132859 Train Epoch: 169 [44800/50000 (89.5%)]	Loss: 0.059363
+
+Test set: Average loss: 0.2679, Accuracy: 9301/10000 (93.0100%)
+
+Start epoch 170/200 with learning rate 0.0008000000000000003...
+Step: 132941 Train Epoch: 170 [0/50000 (0.0%)]	Loss: 0.019580
+Step: 133041 Train Epoch: 170 [6400/50000 (12.8%)]	Loss: 0.012241
+Step: 133141 Train Epoch: 170 [12800/50000 (25.6%)]	Loss: 0.021388
+Step: 133241 Train Epoch: 170 [19200/50000 (38.4%)]	Loss: 0.013206
+Step: 133341 Train Epoch: 170 [25600/50000 (51.2%)]	Loss: 0.029420
+Step: 133441 Train Epoch: 170 [32000/50000 (63.9%)]	Loss: 0.020615
+Step: 133541 Train Epoch: 170 [38400/50000 (76.7%)]	Loss: 0.013227
+Step: 133641 Train Epoch: 170 [44800/50000 (89.5%)]	Loss: 0.024369
+
+Test set: Average loss: 0.2731, Accuracy: 9313/10000 (93.1300%)
+
+Start epoch 171/200 with learning rate 0.0008000000000000003...
+Step: 133723 Train Epoch: 171 [0/50000 (0.0%)]	Loss: 0.012038
+Step: 133823 Train Epoch: 171 [6400/50000 (12.8%)]	Loss: 0.021513
+Step: 133923 Train Epoch: 171 [12800/50000 (25.6%)]	Loss: 0.024260
+Step: 134023 Train Epoch: 171 [19200/50000 (38.4%)]	Loss: 0.015826
+Step: 134123 Train Epoch: 171 [25600/50000 (51.2%)]	Loss: 0.023039
+Step: 134223 Train Epoch: 171 [32000/50000 (63.9%)]	Loss: 0.012906
+Step: 134323 Train Epoch: 171 [38400/50000 (76.7%)]	Loss: 0.029282
+Step: 134423 Train Epoch: 171 [44800/50000 (89.5%)]	Loss: 0.018788
+
+Test set: Average loss: 0.2633, Accuracy: 9331/10000 (93.3100%)
+
+Start epoch 172/200 with learning rate 0.0008000000000000003...
+Step: 134505 Train Epoch: 172 [0/50000 (0.0%)]	Loss: 0.011955
+Step: 134605 Train Epoch: 172 [6400/50000 (12.8%)]	Loss: 0.019180
+Step: 134705 Train Epoch: 172 [12800/50000 (25.6%)]	Loss: 0.026250
+Step: 134805 Train Epoch: 172 [19200/50000 (38.4%)]	Loss: 0.011441
+Step: 134905 Train Epoch: 172 [25600/50000 (51.2%)]	Loss: 0.009029
+Step: 135005 Train Epoch: 172 [32000/50000 (63.9%)]	Loss: 0.011465
+Step: 135105 Train Epoch: 172 [38400/50000 (76.7%)]	Loss: 0.048923
+Step: 135205 Train Epoch: 172 [44800/50000 (89.5%)]	Loss: 0.021930
+
+Test set: Average loss: 0.2684, Accuracy: 9308/10000 (93.0800%)
+
+Start epoch 173/200 with learning rate 0.0008000000000000003...
+Step: 135287 Train Epoch: 173 [0/50000 (0.0%)]	Loss: 0.030231
+Step: 135387 Train Epoch: 173 [6400/50000 (12.8%)]	Loss: 0.010176
+Step: 135487 Train Epoch: 173 [12800/50000 (25.6%)]	Loss: 0.058837
+Step: 135587 Train Epoch: 173 [19200/50000 (38.4%)]	Loss: 0.059833
+Step: 135687 Train Epoch: 173 [25600/50000 (51.2%)]	Loss: 0.039291
+Step: 135787 Train Epoch: 173 [32000/50000 (63.9%)]	Loss: 0.066031
+Step: 135887 Train Epoch: 173 [38400/50000 (76.7%)]	Loss: 0.045253
+Step: 135987 Train Epoch: 173 [44800/50000 (89.5%)]	Loss: 0.009723
+
+Test set: Average loss: 0.2700, Accuracy: 9307/10000 (93.0700%)
+
+Start epoch 174/200 with learning rate 0.0008000000000000003...
+Step: 136069 Train Epoch: 174 [0/50000 (0.0%)]	Loss: 0.009843
+Step: 136169 Train Epoch: 174 [6400/50000 (12.8%)]	Loss: 0.013459
+Step: 136269 Train Epoch: 174 [12800/50000 (25.6%)]	Loss: 0.008530
+Step: 136369 Train Epoch: 174 [19200/50000 (38.4%)]	Loss: 0.027321
+Step: 136469 Train Epoch: 174 [25600/50000 (51.2%)]	Loss: 0.038394
+Step: 136569 Train Epoch: 174 [32000/50000 (63.9%)]	Loss: 0.016874
+Step: 136669 Train Epoch: 174 [38400/50000 (76.7%)]	Loss: 0.070025
+Step: 136769 Train Epoch: 174 [44800/50000 (89.5%)]	Loss: 0.020424
+
+Test set: Average loss: 0.2648, Accuracy: 9325/10000 (93.2500%)
+
+Start epoch 175/200 with learning rate 0.0008000000000000003...
+Step: 136851 Train Epoch: 175 [0/50000 (0.0%)]	Loss: 0.011551
+Step: 136951 Train Epoch: 175 [6400/50000 (12.8%)]	Loss: 0.026469
+Step: 137051 Train Epoch: 175 [12800/50000 (25.6%)]	Loss: 0.012746
+Step: 137151 Train Epoch: 175 [19200/50000 (38.4%)]	Loss: 0.015836
+Step: 137251 Train Epoch: 175 [25600/50000 (51.2%)]	Loss: 0.030997
+Step: 137351 Train Epoch: 175 [32000/50000 (63.9%)]	Loss: 0.026457
+Step: 137451 Train Epoch: 175 [38400/50000 (76.7%)]	Loss: 0.011051
+Step: 137551 Train Epoch: 175 [44800/50000 (89.5%)]	Loss: 0.010051
+
+Test set: Average loss: 0.2673, Accuracy: 9315/10000 (93.1500%)
+
+Start epoch 176/200 with learning rate 0.0008000000000000003...
+Step: 137633 Train Epoch: 176 [0/50000 (0.0%)]	Loss: 0.012405
+Step: 137733 Train Epoch: 176 [6400/50000 (12.8%)]	Loss: 0.057031
+Step: 137833 Train Epoch: 176 [12800/50000 (25.6%)]	Loss: 0.011884
+Step: 137933 Train Epoch: 176 [19200/50000 (38.4%)]	Loss: 0.033649
+Step: 138033 Train Epoch: 176 [25600/50000 (51.2%)]	Loss: 0.015466
+Step: 138133 Train Epoch: 176 [32000/50000 (63.9%)]	Loss: 0.025799
+Step: 138233 Train Epoch: 176 [38400/50000 (76.7%)]	Loss: 0.021436
+Step: 138333 Train Epoch: 176 [44800/50000 (89.5%)]	Loss: 0.048572
+
+Test set: Average loss: 0.2725, Accuracy: 9317/10000 (93.1700%)
+
+Start epoch 177/200 with learning rate 0.0008000000000000003...
+Step: 138415 Train Epoch: 177 [0/50000 (0.0%)]	Loss: 0.018799
+Step: 138515 Train Epoch: 177 [6400/50000 (12.8%)]	Loss: 0.065651
+Step: 138615 Train Epoch: 177 [12800/50000 (25.6%)]	Loss: 0.016946
+Step: 138715 Train Epoch: 177 [19200/50000 (38.4%)]	Loss: 0.030286
+Step: 138815 Train Epoch: 177 [25600/50000 (51.2%)]	Loss: 0.012708
+Step: 138915 Train Epoch: 177 [32000/50000 (63.9%)]	Loss: 0.024686
+Step: 139015 Train Epoch: 177 [38400/50000 (76.7%)]	Loss: 0.015027
+Step: 139115 Train Epoch: 177 [44800/50000 (89.5%)]	Loss: 0.029666
+
+Test set: Average loss: 0.2765, Accuracy: 9317/10000 (93.1700%)
+
+Start epoch 178/200 with learning rate 0.0008000000000000003...
+Step: 139197 Train Epoch: 178 [0/50000 (0.0%)]	Loss: 0.076113
+Step: 139297 Train Epoch: 178 [6400/50000 (12.8%)]	Loss: 0.013455
+Step: 139397 Train Epoch: 178 [12800/50000 (25.6%)]	Loss: 0.043434
+Step: 139497 Train Epoch: 178 [19200/50000 (38.4%)]	Loss: 0.075949
+Step: 139597 Train Epoch: 178 [25600/50000 (51.2%)]	Loss: 0.018970
+Step: 139697 Train Epoch: 178 [32000/50000 (63.9%)]	Loss: 0.031811
+Step: 139797 Train Epoch: 178 [38400/50000 (76.7%)]	Loss: 0.018819
+Step: 139897 Train Epoch: 178 [44800/50000 (89.5%)]	Loss: 0.023846
+
+Test set: Average loss: 0.2693, Accuracy: 9312/10000 (93.1200%)
+
+Start epoch 179/200 with learning rate 0.0008000000000000003...
+Step: 139979 Train Epoch: 179 [0/50000 (0.0%)]	Loss: 0.020701
+Step: 140079 Train Epoch: 179 [6400/50000 (12.8%)]	Loss: 0.010211
+Step: 140179 Train Epoch: 179 [12800/50000 (25.6%)]	Loss: 0.014974
+Step: 140279 Train Epoch: 179 [19200/50000 (38.4%)]	Loss: 0.013158
+Step: 140379 Train Epoch: 179 [25600/50000 (51.2%)]	Loss: 0.018425
+Step: 140479 Train Epoch: 179 [32000/50000 (63.9%)]	Loss: 0.012133
+Step: 140579 Train Epoch: 179 [38400/50000 (76.7%)]	Loss: 0.013474
+Step: 140679 Train Epoch: 179 [44800/50000 (89.5%)]	Loss: 0.017952
+
+Test set: Average loss: 0.2757, Accuracy: 9303/10000 (93.0300%)
+
+Start epoch 180/200 with learning rate 0.0008000000000000003...
+Step: 140761 Train Epoch: 180 [0/50000 (0.0%)]	Loss: 0.018654
+Step: 140861 Train Epoch: 180 [6400/50000 (12.8%)]	Loss: 0.052318
+Step: 140961 Train Epoch: 180 [12800/50000 (25.6%)]	Loss: 0.018037
+Step: 141061 Train Epoch: 180 [19200/50000 (38.4%)]	Loss: 0.027594
+Step: 141161 Train Epoch: 180 [25600/50000 (51.2%)]	Loss: 0.032226
+Step: 141261 Train Epoch: 180 [32000/50000 (63.9%)]	Loss: 0.022563
+Step: 141361 Train Epoch: 180 [38400/50000 (76.7%)]	Loss: 0.047443
+Step: 141461 Train Epoch: 180 [44800/50000 (89.5%)]	Loss: 0.070408
+
+Test set: Average loss: 0.2732, Accuracy: 9319/10000 (93.1900%)
+
+Start epoch 181/200 with learning rate 0.0008000000000000003...
+Step: 141543 Train Epoch: 181 [0/50000 (0.0%)]	Loss: 0.026029
+Step: 141643 Train Epoch: 181 [6400/50000 (12.8%)]	Loss: 0.015988
+Step: 141743 Train Epoch: 181 [12800/50000 (25.6%)]	Loss: 0.018588
+Step: 141843 Train Epoch: 181 [19200/50000 (38.4%)]	Loss: 0.026398
+Step: 141943 Train Epoch: 181 [25600/50000 (51.2%)]	Loss: 0.013220
+Step: 142043 Train Epoch: 181 [32000/50000 (63.9%)]	Loss: 0.009293
+Step: 142143 Train Epoch: 181 [38400/50000 (76.7%)]	Loss: 0.016392
+Step: 142243 Train Epoch: 181 [44800/50000 (89.5%)]	Loss: 0.015729
+
+Test set: Average loss: 0.2794, Accuracy: 9310/10000 (93.1000%)
+
+Start epoch 182/200 with learning rate 0.0008000000000000003...
+Step: 142325 Train Epoch: 182 [0/50000 (0.0%)]	Loss: 0.011386
+Step: 142425 Train Epoch: 182 [6400/50000 (12.8%)]	Loss: 0.010425
+Step: 142525 Train Epoch: 182 [12800/50000 (25.6%)]	Loss: 0.055591
+Step: 142625 Train Epoch: 182 [19200/50000 (38.4%)]	Loss: 0.009177
+Step: 142725 Train Epoch: 182 [25600/50000 (51.2%)]	Loss: 0.018959
+Step: 142825 Train Epoch: 182 [32000/50000 (63.9%)]	Loss: 0.014849
+Step: 142925 Train Epoch: 182 [38400/50000 (76.7%)]	Loss: 0.009414
+Step: 143025 Train Epoch: 182 [44800/50000 (89.5%)]	Loss: 0.013032
+
+Test set: Average loss: 0.2712, Accuracy: 9347/10000 (93.4700%)
+
+Start epoch 183/200 with learning rate 0.0008000000000000003...
+Step: 143107 Train Epoch: 183 [0/50000 (0.0%)]	Loss: 0.023873
+Step: 143207 Train Epoch: 183 [6400/50000 (12.8%)]	Loss: 0.012634
+Step: 143307 Train Epoch: 183 [12800/50000 (25.6%)]	Loss: 0.018249
+Step: 143407 Train Epoch: 183 [19200/50000 (38.4%)]	Loss: 0.008654
+Step: 143507 Train Epoch: 183 [25600/50000 (51.2%)]	Loss: 0.015978
+Step: 143607 Train Epoch: 183 [32000/50000 (63.9%)]	Loss: 0.019333
+Step: 143707 Train Epoch: 183 [38400/50000 (76.7%)]	Loss: 0.022668
+Step: 143807 Train Epoch: 183 [44800/50000 (89.5%)]	Loss: 0.011003
+
+Test set: Average loss: 0.2752, Accuracy: 9333/10000 (93.3300%)
+
+Start epoch 184/200 with learning rate 0.0008000000000000003...
+Step: 143889 Train Epoch: 184 [0/50000 (0.0%)]	Loss: 0.058298
+Step: 143989 Train Epoch: 184 [6400/50000 (12.8%)]	Loss: 0.023568
+Step: 144089 Train Epoch: 184 [12800/50000 (25.6%)]	Loss: 0.028519
+Step: 144189 Train Epoch: 184 [19200/50000 (38.4%)]	Loss: 0.011372
+Step: 144289 Train Epoch: 184 [25600/50000 (51.2%)]	Loss: 0.012240
+Step: 144389 Train Epoch: 184 [32000/50000 (63.9%)]	Loss: 0.011686
+Step: 144489 Train Epoch: 184 [38400/50000 (76.7%)]	Loss: 0.010142
+Step: 144589 Train Epoch: 184 [44800/50000 (89.5%)]	Loss: 0.054135
+
+Test set: Average loss: 0.2785, Accuracy: 9308/10000 (93.0800%)
+
+Start epoch 185/200 with learning rate 0.0008000000000000003...
+Step: 144671 Train Epoch: 185 [0/50000 (0.0%)]	Loss: 0.011584
+Step: 144771 Train Epoch: 185 [6400/50000 (12.8%)]	Loss: 0.016561
+Step: 144871 Train Epoch: 185 [12800/50000 (25.6%)]	Loss: 0.027695
+Step: 144971 Train Epoch: 185 [19200/50000 (38.4%)]	Loss: 0.018692
+Step: 145071 Train Epoch: 185 [25600/50000 (51.2%)]	Loss: 0.096831
+Step: 145171 Train Epoch: 185 [32000/50000 (63.9%)]	Loss: 0.009393
+Step: 145271 Train Epoch: 185 [38400/50000 (76.7%)]	Loss: 0.020044
+Step: 145371 Train Epoch: 185 [44800/50000 (89.5%)]	Loss: 0.021893
+
+Test set: Average loss: 0.2788, Accuracy: 9320/10000 (93.2000%)
+
+Start epoch 186/200 with learning rate 0.0008000000000000003...
+Step: 145453 Train Epoch: 186 [0/50000 (0.0%)]	Loss: 0.010242
+Step: 145553 Train Epoch: 186 [6400/50000 (12.8%)]	Loss: 0.046000
+Step: 145653 Train Epoch: 186 [12800/50000 (25.6%)]	Loss: 0.015852
+Step: 145753 Train Epoch: 186 [19200/50000 (38.4%)]	Loss: 0.027231
+Step: 145853 Train Epoch: 186 [25600/50000 (51.2%)]	Loss: 0.009256
+Step: 145953 Train Epoch: 186 [32000/50000 (63.9%)]	Loss: 0.027890
+Step: 146053 Train Epoch: 186 [38400/50000 (76.7%)]	Loss: 0.013144
+Step: 146153 Train Epoch: 186 [44800/50000 (89.5%)]	Loss: 0.008839
+
+Test set: Average loss: 0.2850, Accuracy: 9290/10000 (92.9000%)
+
+Start epoch 187/200 with learning rate 0.0008000000000000003...
+Step: 146235 Train Epoch: 187 [0/50000 (0.0%)]	Loss: 0.017824
+Step: 146335 Train Epoch: 187 [6400/50000 (12.8%)]	Loss: 0.024557
+Step: 146435 Train Epoch: 187 [12800/50000 (25.6%)]	Loss: 0.011631
+Step: 146535 Train Epoch: 187 [19200/50000 (38.4%)]	Loss: 0.015716
+Step: 146635 Train Epoch: 187 [25600/50000 (51.2%)]	Loss: 0.076476
+Step: 146735 Train Epoch: 187 [32000/50000 (63.9%)]	Loss: 0.047406
+Step: 146835 Train Epoch: 187 [38400/50000 (76.7%)]	Loss: 0.012861
+Step: 146935 Train Epoch: 187 [44800/50000 (89.5%)]	Loss: 0.061349
+
+Test set: Average loss: 0.2844, Accuracy: 9309/10000 (93.0900%)
+
+Start epoch 188/200 with learning rate 0.0008000000000000003...
+Step: 147017 Train Epoch: 188 [0/50000 (0.0%)]	Loss: 0.014266
+Step: 147117 Train Epoch: 188 [6400/50000 (12.8%)]	Loss: 0.030173
+Step: 147217 Train Epoch: 188 [12800/50000 (25.6%)]	Loss: 0.024669
+Step: 147317 Train Epoch: 188 [19200/50000 (38.4%)]	Loss: 0.012581
+Step: 147417 Train Epoch: 188 [25600/50000 (51.2%)]	Loss: 0.019732
+Step: 147517 Train Epoch: 188 [32000/50000 (63.9%)]	Loss: 0.021864
+Step: 147617 Train Epoch: 188 [38400/50000 (76.7%)]	Loss: 0.012204
+Step: 147717 Train Epoch: 188 [44800/50000 (89.5%)]	Loss: 0.013534
+
+Test set: Average loss: 0.2839, Accuracy: 9311/10000 (93.1100%)
+
+Start epoch 189/200 with learning rate 0.0008000000000000003...
+Step: 147799 Train Epoch: 189 [0/50000 (0.0%)]	Loss: 0.019901
+Step: 147899 Train Epoch: 189 [6400/50000 (12.8%)]	Loss: 0.019534
+Step: 147999 Train Epoch: 189 [12800/50000 (25.6%)]	Loss: 0.038174
+Step: 148099 Train Epoch: 189 [19200/50000 (38.4%)]	Loss: 0.016061
+Step: 148199 Train Epoch: 189 [25600/50000 (51.2%)]	Loss: 0.016675
+Step: 148299 Train Epoch: 189 [32000/50000 (63.9%)]	Loss: 0.027221
+Step: 148399 Train Epoch: 189 [38400/50000 (76.7%)]	Loss: 0.027166
+Step: 148499 Train Epoch: 189 [44800/50000 (89.5%)]	Loss: 0.054386
+
+Test set: Average loss: 0.2798, Accuracy: 9308/10000 (93.0800%)
+
+Start epoch 190/200 with learning rate 0.0008000000000000003...
+Step: 148581 Train Epoch: 190 [0/50000 (0.0%)]	Loss: 0.008803
+Step: 148681 Train Epoch: 190 [6400/50000 (12.8%)]	Loss: 0.022949
+Step: 148781 Train Epoch: 190 [12800/50000 (25.6%)]	Loss: 0.013213
+Step: 148881 Train Epoch: 190 [19200/50000 (38.4%)]	Loss: 0.014528
+Step: 148981 Train Epoch: 190 [25600/50000 (51.2%)]	Loss: 0.009526
+Step: 149081 Train Epoch: 190 [32000/50000 (63.9%)]	Loss: 0.017683
+Step: 149181 Train Epoch: 190 [38400/50000 (76.7%)]	Loss: 0.028536
+Step: 149281 Train Epoch: 190 [44800/50000 (89.5%)]	Loss: 0.017674
+
+Test set: Average loss: 0.2844, Accuracy: 9303/10000 (93.0300%)
+
+Start epoch 191/200 with learning rate 0.0008000000000000003...
+Step: 149363 Train Epoch: 191 [0/50000 (0.0%)]	Loss: 0.018750
+Step: 149463 Train Epoch: 191 [6400/50000 (12.8%)]	Loss: 0.008673
+Step: 149563 Train Epoch: 191 [12800/50000 (25.6%)]	Loss: 0.009076
+Step: 149663 Train Epoch: 191 [19200/50000 (38.4%)]	Loss: 0.033691
+Step: 149763 Train Epoch: 191 [25600/50000 (51.2%)]	Loss: 0.009999
+Step: 149863 Train Epoch: 191 [32000/50000 (63.9%)]	Loss: 0.011035
+Step: 149963 Train Epoch: 191 [38400/50000 (76.7%)]	Loss: 0.015216
+Step: 150063 Train Epoch: 191 [44800/50000 (89.5%)]	Loss: 0.034782
+
+Test set: Average loss: 0.2753, Accuracy: 9343/10000 (93.4300%)
+
+Start epoch 192/200 with learning rate 0.0008000000000000003...
+Step: 150145 Train Epoch: 192 [0/50000 (0.0%)]	Loss: 0.010419
+Step: 150245 Train Epoch: 192 [6400/50000 (12.8%)]	Loss: 0.114884
+Step: 150345 Train Epoch: 192 [12800/50000 (25.6%)]	Loss: 0.008261
+Step: 150445 Train Epoch: 192 [19200/50000 (38.4%)]	Loss: 0.018373
+Step: 150545 Train Epoch: 192 [25600/50000 (51.2%)]	Loss: 0.008458
+Step: 150645 Train Epoch: 192 [32000/50000 (63.9%)]	Loss: 0.011400
+Step: 150745 Train Epoch: 192 [38400/50000 (76.7%)]	Loss: 0.029858
+Step: 150845 Train Epoch: 192 [44800/50000 (89.5%)]	Loss: 0.023645
+
+Test set: Average loss: 0.2799, Accuracy: 9340/10000 (93.4000%)
+
+Start epoch 193/200 with learning rate 0.0008000000000000003...
+Step: 150927 Train Epoch: 193 [0/50000 (0.0%)]	Loss: 0.020157
+Step: 151027 Train Epoch: 193 [6400/50000 (12.8%)]	Loss: 0.016815
+Step: 151127 Train Epoch: 193 [12800/50000 (25.6%)]	Loss: 0.087488
+Step: 151227 Train Epoch: 193 [19200/50000 (38.4%)]	Loss: 0.010735
+Step: 151327 Train Epoch: 193 [25600/50000 (51.2%)]	Loss: 0.029443
+Step: 151427 Train Epoch: 193 [32000/50000 (63.9%)]	Loss: 0.010951
+Step: 151527 Train Epoch: 193 [38400/50000 (76.7%)]	Loss: 0.018576
+Step: 151627 Train Epoch: 193 [44800/50000 (89.5%)]	Loss: 0.013290
+
+Test set: Average loss: 0.2821, Accuracy: 9317/10000 (93.1700%)
+
+Start epoch 194/200 with learning rate 0.0008000000000000003...
+Step: 151709 Train Epoch: 194 [0/50000 (0.0%)]	Loss: 0.013980
+Step: 151809 Train Epoch: 194 [6400/50000 (12.8%)]	Loss: 0.009970
+Step: 151909 Train Epoch: 194 [12800/50000 (25.6%)]	Loss: 0.024927
+Step: 152009 Train Epoch: 194 [19200/50000 (38.4%)]	Loss: 0.016130
+Step: 152109 Train Epoch: 194 [25600/50000 (51.2%)]	Loss: 0.010543
+Step: 152209 Train Epoch: 194 [32000/50000 (63.9%)]	Loss: 0.014032
+Step: 152309 Train Epoch: 194 [38400/50000 (76.7%)]	Loss: 0.012622
+Step: 152409 Train Epoch: 194 [44800/50000 (89.5%)]	Loss: 0.014864
+
+Test set: Average loss: 0.2808, Accuracy: 9337/10000 (93.3700%)
+
+Start epoch 195/200 with learning rate 0.0008000000000000003...
+Step: 152491 Train Epoch: 195 [0/50000 (0.0%)]	Loss: 0.021675
+Step: 152591 Train Epoch: 195 [6400/50000 (12.8%)]	Loss: 0.054445
+Step: 152691 Train Epoch: 195 [12800/50000 (25.6%)]	Loss: 0.013166
+Step: 152791 Train Epoch: 195 [19200/50000 (38.4%)]	Loss: 0.009198
+Step: 152891 Train Epoch: 195 [25600/50000 (51.2%)]	Loss: 0.009871
+Step: 152991 Train Epoch: 195 [32000/50000 (63.9%)]	Loss: 0.016951
+Step: 153091 Train Epoch: 195 [38400/50000 (76.7%)]	Loss: 0.015882
+Step: 153191 Train Epoch: 195 [44800/50000 (89.5%)]	Loss: 0.050450
+
+Test set: Average loss: 0.2941, Accuracy: 9304/10000 (93.0400%)
+
+Start epoch 196/200 with learning rate 0.0008000000000000003...
+Step: 153273 Train Epoch: 196 [0/50000 (0.0%)]	Loss: 0.033617
+Step: 153373 Train Epoch: 196 [6400/50000 (12.8%)]	Loss: 0.021066
+Step: 153473 Train Epoch: 196 [12800/50000 (25.6%)]	Loss: 0.010007
+Step: 153573 Train Epoch: 196 [19200/50000 (38.4%)]	Loss: 0.019878
+Step: 153673 Train Epoch: 196 [25600/50000 (51.2%)]	Loss: 0.016583
+Step: 153773 Train Epoch: 196 [32000/50000 (63.9%)]	Loss: 0.094708
+Step: 153873 Train Epoch: 196 [38400/50000 (76.7%)]	Loss: 0.048207
+Step: 153973 Train Epoch: 196 [44800/50000 (89.5%)]	Loss: 0.031607
+
+Test set: Average loss: 0.2848, Accuracy: 9302/10000 (93.0200%)
+
+Start epoch 197/200 with learning rate 0.0008000000000000003...
+Step: 154055 Train Epoch: 197 [0/50000 (0.0%)]	Loss: 0.021947
+Step: 154155 Train Epoch: 197 [6400/50000 (12.8%)]	Loss: 0.017537
+Step: 154255 Train Epoch: 197 [12800/50000 (25.6%)]	Loss: 0.012337
+Step: 154355 Train Epoch: 197 [19200/50000 (38.4%)]	Loss: 0.028960
+Step: 154455 Train Epoch: 197 [25600/50000 (51.2%)]	Loss: 0.024650
+Step: 154555 Train Epoch: 197 [32000/50000 (63.9%)]	Loss: 0.040918
+Step: 154655 Train Epoch: 197 [38400/50000 (76.7%)]	Loss: 0.010976
+Step: 154755 Train Epoch: 197 [44800/50000 (89.5%)]	Loss: 0.012826
+
+Test set: Average loss: 0.2870, Accuracy: 9304/10000 (93.0400%)
+
+Start epoch 198/200 with learning rate 0.0008000000000000003...
+Step: 154837 Train Epoch: 198 [0/50000 (0.0%)]	Loss: 0.023914
+Step: 154937 Train Epoch: 198 [6400/50000 (12.8%)]	Loss: 0.014645
+Step: 155037 Train Epoch: 198 [12800/50000 (25.6%)]	Loss: 0.014802
+Step: 155137 Train Epoch: 198 [19200/50000 (38.4%)]	Loss: 0.009754
+Step: 155237 Train Epoch: 198 [25600/50000 (51.2%)]	Loss: 0.023294
+Step: 155337 Train Epoch: 198 [32000/50000 (63.9%)]	Loss: 0.015930
+Step: 155437 Train Epoch: 198 [38400/50000 (76.7%)]	Loss: 0.009210
+Step: 155537 Train Epoch: 198 [44800/50000 (89.5%)]	Loss: 0.133827
+
+Test set: Average loss: 0.2856, Accuracy: 9319/10000 (93.1900%)
+
+Start epoch 199/200 with learning rate 0.0008000000000000003...
+Step: 155619 Train Epoch: 199 [0/50000 (0.0%)]	Loss: 0.013948
+Step: 155719 Train Epoch: 199 [6400/50000 (12.8%)]	Loss: 0.011235
+Step: 155819 Train Epoch: 199 [12800/50000 (25.6%)]	Loss: 0.010187
+Step: 155919 Train Epoch: 199 [19200/50000 (38.4%)]	Loss: 0.015253
+Step: 156019 Train Epoch: 199 [25600/50000 (51.2%)]	Loss: 0.021076
+Step: 156119 Train Epoch: 199 [32000/50000 (63.9%)]	Loss: 0.014798
+Step: 156219 Train Epoch: 199 [38400/50000 (76.7%)]	Loss: 0.012075
+Step: 156319 Train Epoch: 199 [44800/50000 (89.5%)]	Loss: 0.015159
+
+Test set: Average loss: 0.2906, Accuracy: 9300/10000 (93.0000%)
+
+Best accuracy: 0.9347
+layer index: 2 	 total channel: 16 	 remaining channel: 11
+layer index: 6 	 total channel: 16 	 remaining channel: 9
+layer index: 8 	 total channel: 16 	 remaining channel: 13
+layer index: 13 	 total channel: 16 	 remaining channel: 13
+layer index: 15 	 total channel: 16 	 remaining channel: 15
+layer index: 20 	 total channel: 16 	 remaining channel: 9
+layer index: 22 	 total channel: 16 	 remaining channel: 10
+layer index: 27 	 total channel: 16 	 remaining channel: 8
+layer index: 29 	 total channel: 16 	 remaining channel: 9
+layer index: 34 	 total channel: 16 	 remaining channel: 7
+layer index: 36 	 total channel: 16 	 remaining channel: 6
+layer index: 41 	 total channel: 16 	 remaining channel: 6
+layer index: 43 	 total channel: 16 	 remaining channel: 7
+layer index: 48 	 total channel: 16 	 remaining channel: 12
+layer index: 50 	 total channel: 16 	 remaining channel: 14
+layer index: 55 	 total channel: 16 	 remaining channel: 11
+layer index: 57 	 total channel: 16 	 remaining channel: 15
+layer index: 62 	 total channel: 16 	 remaining channel: 6
+layer index: 64 	 total channel: 16 	 remaining channel: 5
+layer index: 70 	 total channel: 32 	 remaining channel: 32
+layer index: 72 	 total channel: 32 	 remaining channel: 32
+layer index: 77 	 total channel: 32 	 remaining channel: 26
+layer index: 79 	 total channel: 32 	 remaining channel: 32
+layer index: 84 	 total channel: 32 	 remaining channel: 19
+layer index: 86 	 total channel: 32 	 remaining channel: 32
+layer index: 91 	 total channel: 32 	 remaining channel: 17
+layer index: 93 	 total channel: 32 	 remaining channel: 32
+layer index: 98 	 total channel: 32 	 remaining channel: 7
+layer index: 100 	 total channel: 32 	 remaining channel: 18
+layer index: 105 	 total channel: 32 	 remaining channel: 2
+layer index: 107 	 total channel: 32 	 remaining channel: 15
+layer index: 112 	 total channel: 32 	 remaining channel: 0
+layer index: 114 	 total channel: 32 	 remaining channel: 0
+layer index: 119 	 total channel: 32 	 remaining channel: 0
+layer index: 121 	 total channel: 32 	 remaining channel: 0
+layer index: 126 	 total channel: 32 	 remaining channel: 0
+layer index: 128 	 total channel: 32 	 remaining channel: 0
+layer index: 134 	 total channel: 64 	 remaining channel: 63
+layer index: 136 	 total channel: 64 	 remaining channel: 63
+layer index: 141 	 total channel: 64 	 remaining channel: 52
+layer index: 143 	 total channel: 64 	 remaining channel: 64
+layer index: 148 	 total channel: 64 	 remaining channel: 41
+layer index: 150 	 total channel: 64 	 remaining channel: 64
+layer index: 155 	 total channel: 64 	 remaining channel: 44
+layer index: 157 	 total channel: 64 	 remaining channel: 64
+layer index: 162 	 total channel: 64 	 remaining channel: 36
+layer index: 164 	 total channel: 64 	 remaining channel: 61
+layer index: 169 	 total channel: 64 	 remaining channel: 14
+layer index: 171 	 total channel: 64 	 remaining channel: 36
+layer index: 176 	 total channel: 64 	 remaining channel: 9
+layer index: 178 	 total channel: 64 	 remaining channel: 28
+layer index: 183 	 total channel: 64 	 remaining channel: 35
+layer index: 185 	 total channel: 64 	 remaining channel: 38
+layer index: 190 	 total channel: 64 	 remaining channel: 39
+layer index: 192 	 total channel: 64 	 remaining channel: 39
+Pre-processing Successful! Pruned ratio: 0.3897637724876404
+Best accuracy: 0.9347

@@ -1,0 +1,6 @@
+Configuration: 
+[21, 59, 'M', 122, 126, 'M', 246, 233, 228, 'M', 212, 78, 75, 'M', 39, 17, 39, 219]
+Number of parameters: 
+2176935
+Test accuracy: 
+0.9338
