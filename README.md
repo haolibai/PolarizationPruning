@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 > We recommend to run the code on PyTorch 1.2 and CUDA 10.0. The project is *incompatible* with PyTorch <= 1.0.
 
-See `./imagenet` or `./cifar` for detail guides running on ImageNet ([ILSVRC-12](http://image-net.org/challenges/LSVRC/2012/)) or CIFAR10/100.
+See README in `./imagenet` or `./cifar` for detail guides running on ImageNet ([ILSVRC-12](http://image-net.org/challenges/LSVRC/2012/)) or CIFAR10/100.
 
 ## Checkpoints and logs
 
@@ -49,8 +49,7 @@ In our practice, `grad` and `fixed` always give similar results at pruning polar
 
 - `original`: There is no any sparse regularization on the loss function, i.e., baseline model.
 - `sr`: Apply L1 regularization on the loss function, i.e., [Network Slimming](https://arxiv.org/abs/1708.06519).
-- `zol`: Polarization regularization. We implement the polarization regularizer as <img src="https://latex.codecogs.com/svg.latex?R_s(\bm{\gamma})&space;=&space;t&space;\lVert&space;\bm{\gamma}&space;\rVert_1&space;-&space;\lVert&space;\bm{\gamma}&space;-&space;\alpha&space;\bar&space;\gamma&space;\bm{1}_n\rVert_1" title="R_s(\bm{\gamma}) = t \lVert \bm{\gamma} \rVert_1 - \lVert \bm{\gamma} - \alpha \bar \gamma \bm{1}_n\rVert_1" />, and always set α as 1. The implementation is equivalent to the equation 2 in the paper. The argument `--lbd` is the coefficient of the sparsity regularization term (i.e., λ), as shown in the equation 1 in the paper.
-
+- `zol`: Polarization regularization. See equation 2 in the paper.
 
 
 ## Acknowledgement

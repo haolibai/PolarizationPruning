@@ -27,9 +27,9 @@ parser.add_argument("--loss-type", "-loss", dest="loss",
 parser.add_argument('--lbd', type=float, default=0.0001,
                     help='scale sparse rate (default: 0.0001)')
 parser.add_argument('--alpha', type=float, default=1.,
-                    help='coefficient of mean term in zol loss (default: 1)')
+                    help='coefficient of mean term in polarization regularizer. deprecated (default: 1)')
 parser.add_argument('--t', type=float, default=1.,
-                    help='coefficient of L1 term in zol loss (default: 1)')
+                    help='coefficient of L1 term in polarization regularizer (default: 1)')
 parser.add_argument('--batch-size', type=int, default=64, metavar='N',
                     help='input batch size for training (default: 64)')
 parser.add_argument('--test-batch-size', type=int, default=256, metavar='N',
