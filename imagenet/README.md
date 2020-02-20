@@ -1,6 +1,6 @@
 # Train on ImageNet
 
-> Note: We recommend to use 4x GTX 1080Ti (or higher) to train ImageNet. Training takes about 1.5 days.
+> Note: We recommend to use 4x GTX 1080Ti (or higher) to train on ImageNet data. In this way, training usually takes about 1.5 days.
 
 Dataset:
 1. Download the ImageNet dataset
@@ -15,7 +15,7 @@ Dataset:
     mkdir ./backup_ckpt/  # backup checkpoints every five epochs
     ```
 
-    > Note: Checkpoints will be named as `checkpoint.pth.tar` and `model_best.pth.tar`. The program will overwrite existed checkpoints in the checkpoint directory. Make sure to use a different checkpoint directory name at different experiments. We recommend using the experiment name as directory, e.g., `--save ./resnet50-imagenet`.
+    > Note: Checkpoints will be named as `checkpoint.pth.tar` and `model_best.pth.tar`. The program will overwrite existing checkpoints in the checkpoint directory. Make sure to use a different checkpoint directory name in different experiments. We recommend using the experiment name as directory, e.g., `--save ./resnet50-imagenet`.
 
 ## Training
 

@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 > We recommend to run the code on PyTorch 1.2 and CUDA 10.0. The project is *incompatible* with PyTorch <= 1.0.
 
-See README in `./imagenet` or `./cifar` for detail guides running on ImageNet ([ILSVRC-12](http://image-net.org/challenges/LSVRC/2012/)) or CIFAR10/100.
+See README in `./imagenet` or `./cifar` for guidelines on running experiments on ImageNet ([ILSVRC-12](http://image-net.org/challenges/LSVRC/2012/)) or CIFAR10/100 datasets.
 
 ## Checkpoints and logs
 
@@ -43,16 +43,15 @@ We introduce a novel pruning method in our paper (Fig. 2). We have implemented m
 - `percent`: Determine the threshold by a global pruning percent (as Network Slimming).
 - `search`: **Deprecated**. Not recommend to use.
 
-In our practice, `grad` and `fixed` always give similar results at pruning polarized distributions.
-
 ### Loss Type
 
 - `original`: There is no any sparse regularization on the loss function, i.e., baseline model.
-- `sr`: Apply L1 regularization on the loss function, i.e., [Network Slimming](https://arxiv.org/abs/1708.06519).
+- `sr`: Apply L1 regularization on the scaling factors, i.e., [Network Slimming](https://arxiv.org/abs/1708.06519).
 - `zol`: Polarization regularization. See equation 2 in the paper.
+
 
 
 ## Acknowledgement
 
-We build our code based on [rethinking-network-pruning](https://github.com/Eric-mingjie/rethinking-network-pruning). We'd like to thank their contribution to the pruning community.
+We build our code based on [rethinking-network-pruning](https://github.com/Eric-mingjie/rethinking-network-pruning). We'd like to thank their contribution to the research on structured pruning.
 

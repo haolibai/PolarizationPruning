@@ -1,6 +1,6 @@
 # Train on CIFAR
 
-> We give examples training on CIFAR-10. To train on CIFAR-100, use `--dataset cifar100`.
+> To train on CIFAR-100, use `--dataset cifar100`.
 
 1. Create checkpoint directory
     ```bash
@@ -8,7 +8,7 @@
     mkdir ./events/       # TensorBoard events
     ```
 
-    > Note: Checkpoints will be named as `checkpoint.pth.tar` and `model_best.pth.tar`. The program will overwrite existed checkpoints in the checkpoint directory. Make sure to use a different checkpoint directory name at different experiments. We recommend using the experiment name as directory, e.g., `--save ./resnet56-cifar`.
+    > Note: Checkpoints will be named as `checkpoint.pth.tar` and `model_best.pth.tar`. The program will overwrite existing checkpoints in the checkpoint directory. Make sure to use a different checkpoint directory name in different experiments. We recommend using the experiment name as directory, e.g., `--save ./resnet56-cifar`.
 
 
 ## ResNet-56
