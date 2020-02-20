@@ -24,11 +24,9 @@ pip install -r requirements.txt
 
 See `./imagenet` or `./cifar` for detail guides running on ImageNet ([ILSVRC-12](http://image-net.org/challenges/LSVRC/2012/)) or CIFAR10/100.
 
-## Checkpoints
+## Checkpoints and logs
 
-~~We release our checkpoints, training logs and TensorBoard events on [Google Drive](#). Hope them help you better understand our work.~~
-
-We have uploaded our training logs on CMT (see `code.zip/log/`). Limited by the upload file size, we can't upload checkpoints and TensorBoard events. We will release checkpoints as soon as possible after review.
+We present logs of sparsity training with polarization regularizer and logs of fine-tuning the pruned model (`./logs`). Limited by the upload file size, we can't upload checkpoints and TensorBoard events. We will release checkpoints as soon as possible after review.
 
 ## Note
 
