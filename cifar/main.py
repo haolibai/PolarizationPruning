@@ -61,7 +61,7 @@ parser.add_argument('--arch', default='vgg', type=str,
 parser.add_argument('--log', default='./log', type=str, metavar='PATH',
                     help='path to tensorboard log (default: ./log)')
 parser.add_argument('--gammas', type=float, nargs='+', default=[0.1, 0.1],
-                    help='LR is multiplied by gamma on schedule, number of gammas should be equal to schedule')
+                    help='LR is multiplied by gamma on decay-epoch, number of gammas should be equal to decay-epoch')
 parser.add_argument('--bn-init-value', default=0.5, type=float,
                     help='initial value of bn weight (default: 0.5, following NetworkSlimming)')
 parser.add_argument('--retrain', type=str, default=None, metavar="PATH",

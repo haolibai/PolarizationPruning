@@ -42,7 +42,7 @@ parser.add_argument('--start-epoch', default=0, type=int, metavar='N',
 parser.add_argument('--lr', type=float, default=0.001, metavar='LR',
                     help='learning rate (default: 0.1)')
 parser.add_argument('--gammas', type=float, nargs='+', default=[0.1, 0.1],
-                    help='LR is multiplied by gamma on schedule, number of gammas should be equal to schedule')
+                    help='LR is multiplied by gamma on decay-epoch, number of gammas should be equal to decay-epoch')
 parser.add_argument('--decay-epoch', type=float, nargs='*', default=[0.5, 0.75],
                     help="the epoch to decay the learning rate (default 0.5, 0.75)")
 parser.add_argument('--momentum', type=float, default=0.9, metavar='M',
